@@ -1,10 +1,12 @@
 # Data & sensitive files
-data/
 *.dicom
 *.vc               # VeraCrypt containers
 *.pyc
 __pycache__/
 .env
+cxr_env/
+venv/
+.venv/
 secrets/
 *.log
 # Temporary files
