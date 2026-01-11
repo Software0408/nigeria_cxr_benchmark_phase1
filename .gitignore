@@ -1,5 +1,6 @@
 # Data & sensitive files
 *.dicom
+*.dcm
 *.vc               # VeraCrypt containers
 *.pyc
 __pycache__/
