@@ -1,37 +1,61 @@
 # tests/test_validate_data.py
-# Automated tests for validate_data.py
-# Uses pytest with in-memory/mock DICOMs for reproducibility and CI compatibility
+# Phase 1 pytest suite for validate_data.py
+# Aligned with benchmark rules:
+# - Mixed body parts allowed
+# - At least one chest DICOM with pixel data required
+# - report.txt REQUIRED
+# - PHI presence flagged (presence only)
 
 import sys
+import shutil
+from pathlib import Path
+
 import pytest
 import pydicom
-from pydicom.dataset import Dataset, FileDataset, FileMetaDataset
-from pathlib import Path
-import shutil
+from pydicom.dataset import FileDataset, FileMetaDataset
 
-from workspace.src.data.validate_data import (
+# --------------------------------------------------
+# Ensure project root is on sys.path (for root-level src/)
+# --------------------------------------------------
+project_root = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(project_root))
+
+from src.data.validate_data import (
     is_chest_xray,
     validate_dicom_file,
     validate_study_folder,
     validate_dataset,
 )
 
-# Add project root to sys.path for imports
-project_root = Path(__file__).parent.parent.parent
-sys.path.insert(0, str(project_root))
-
-# -----------------------------
-# Standardized Mock Fixtures (valid image structure)
-# -----------------------------
-def _create_mock_dicom(tmp_path, filename, modality="CR", body_part="CHEST", view_position="PA"):
-    """Create a minimal but valid DICOM with required image tags."""
+# --------------------------------------------------
+# Helper: create mock DICOM files
+# --------------------------------------------------
+def _create_mock_dicom(
+    tmp_path,
+    filename,
+    modality="CR",
+    body_part="CHEST",
+    view_position="PA",
+    has_pixel=True,
+    patient_id=None,
+):
     file_meta = FileMetaDataset()
-    file_meta.MediaStorageSOPClassUID = pydicom.uid.ExplicitVRLittleEndian
+    file_meta.MediaStorageSOPClassUID = pydicom.uid.SecondaryCaptureImageStorage
     file_meta.MediaStorageSOPInstanceUID = pydicom.uid.generate_uid()
-    file_meta.ImplementationClassUID = pydicom.uid.PYDICOM_IMPLEMENTATION_UID
     file_meta.TransferSyntaxUID = pydicom.uid.ExplicitVRLittleEndian
-    ds = FileDataset(filename, {}, file_meta=file_meta, preamble=b"\0" * 128)
-    # Minimal required tags for valid image recognition
+    file_meta.ImplementationClassUID = pydicom.uid.PYDICOM_IMPLEMENTATION_UID
+
+    ds = FileDataset(
+        filename,
+        {},
+        file_meta=file_meta,
+        preamble=b"\0" * 128,
+    )
+
+    ds.Modality = modality
+    ds.BodyPartExamined = body_part
+    ds.ViewPosition = view_position
+
     ds.Rows = 1
     ds.Columns = 1
     ds.BitsAllocated = 8
@@ -41,38 +65,56 @@ def _create_mock_dicom(tmp_path, filename, modality="CR", body_part="CHEST", vie
     ds.SamplesPerPixel = 1
     ds.PhotometricInterpretation = "MONOCHROME2"
 
-    # Custom metadata
-    ds.Modality = modality
-    ds.BodyPartExamined = body_part
-    ds.ViewPosition = view_position
-    # Valid pixel data (single black pixel)
-    ds.PixelData = b"\x00"
+    if patient_id is not None:
+        ds.PatientID = patient_id
+
+    if has_pixel:
+        ds.PixelData = b"\x00"
 
     file_path = tmp_path / filename
     ds.save_as(file_path)
     return str(file_path)
 
 
+# --------------------------------------------------
+# Fixtures
+# --------------------------------------------------
 @pytest.fixture
 def mock_chest_dicom(tmp_path):
-    return _create_mock_dicom(tmp_path, "mock_chest.dcm", modality="CR", body_part="CHEST", view_position="PA")
+    return _create_mock_dicom(tmp_path, "chest.dcm")
 
 
 @pytest.fixture
 def mock_non_chest_dicom(tmp_path):
-    return _create_mock_dicom(tmp_path, "mock_non_chest.dcm", modality="CT", body_part="ABDOMEN")
+    return _create_mock_dicom(
+        tmp_path,
+        "abdomen.dcm",
+        modality="CT",
+        body_part="ABDOMEN",
+        view_position="AP",
+    )
+
+
+@pytest.fixture
+def mock_no_pixel_dicom(tmp_path):
+    return _create_mock_dicom(tmp_path, "no_pixel.dcm", has_pixel=False)
+
+
+@pytest.fixture
+def mock_phi_dicom(tmp_path):
+    return _create_mock_dicom(tmp_path, "phi.dcm", patient_id="REAL_PATIENT_ID")
 
 
 @pytest.fixture
 def mock_invalid_dicom(tmp_path):
     file_path = tmp_path / "invalid.dcm"
-    file_path.write_bytes(b"invalid DICOM content")
+    file_path.write_bytes(b"not a dicom")
     return str(file_path)
 
 
-# -----------------------------
-# Unit Tests
-# -----------------------------
+# --------------------------------------------------
+# Unit tests: metadata logic
+# --------------------------------------------------
 def test_is_chest_xray_true(mock_chest_dicom):
     ds = pydicom.dcmread(mock_chest_dicom)
     assert is_chest_xray(ds) is True
@@ -83,6 +125,9 @@ def test_is_chest_xray_false(mock_non_chest_dicom):
     assert is_chest_xray(ds) is False
 
 
+# --------------------------------------------------
+# Unit tests: file-level validation
+# --------------------------------------------------
 def test_validate_dicom_file_valid(mock_chest_dicom):
     result = validate_dicom_file(mock_chest_dicom)
     assert result["is_valid"] is True
@@ -91,50 +136,98 @@ def test_validate_dicom_file_valid(mock_chest_dicom):
     assert result["error"] is None
 
 
+def test_validate_dicom_file_no_pixel(mock_no_pixel_dicom):
+    result = validate_dicom_file(mock_no_pixel_dicom)
+    assert result["is_valid"] is True
+    assert result["has_pixel_data"] is False
+
+
+def test_validate_dicom_file_phi_flag(mock_phi_dicom):
+    result = validate_dicom_file(mock_phi_dicom)
+    assert result["patient_id_leak"] is True
+
+
 def test_validate_dicom_file_invalid(mock_invalid_dicom):
     result = validate_dicom_file(mock_invalid_dicom)
     assert result["is_valid"] is False
     assert "Invalid DICOM" in result["error"]
 
 
-# -----------------------------
-# Integration Tests
-# -----------------------------
-def test_validate_study_folder_valid(tmp_path, mock_chest_dicom):
-    study_path = tmp_path / "study_valid"
-    study_path.mkdir()
-    shutil.copy(mock_chest_dicom, study_path / "image.dcm")
-    (study_path / "report.txt").write_text("Mock report")
+# --------------------------------------------------
+# Integration tests: study-level validation
+# --------------------------------------------------
+def test_validate_study_valid(tmp_path, mock_chest_dicom):
+    study = tmp_path / "study_valid"
+    study.mkdir()
 
-    result = validate_study_folder(str(study_path))
+    shutil.copy(mock_chest_dicom, study / "image.dcm")
+    (study / "report.txt").write_text("Report")
+
+    result = validate_study_folder(str(study))
+
     assert result["status"] == "valid"
     assert result["chest_dicoms"] >= 1
+    assert result["pixel_dicoms"] >= 1
     assert result["report_present"] is True
+    assert result["reasons"] == []
 
 
-def test_validate_study_folder_invalid_no_report(tmp_path, mock_chest_dicom):
-    study_path = tmp_path / "study_no_report"
-    study_path.mkdir()
-    shutil.copy(mock_chest_dicom, study_path / "image.dcm")
+def test_validate_study_invalid_no_report(tmp_path, mock_chest_dicom):
+    study = tmp_path / "study_no_report"
+    study.mkdir()
 
-    result = validate_study_folder(str(study_path))
+    shutil.copy(mock_chest_dicom, study / "image.dcm")
+
+    result = validate_study_folder(str(study))
+
     assert result["status"] == "invalid"
     assert "Missing report.txt" in result["reasons"]
 
 
-# -----------------------------
-# Dataset-level Test (lightweight)
-# -----------------------------
-def test_validate_dataset(tmp_path, mock_chest_dicom):
-    dataset_root = tmp_path / "dataset"
-    dataset_root.mkdir()
-    study = dataset_root / "study1"
+def test_validate_study_mixed_pixel(tmp_path, mock_chest_dicom, mock_no_pixel_dicom):
+    study = tmp_path / "study_mixed"
+    study.mkdir()
+
+    shutil.copy(mock_chest_dicom, study / "chest.dcm")
+    shutil.copy(mock_no_pixel_dicom, study / "no_pixel.dcm")
+    (study / "report.txt").write_text("Report")
+
+    result = validate_study_folder(str(study))
+
+    assert result["status"] == "valid"  # At least one pixel
+    assert result["pixel_dicoms"] == 1
+    assert "No DICOM with pixel data" not in result["reasons"]
+
+
+def test_validate_study_all_no_pixel(tmp_path, mock_no_pixel_dicom):
+    study = tmp_path / "study_no_pixel"
+    study.mkdir()
+
+    shutil.copy(mock_no_pixel_dicom, study / "a.dcm")
+    shutil.copy(mock_no_pixel_dicom, study / "b.dcm")
+    (study / "report.txt").write_text("Report")
+
+    result = validate_study_folder(str(study))
+
+    assert result["status"] == "invalid"
+    assert "No DICOM with pixel data" in result["reasons"]
+
+
+# --------------------------------------------------
+# Dataset-level smoke test
+# --------------------------------------------------
+def test_validate_dataset_runs(tmp_path, mock_chest_dicom):
+    dataset = tmp_path / "dataset"
+    dataset.mkdir()
+
+    study = dataset / "study1"
     study.mkdir()
     shutil.copy(mock_chest_dicom, study / "image.dcm")
-    (study / "report.txt").write_text("Mock")
+    (study / "report.txt").write_text("Report")
 
-    validate_dataset(str(dataset_root))
+    # Should run without raising
+    validate_dataset(str(dataset))
+
 
 if __name__ == "__main__":
     pytest.main([__file__])
-    
