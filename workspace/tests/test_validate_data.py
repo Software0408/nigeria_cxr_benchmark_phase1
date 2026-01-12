@@ -2,17 +2,12 @@
 # Automated tests for validate_data.py
 # Uses pytest with in-memory/mock DICOMs for reproducibility and CI compatibility
 
-import os
 import sys
 import pytest
 import pydicom
 from pydicom.dataset import Dataset, FileDataset, FileMetaDataset
 from pathlib import Path
 import shutil
-
-# Add project root to sys.path for imports
-project_root = Path(__file__).parent.parent.parent
-sys.path.insert(0, str(project_root))
 
 from workspace.src.data.validate_data import (
     is_chest_xray,
@@ -21,20 +16,22 @@ from workspace.src.data.validate_data import (
     validate_dataset,
 )
 
+# Add project root to sys.path for imports
+project_root = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(project_root))
+
 # -----------------------------
 # Standardized Mock Fixtures (valid image structure)
 # -----------------------------
 def _create_mock_dicom(tmp_path, filename, modality="CR", body_part="CHEST", view_position="PA"):
-    """Helper to create valid mock DICOM with minimal image tags."""
+    """Create a minimal but valid DICOM with required image tags."""
     file_meta = FileMetaDataset()
     file_meta.MediaStorageSOPClassUID = pydicom.uid.ExplicitVRLittleEndian
     file_meta.MediaStorageSOPInstanceUID = pydicom.uid.generate_uid()
     file_meta.ImplementationClassUID = pydicom.uid.PYDICOM_IMPLEMENTATION_UID
-    file_meta.TransferSyntaxUID = pydicom.uid.ExplicitVRLittleEndian  # Fixes deprecation
-
+    file_meta.TransferSyntaxUID = pydicom.uid.ExplicitVRLittleEndian
     ds = FileDataset(filename, {}, file_meta=file_meta, preamble=b"\0" * 128)
-
-    # Required for valid image
+    # Minimal required tags for valid image recognition
     ds.Rows = 1
     ds.Columns = 1
     ds.BitsAllocated = 8
@@ -48,8 +45,7 @@ def _create_mock_dicom(tmp_path, filename, modality="CR", body_part="CHEST", vie
     ds.Modality = modality
     ds.BodyPartExamined = body_part
     ds.ViewPosition = view_position
-
-    # Valid pixel data (1 black pixel)
+    # Valid pixel data (single black pixel)
     ds.PixelData = b"\x00"
 
     file_path = tmp_path / filename
@@ -75,7 +71,7 @@ def mock_invalid_dicom(tmp_path):
 
 
 # -----------------------------
-# Unit & Integration Tests
+# Unit Tests
 # -----------------------------
 def test_is_chest_xray_true(mock_chest_dicom):
     ds = pydicom.dcmread(mock_chest_dicom)
@@ -101,46 +97,12 @@ def test_validate_dicom_file_invalid(mock_invalid_dicom):
     assert "Invalid DICOM" in result["error"]
 
 
-def test_validate_study_folder_valid(tmp_path, mock_chest_dicom):
-    study_path = tmp_path / "study_valid"
-    study_path.mkdir()
-    shutil.copy(mock_chest_dicom, study_path / "image.dcm")
-    (study_path / "report.txt").write_text("Mock report")
-
-    result = validate_study_folder(str(study_path))
-    assert result["status"] == "valid"
-    assert result["chest_dicoms"] >= 1
-    assert result["report_present"] is True
-
-
-def test_validate_study_folder_invalid_no_report(tmp_path, mock_chest_dicom):
-    study_path = tmp_path / "study_no_report"
-    study_path.mkdir()
-    shutil.copy(mock_chest_dicom, study_path / "image.dcm")
-
-    result = validate_study_folder(str(study_path))
-    assert result["status"] == "invalid"
-    assert "Missing report.txt" in result["reasons"]
-
-
-def test_validate_dataset(tmp_path, mock_chest_dicom):
-    dataset_root = tmp_path / "dataset"
-    dataset_root.mkdir()
-    study = dataset_root / "study1"
-    study.mkdir()
-    shutil.copy(mock_chest_dicom, study / "image.dcm")
-    (study / "report.txt").write_text("Mock")
-
-    validate_dataset(str(dataset_root))
-
-
 # -----------------------------
 # Integration Tests
 # -----------------------------
 def test_validate_study_folder_valid(tmp_path, mock_chest_dicom):
     study_path = tmp_path / "study_valid"
     study_path.mkdir()
-    # Copy mock file into study folder
     shutil.copy(mock_chest_dicom, study_path / "image.dcm")
     (study_path / "report.txt").write_text("Mock report")
 
@@ -170,7 +132,9 @@ def test_validate_dataset(tmp_path, mock_chest_dicom):
     study.mkdir()
     shutil.copy(mock_chest_dicom, study / "image.dcm")
     (study / "report.txt").write_text("Mock")
+
     validate_dataset(str(dataset_root))
 
 if __name__ == "__main__":
     pytest.main([__file__])
+    
