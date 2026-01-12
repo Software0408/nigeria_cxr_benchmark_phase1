@@ -10,8 +10,8 @@ from pydicom.dataset import Dataset, FileDataset, FileMetaDataset
 from pathlib import Path
 import shutil
 
-# Add project root to sys.path for imports (robust for nested structure)
-project_root = Path(__file__).parent.parent.parent  # From tests/ to repo root
+# Add project root to sys.path for imports
+project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
 from workspace.src.data.validate_data import (
