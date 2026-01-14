@@ -123,7 +123,7 @@ def anonymize_dicom_file(input_path, output_path, shift_days):
 def anonymize_study(input_study_path: str, output_study_path: str):
     input_path = Path(input_study_path)
     output_path = Path(output_study_path)
-    output_path.mkdir(parents=True, exist_ok=True)
+    output_path.mkdir(parents=True, exist_ok=True) 
 
     # Copy report unchanged
     report_in = input_path / "report.txt"

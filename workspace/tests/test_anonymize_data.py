@@ -27,7 +27,7 @@ from workspace.src.data.anonymize_data import (
 # Mock secret key for testing (bypasses env check)
 @pytest.fixture(autouse=True)
 def mock_secret_key(monkeypatch):
-    monkeypatch.setenv("CXR_ANON_SECRET", "test_key_2026")
+    monkeypatch.setenv("CXR_ANON_SECRET", "test_key_2026") 
 
 # -----------------------------
 # Helper for mock DICOM creation

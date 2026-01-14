@@ -117,7 +117,7 @@ def mock_invalid_dicom(tmp_path):
 # --------------------------------------------------
 def test_is_chest_xray_true(mock_chest_dicom):
     ds = pydicom.dcmread(mock_chest_dicom)
-    assert is_chest_xray(ds) is True
+    assert is_chest_xray(ds) is True 
 
 
 def test_is_chest_xray_false(mock_non_chest_dicom):
