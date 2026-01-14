@@ -7,6 +7,7 @@ import hashlib
 import shutil
 from tqdm import tqdm
 import pydicom
+from pathlib import Path
 from pydicom.errors import InvalidDicomError
 
 
@@ -124,22 +125,50 @@ def validate_study_folder(study_path):
 # -----------------------------
 # Dataset-level validation
 # -----------------------------
-def validate_dataset(dataset_root, valid_output_root=None):
-    """Validate full dataset and optionally copy valid studies to output folder."""
+def validate_dataset(dataset_root, valid_output_dir=None, clean_chest_output_dir=None):
+    """Validate full dataset and optionally copy/move valid studies or chest-only clean subset."""
+    dataset_path = Path(dataset_root)
+    if not dataset_path.exists():
+        raise FileNotFoundError(f"Dataset root not found: {dataset_root}")
+    if not dataset_path.is_dir():
+        raise NotADirectoryError(f"Path is not a directory: {dataset_root}")
+
     total = valid = invalid = 0
     invalid_studies = []
 
-    study_ids = [d for d in os.listdir(dataset_root) if os.path.isdir(os.path.join(dataset_root, d))]
+    study_ids = [d for d in dataset_path.iterdir() if d.is_dir()]
 
-    for study_id in tqdm(study_ids, desc="Validating studies"):
-        study_path = os.path.join(dataset_root, study_id)
+    for study_path in tqdm(study_ids, desc="Validating studies"):
         total += 1
-        result = validate_study_folder(study_path)
+        result = validate_study_folder(str(study_path))
         if result["status"] == "valid":
             valid += 1
-            if valid_output_root:
-                output_study_path = os.path.join(valid_output_root, study_id)
-                shutil.copytree(study_path, output_study_path)  # Copy valid study
+            # Full valid study copy (optional)
+            if valid_output_dir:
+                output_study_path = Path(valid_output_dir) / study_path.name
+                output_study_path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copytree(study_path, output_study_path)
+                print(f"Copied full valid study {study_path.name} to {output_study_path}")
+
+            # Chest-only clean subset copy (optional)
+            if clean_chest_output_dir:
+                clean_study_path = Path(clean_chest_output_dir) / study_path.name
+                clean_study_path.mkdir(parents=True, exist_ok=True)
+
+                # Copy report
+                report_in = study_path / "report.txt"
+                if report_in.exists():
+                    shutil.copy(report_in, clean_study_path / "report.txt")
+
+                # Copy only chest-candidate DICOMs
+                chest_count = 0
+                for dcm_file in study_path.glob("*.dcm"):
+                    res = validate_dicom_file(str(dcm_file))
+                    if res["is_chest_candidate"]:
+                        shutil.copy(dcm_file, clean_study_path / dcm_file.name)
+                        chest_count += 1
+
+                print(f"Copied {chest_count} chest DICOMs for clean study {study_path.name} to {clean_study_path}")
         else:
             invalid += 1
             invalid_studies.append(result)
@@ -158,4 +187,8 @@ def validate_dataset(dataset_root, valid_output_root=None):
             print(f"Report present: {inv['report_present']}")
 
 if __name__ == "__main__":
-    validate_dataset("Z:/chest_dataset", valid_output_root="Z:/valid_dataset")  # Update paths
+    validate_dataset(
+        "Z:/chest_dataset",
+        valid_output_dir="Z:/valid_dataset",
+        clean_chest_output_dir="Z:/valid_dataset"
+    )
