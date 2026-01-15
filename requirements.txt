@@ -22,6 +22,7 @@ pyyaml>=6.0.0
 torch>=2.0.0               # model evaluation (April–May)
 torchvision>=0.15.0
 transformers>=4.35.0       # BioClinicalBERT for NLP labeling (February)
+opencv-python>=4.8.0       # cv2
 torchmetrics>=1.0.0         # AUROC, ECE, etc.
 Spacy>=3.7.0
 
