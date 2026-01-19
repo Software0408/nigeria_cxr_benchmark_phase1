@@ -1,5 +1,5 @@
 # workspace/src/data/generate_qc_sample.py
-# Generate random sample of 200 preprocessed images for manual QC
+# Generate random sample of 322 preprocessed images for manual QC
 # Outputs folder for cloud upload + CSV reference list
 
 import random
@@ -10,15 +10,15 @@ import pandas as pd
 random.seed(42)  # Reproducible sample
 
 preprocessed_dir = Path("Z:/preprocessed_dataset")
-qc_dir = Path("Z:/manual_qc_sample_200")
+qc_dir = Path("Z:/manual_qc_sample_322")
 qc_dir.mkdir(exist_ok=True)
 
 # Collect all PNGs
 all_png = list(preprocessed_dir.rglob("*.png"))
-if len(all_png) < 200:
-    raise ValueError(f"Only {len(all_png)} images found — need at least 200")
+if len(all_png) < 322:
+    raise ValueError(f"Only {len(all_png)} images found — need at least 322")
 
-sample_png = random.sample(all_png, 200)
+sample_png = random.sample(all_png, 322)
 
 # Reference list for reviewer/form
 reference_list = []
