@@ -9,11 +9,10 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    # Removed matrix for Phase 1 efficiency (Docker pins Python 3.10); re-enable in Week 3-4 if needed
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # Updated to latest stable version
+        uses: actions/checkout@v4 
 
       - name: Free up disk space
         run: |
@@ -22,7 +21,7 @@ jobs:
           df -h
 
       - name: Cache pip dependencies (host-level, for any non-Docker steps)
-        uses: actions/cache@v4  # Updated to latest
+        uses: actions/cache@v4 
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
@@ -53,6 +52,8 @@ jobs:
           flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
 
       - name: Run tests with coverage (host-level, for reporting)
+        env:
+          CXR_ANON_SECRET: ${{ secrets.CXR_ANON_SECRET }}
         run: |
           export PYTHONPATH="${{ github.workspace }}:$PYTHONPATH"
           pytest --cov=src --cov-report=xml --cov-report=term-missing
@@ -62,4 +63,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: coverage-report
-          path: coverage.xml  # Or htmlcov/ if generated
+          path: coverage.xml
