@@ -9,20 +9,11 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ['3.10', '3.11', '3.12']  # Single version for early phase;
-                                # Add metrux later in (week 3-4) ['3.10', '3.11', '3.12']
+    # Removed matrix for Phase 1 efficiency (Docker pins Python 3.10); re-enable in Week 3-4 if needed
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
-        with:
-          python-version: ${{ matrix.python-version }}
-          cache: 'pip'  # Cache pip installs for faster runs
+        uses: actions/checkout@v4  # Updated to latest stable version
 
       - name: Free up disk space
         run: |
@@ -30,15 +21,15 @@ jobs:
           sudo apt-get clean
           df -h
 
-      - name: Cache pip dependencies
-        uses: actions/cache@v3
+      - name: Cache pip dependencies (host-level, for any non-Docker steps)
+        uses: actions/cache@v4  # Updated to latest
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
-      
-      - name: Install dependencies
+
+      - name: Install host dependencies (for linting/coverage)
         run: |
           python -m pip install --upgrade pip
           pip install pytest pytest-cov flake8
@@ -46,14 +37,29 @@ jobs:
             pip install -r requirements.txt
           fi
 
+      - name: Build Docker Image
+        run: docker build -t ncb-phase1:latest .
+
+      - name: Run Tests in Docker
+        env:
+          CXR_ANON_SECRET: ${{ secrets.CXR_ANON_SECRET }}  # Securely injects the anonymization key
+        run: docker run --rm ncb-phase1:latest pytest -v tests/
+
       - name: Lint with flake8
         run: |
-          # Strict check: fail on errors/warnings
-          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics --exit-zero
-          # Relaxed check: report complexity & line length (no fail)
-          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+          # Strict: Fail on critical errors
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # Relaxed: Report style/complexity (no fail on CI for early phase)
+          flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
 
-      - name: Run tests with coverage
+      - name: Run tests with coverage (host-level, for reporting)
         run: |
-          export PYTHONPATH="${{ github.workspace }}:$PYTHONPATH" # for review
-          pytest --cov=workspace/src --cov-report=xml --cov-report=term-missing
+          export PYTHONPATH="${{ github.workspace }}:$PYTHONPATH"
+          pytest --cov=src --cov-report=xml --cov-report=term-missing
+          # Optional: Upload to Codecov later (add step with token secret)
+
+      - name: Upload coverage artifact (optional, for review)
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage.xml  # Or htmlcov/ if generated
