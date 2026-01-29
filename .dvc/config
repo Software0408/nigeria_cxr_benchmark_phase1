@@ -1,0 +1,6 @@
+[core]
+    remote = gdrive_remote
+['remote "gdrive_remote"']
+    url = gdrive://141MPqg2A_RR7acirqSQnUvm7YfmY5Hmu
+    gdrive_use_service_account = true
+    gdrive_service_account_json_file_path = Z:\nigeria_cxr_benchmark_phase1\.dvc\credentials\nigeria-cxr-dvc-d94ad86a6415.json

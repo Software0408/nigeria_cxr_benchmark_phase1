@@ -15,7 +15,7 @@ from PIL import Image
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
-from workspace.src.data.preprocess_data import (
+from src.data.preprocess_data import (
     percentile_clip_and_normalize,
     resize_with_padding,
     preprocess_dicom,

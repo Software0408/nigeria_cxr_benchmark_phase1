@@ -19,7 +19,7 @@ OUTPUT_XLSX = "Z:/manual_qc_sample_322/qc_prefill_links.xlsx"
 FORM_BASE_URL = "https://docs.google.com/forms/d/e/" \
                 "1FAIpQLScurCCBfLe-_K1R4-_ORcC0Pu02dUUu-YDkFJlEUWP4fk1Y5w/viewform"
 
-DRIVE_BASE_URL = "https://drive.google.com/drive/folders/1dNNoxSCt4jpkRknTT7Fwf8aduKOHlSh4?usp=sharing"
+DRIVE_BASE_URL = "https://drive.google.com/drive/folders/1Lx3TjzA73CZUy-4c96rGgTXu1sFgImIg?usp=drive_link"
 
 
 FIELD_QC_ID = "entry.1941674469"

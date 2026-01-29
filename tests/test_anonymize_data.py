@@ -16,7 +16,7 @@ import shutil
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
-from workspace.src.data.anonymize_data import (
+from src.data.anonymize_data import (
     hash_id,
     shift_date,
     clean_report_text,
