@@ -9,6 +9,7 @@ services:
       - ./notebooks:/app/notebooks  # Mount notebooks from workspace
       - ./results:/app/results                # For saving figures, metrics, logs (e.g., AUROC best)
       - Z:/nigeria_cxr_benchmark_phase1/workspace/data/preprocessed_dataset:/app/data:ro
+      - ./requirements.lock.txt:/app/requirements.lock.txt
       - ./tests:/app/tests
     ports:
       - "8888:8888"
