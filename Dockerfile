@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy and install Python dependencies
 COPY requirements.lock.txt .
 RUN pip install --no-cache-dir --upgrade pip setuptools wheel && \
-    RUN pip install --no-cache-dir -r requirements.lock.txt
+    pip install --no-cache-dir -r requirements.lock.txt
 
 # Build JupyterLab assets (requires Node.js/Yarn)
 # Full build for all extensions; removes Node.js need at runtime
