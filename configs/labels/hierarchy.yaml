@@ -1,0 +1,61 @@
+# 3-Tier Label Hierarchy for Nigerian Chest X-ray Benchmark
+# Version: 1.1 (Week 5 - Task 1 - Final)
+# Aligned with Appendix A. Normal is NOT a pathology.
+
+tier1:  # Exactly ONE per study
+  normal:       "No radiographic abnormality detected"
+  abnormal:     "One or more significant radiographic abnormalities present"
+  indeterminate: "Image quality or findings insufficient for confident interpretation"
+
+tier2:  # Grouping for analysis / hierarchical supervision
+  infectious:   "Infectious / Inflammatory"
+  cardiac:      "Cardiac / Vascular"
+  pleural:      "Pleural"
+  parenchymal:  "Parenchymal / Interstitial"
+  neoplastic:   "Neoplastic / Suspicious"
+  iatrogenic:   "Iatrogenic / Device-related"
+  other:        "Degenerative / Other"
+
+# Tier 3 → Tier 2 mapping
+# ONLY abnormal findings (Normal is handled separately)
+pathology_to_category:
+  "Pneumonia / Consolidation": infectious
+  Tuberculosis: infectious
+  "Pleural Effusion": pleural
+  Cardiomegaly: cardiac
+  "Pulmonary Edema": cardiac
+  Atelectasis: parenchymal
+  "Reticulonodular / Interstitial Pattern": parenchymal
+  "Lung Mass / Nodule": neoplastic
+  "Suspected Malignancy": neoplastic
+  "Degenerative / Structural Changes": other
+  "Other Significant Abnormality": other
+  "Device Present": iatrogenic
+  "Post-Surgical Changes": iatrogenic
+
+# Full definitions (for annotation guidelines & NLP)
+pathology_definitions:
+  "Pneumonia / Consolidation": "Airspace opacities suggestive of infection or inflammation"
+  Tuberculosis: "Apical or diffuse parenchymal changes suggestive of pulmonary tuberculosis"
+  "Pleural Effusion": "Fluid accumulation in the pleural space"
+  Cardiomegaly: "Enlarged cardiac silhouette beyond normal limits"
+  "Pulmonary Edema": "Interstitial or alveolar fluid overload"
+  Atelectasis: "Partial or complete collapse of lung parenchyma"
+  "Reticulonodular / Interstitial Pattern": "Diffuse interstitial or reticulonodular lung markings"
+  "Lung Mass / Nodule": "Discrete pulmonary opacity suspicious for a mass or nodule"
+  "Suspected Malignancy": "Radiographic features suspicious for neoplastic disease"
+  "Degenerative / Structural Changes": "Chronic skeletal or thoracic structural abnormalities"
+  "Device Present": "Presence of medical devices or foreign bodies"
+  "Post-Surgical Changes": "Expected radiographic changes following thoracic surgery"
+  "Other Significant Abnormality": "Clinically relevant findings not otherwise classified"
+
+# Rules for automated derivation
+derivation_rules:
+  tier1_assignment:
+    - "If Normal is the only label → tier1 = normal"
+    - "If any pathology label from pathology_to_category → tier1 = abnormal"
+    - "If image technically inadequate → tier1 = indeterminate"
+  evaluation_policy:
+    - "Primary evaluation metrics computed on Tier-3 pathology labels only"
+    - "Tier-2 used for subgroup analysis and hierarchical metrics"
+    - "Tier-1 used for dataset balance, active learning triage, and quality gates"
