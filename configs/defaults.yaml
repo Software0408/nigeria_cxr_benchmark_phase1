@@ -1,0 +1,8 @@
+data:
+  input_path: /app/data/preprocessed_data
+  output_path: /app/results
+nlp:
+  model: "BioClinicalBERT"  # Or rule-based fallback
+evaluation:
+  metrics: ["AUROC", "ECE"]
+  baselines: ["CheXNet", "DenseNet"]

@@ -92,25 +92,55 @@ def shift_date(date_str, shift_days):
         return date_str
 
 def clean_report_text(report_text: str) -> str:
-    """Remove radiologist signatures and identifiers from reports."""
+    """
+    De-identify radiology reports by:
+    1. Lightly redacting stray PHI in the entire report (dates, IDs).
+    2. Aggressively handling signatures only in the trailing lines (last 3).
+    Preserves all clinical content and formatting.
+    """
     lines = report_text.splitlines()
-    cleaned = []
-
+    
+    if not lines:
+        return report_text
+    
+    # Step 1: Light global redaction (safe for clinical lines)
+    redacted_lines = []
+    global_patterns = [
+        (r"\b\d{4}[-/]?\d{2}[-/]?\d{2}\b", "[REDACTED_DATE]"),     # Dates
+        (r"\b\d{6,}\b", "[REDACTED_ID]"),                           # Hospital/patient numbers
+    ]
+    
     for line in lines:
+        redacted = line
+        for pattern, repl in global_patterns:
+            redacted = re.sub(pattern, repl, redacted, flags=re.IGNORECASE)
+        redacted_lines.append(redacted)
+    
+    # Step 2: Signature detection only on trailing lines
+    # Common signature indicators
+    signature_patterns = [
+        r"\b(?:Dr|Drs|Dr\.|Doctor|Radiologist)\b",  # Professional titles
+        r"^\s*Dr\.?.+/\s*.+",  # Dual signatures
+    ]
+    
+    # Check last 3 lines (adjust if your reports ever exceed this)
+    trailing_lines = redacted_lines[-3:]
+    cleaned_trailing = []
+    
+    for line in trailing_lines:
         stripped = line.strip()
-
-        if re.match(r"^\s*(Dr|Drs|Radiologist)[\s:]?", stripped, re.IGNORECASE):
+        if any(re.search(pat, stripped, re.IGNORECASE) for pat in signature_patterns):
+            # Signature line → safe to drop entirely
             continue
-        if stripped.lower().startswith(
-            ("signed", "reported by", "verified by", "dictated by")
-        ):
-            continue
-        if re.search(r"\w+\s*/\s*\w+", stripped):
-            continue
-
-        cleaned.append(line)
-
-    return "\n".join(cleaned)
+        else:
+            # Non-signature trailing line → keep (e.g., final impression note)
+            cleaned_trailing.append(line)
+    
+    # Reconstruct: body (all but last 3) + cleaned trailing
+    preserved_body = redacted_lines[:-3]
+    final_lines = preserved_body + cleaned_trailing
+    
+    return "\n".join(final_lines)
 
 # ------------------------------------------------------------------
 # Core anonymization (single DICOM)
@@ -185,6 +215,10 @@ def anonymize_study(input_study_path: str, output_study_path: str):
         raw_text = report_in.read_text(encoding="utf-8", errors="ignore")
         cleaned_text = clean_report_text(raw_text)
         (output_path / "report.txt").write_text(cleaned_text, encoding="utf-8")
+    
+    raw_lines = len(raw_text.splitlines())
+    cleaned_lines = len(cleaned_text.splitlines())
+    print(f"  → Report: {raw_lines} → {cleaned_lines} lines (diff: {raw_lines - cleaned_lines})")
 
     # One date shift per study
     shift_days = random.randint(-365, 365)

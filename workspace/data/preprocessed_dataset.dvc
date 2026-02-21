@@ -1,6 +1,0 @@
-outs:
-- md5: b3a59d21ac042a77b778f54775cd2c26.dir
-  size: 9117805323
-  nfiles: 18169
-  hash: md5
-  path: preprocessed_dataset
