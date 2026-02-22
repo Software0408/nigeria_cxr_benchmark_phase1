@@ -3,8 +3,8 @@
 # Last updated: January 11, 2026
 
 # Core testing & quality assurance (used in GitHub Actions CI)
-pytest>=7.4.0
-pytest-cov>=4.1.0
+pytest>=8.3.0
+pytest-cov>=5.0.0
 flake8>=6.0.0
 
 # DICOM handling & anonymization (Week 3)
@@ -19,7 +19,9 @@ tqdm>=4.66.0
 pyyaml>=6.0.0
 
 # Future dependencies
-torch>=2.0.0               # model evaluation (April–May)
+# Updated for CUDA 13.1
+torch==2.10.0
+datasets>=2.16.1               # For data loading
 jupyterlab>=4.0.0          # interactive notebooks
 matplotlib>=3.8.2          # visualization
 seaborn>=0.13.0            # enhanced visualizations
