@@ -11,6 +11,7 @@ venv/
 secrets/
 *.log
 *.json
+!src/nlp/dictionary/bilingual_dict.json
 # Temporary files
 *.tmp
 *.bak
