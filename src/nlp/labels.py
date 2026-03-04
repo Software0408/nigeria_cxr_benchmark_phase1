@@ -1,23 +1,24 @@
 # src/nlp/labels.py
 """
-Label hierarchy + production-grade rule-based report label extraction.
+Label hierarchy and rule-based report label extractor for Nigerian chest X-ray reports.
 
-v2.0 — Week 6 fixes (March 2026):
-  FIX 1: Section parsing now captures body text BEFORE impression/conclusion headers
-  FIX 2: Pulmonary Edema vascular keyword check moved inside section loop
-  FIX 3: CTR numeric parsing — only flags Cardiomegaly if CTR > 0.50
-  FIX 4: Ambiguous phrases ("homogeneous opacity") removed from Pneumonia dict
-  NEW:   "costophrenic blunting" phrases added for Pleural Effusion
-  NEW:   Additional Device Present phrases (CVP line, chest tube tip, etc.)
-  NEW:   Additional Degenerative phrases (unfolding of the aortic arch, etc.)
-  NEW:   Explicit CTR-based Cardiomegaly detection via dedicated method
+v2.0 — Week 6 (March 2026):
+  - Section parsing now captures body text before impression/conclusion headers
+  - Pulmonary Edema detection requires a vascular keyword in the same section
+  - CTR-based Cardiomegaly only triggered when the numeric CTR value exceeds 0.50
+  - Ambiguous phrases (e.g. "homogeneous opacity") no longer trigger Pneumonia alone;
+    a pneumonia-specific confirming term must also be present
+  - Added "costophrenic blunting" phrases for Pleural Effusion detection
+  - Added Device Present phrases (CVP line, chest tube tip, etc.)
+  - Added Degenerative phrases (unfolding of the aortic arch, aorta is tortuous, etc.)
+  - Dedicated _detect_ctr_cardiomegaly() method for numeric CTR parsing
 
-Backwards compatible: rule_based_extractor() still returns List[str].
+rule_based_extractor() remains backwards compatible and returns List[str].
 """
 
 from pathlib import Path
 import yaml
-from typing import Dict, List, Set, Tuple, Any, Optional
+from typing import Dict, List, Any, Optional
 import json
 import re
 import logging
@@ -98,7 +99,7 @@ class LabelHierarchy:
         }
         self.default_weight = 0.45
 
-    # ---- Tier helpers (unchanged) ----
+    # ---- Tier helpers ----
 
     @property
     def tier1_labels(self) -> List[str]:
@@ -196,7 +197,7 @@ class LabelHierarchy:
 
         labels_out: Dict[str, Dict[str, Any]] = {}
 
-        # --- CTR-based Cardiomegaly (FIX 3) ---
+        # CTR-based Cardiomegaly detection runs first so dictionary hits can be merged into it later
         ctr_result = self._detect_ctr_cardiomegaly(report)
         if ctr_result is not None:
             labels_out["Cardiomegaly"] = ctr_result
@@ -205,9 +206,10 @@ class LabelHierarchy:
             if label == "Normal":
                 continue
 
-            # --- FIX 2: Pulmonary Edema vascular keyword gate ---
+            # Pulmonary Edema requires at least one vascular keyword anywhere in the report
+            # to avoid triggering on generic opacity phrases alone
             if label == "Pulmonary Edema":
-                # Check ALL section texts for vascular keywords
+                # Check all section texts for vascular keywords
                 has_pe_cue = any(
                     any(vk in sect_text.lower() for vk in self._pe_vascular_keywords)
                     for sect_text in sections.values()
@@ -223,7 +225,8 @@ class LabelHierarchy:
                 if not section_text.strip():
                     continue
 
-                # --- FIX 4: filter ambiguous Pneumonia phrases ---
+                # Ambiguous Pneumonia phrases are only used when a confirming term
+                # (e.g. "consolidation", "pneumonic") also appears in the same section
                 if label == "Pneumonia / Consolidation":
                     filtered_phrases = []
                     for p in phrases:
@@ -307,7 +310,8 @@ class LabelHierarchy:
 
     def _detect_ctr_cardiomegaly(self, report: str) -> Optional[Dict[str, Any]]:
         """
-        FIX 3: Parse CTR numeric values and only flag Cardiomegaly if CTR > 0.50.
+        Parse CTR numeric values from the report and flag Cardiomegaly only when
+        the cardiothoracic ratio exceeds 0.50.
         Handles formats: CTR-0.72, CTR = 0.61, CTR: 55%, CTR=61%, CTR 0.53
         """
         text = report.lower()
@@ -476,8 +480,6 @@ class LabelHierarchy:
 
             if find_match and find_match.start() < imp_match.start():
                 find_key = find_match.group(1).lower()
-                find_text = before_imp[find_match.end() - find_match.start():]
-                # Re-extract: from after the findings header to end of before_imp
                 find_content = txt[find_match.end():imp_match.start()].strip()
                 sections[find_key] = find_content
             else:
