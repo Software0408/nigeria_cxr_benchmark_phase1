@@ -1,5 +1,5 @@
 # Stage 1: Builder - Install dependencies and build JupyterLab assets
-FROM python:3.10-slim AS builder
+FROM python:3.11-slim AS builder
 
 WORKDIR /app
 
@@ -26,13 +26,13 @@ RUN pip install --no-cache-dir --upgrade pip setuptools wheel && \
 RUN jupyter lab build --minimize=False  
 
 # Stage 2: Final runtime image (no Node.js - slim and clean)
-FROM python:3.10-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
 # Copy installed packages and built JupyterLab assets
 # Includes built assets
-COPY --from=builder /usr/local/lib/python3.10/site-packages /usr/local/lib/python3.10/site-packages
+COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
 COPY --from=builder /usr/local/bin /usr/local/bin
 COPY --from=builder /usr/local/share/jupyter /usr/local/share/jupyter
 
