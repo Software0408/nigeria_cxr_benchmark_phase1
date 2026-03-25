@@ -20,11 +20,11 @@ tier2:  # Grouping for analysis / hierarchical supervision
 # ONLY abnormal findings (Normal is handled separately)
 pathology_to_category:
   "Pneumonia / Consolidation": infectious
-  Tuberculosis: infectious
+  "Tuberculosis": infectious
   "Pleural Effusion": pleural
-  Cardiomegaly: cardiac
+  "Cardiomegaly": cardiac
   "Pulmonary Edema": cardiac
-  Atelectasis: parenchymal
+  "Atelectasis": parenchymal
   "Reticulonodular / Interstitial Pattern": parenchymal
   "Lung Mass / Nodule": neoplastic
   "Suspected Malignancy": neoplastic
@@ -36,11 +36,11 @@ pathology_to_category:
 # Full definitions (for annotation guidelines & NLP)
 pathology_definitions:
   "Pneumonia / Consolidation": "Airspace opacities suggestive of infection or inflammation"
-  Tuberculosis: "Apical or diffuse parenchymal changes suggestive of pulmonary tuberculosis"
+  "Tuberculosis": "Apical or diffuse parenchymal changes suggestive of pulmonary tuberculosis"
   "Pleural Effusion": "Fluid accumulation in the pleural space"
-  Cardiomegaly: "Enlarged cardiac silhouette beyond normal limits"
+  "Cardiomegaly": "Enlarged cardiac silhouette beyond normal limits"
   "Pulmonary Edema": "Interstitial or alveolar fluid overload"
-  Atelectasis: "Partial or complete collapse of lung parenchyma"
+  "Atelectasis": "Partial or complete collapse of lung parenchyma"
   "Reticulonodular / Interstitial Pattern": "Diffuse interstitial or reticulonodular lung markings"
   "Lung Mass / Nodule": "Discrete pulmonary opacity suspicious for a mass or nodule"
   "Suspected Malignancy": "Radiographic features suspicious for neoplastic disease"

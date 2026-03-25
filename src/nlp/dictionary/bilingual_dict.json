@@ -18,7 +18,13 @@
     "cardiac size is normal",
     "normal in size",
     "clear lung field",
-    "normal cardiac size"
+    "normal cardiac size",
+    "no gross abnormality",
+    "lungs are clear",
+    "both lungs are clear",
+    "no active disease",
+    "no acute findings",
+    "no active parenchymal disease"
   ],
   "Pneumonia / Consolidation": [
     "consolidation",
@@ -68,7 +74,13 @@
     "perihilar opacity",
     "veil opacity",
     "air space opacities",
-    "airspace opacities"
+    "airspace opacities",
+    "segmental consolidation",
+    "focal consolidation",
+    "pneumonic infiltrates",
+    "pneumonic process",
+    "air-space opacification",
+    "air space opacification"
   ],
   "Tuberculosis": [
     "tb",
@@ -131,7 +143,16 @@
     "sulcus is obscured",
     "sulcus obscured",
     "costophrenic angle obscured",
-    "costophrenic angle is obscured"
+    "costophrenic angle is obscured",
+    "blunted costophrenic",
+    "costophrenic sulci are blunted",
+    "haziness of costophrenic",
+    "haziness of both costophrenic sulci",
+    "silhouetting the hemidiaphragm",
+    "silhouetting the ipsilateral hemidiaphragm",
+    "silhouetting the left hemidiaphragm",
+    "silhouetting the right hemidiaphragm",
+    "fluid tracking"
   ],
   "Cardiomegaly": [
     "cardiomegaly",
@@ -151,7 +172,11 @@
     "enlarged cardiac silhouette",
     "enlarged cardiac shadow",
     "cardiac silhouette is enlarged",
-    "cardiac shadow is enlarged"
+    "cardiac shadow is enlarged",
+    "cardiac shadow appears enlarged",
+    "grossly enlarged cardiac",
+    "grossly enlarged heart",
+    "severely enlarged cardiac shadow"
   ],
   "Pulmonary Edema": [
     "pulmonary edema",
@@ -326,6 +351,7 @@
     "kyphosis",
     "scoliosis",
     "aortic unfolding",
+    "Aortic calcification",
     "aortic knob calcification",
     "calcification of the aorta",
     "kyphoscoliosis",
@@ -358,11 +384,18 @@
     "aortic elongation",
     "aortic unfolding",
     "unfolding of the aorta",
-    "unfolding of the aortic arch",
     "aorta is unfolded",
-    "aorta is tortuous",
     "wall calcification",
-    "thoracic spondylosis"
+    "thoracic spondylosis",
+    "levoscoliosis",
+    "dextroscoliosis",
+    "osteoporotic changes",
+    "degenerative spine changes",
+    "cervical spondylosis",
+    "lumbar spondylosis",
+    "calcified aortic arch",
+    "aortic arch calcification",
+    "sclerotic changes"
   ],
   "Device Present": [
     "central venous catheter",
@@ -420,7 +453,10 @@
     "surgical clips",
     "median sternotomy",
     "post lobectomy",
-    "cabg changes"
+    "cabg changes",
+    "sternotomy changes",
+    "post thoracotomy",
+    "surgical staples"
   ],
   "Other Significant Abnormality": [
     "other significant finding",

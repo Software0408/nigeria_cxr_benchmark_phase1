@@ -25,14 +25,16 @@ from pydicom.uid import generate_uid
 import re
 
 # ------------------------------------------------------------------
-# Secret key (must be set in environment)
+# Secret key (read lazily so test monkeypatching works at call time)
 # ------------------------------------------------------------------
-SECRET_KEY = os.environ.get("CXR_ANON_SECRET")
-if not SECRET_KEY:
-    raise RuntimeError(
-        "CXR_ANON_SECRET not set. "
-        "Anonymization aborted to prevent unsafe pseudonymization."
-    )
+def _get_secret_key() -> str:
+    key = os.environ.get("CXR_ANON_SECRET")
+    if not key:
+        raise RuntimeError(
+            "CXR_ANON_SECRET not set. "
+            "Anonymization aborted to prevent unsafe pseudonymization."
+        )
+    return key
 
 # ------------------------------------------------------------------
 # PHI tags to REMOVE completely
@@ -78,7 +80,7 @@ def hash_id(value: str) -> str:
     if not value:
         return "ANON"
     return hashlib.sha256(
-        (str(value) + SECRET_KEY).encode("utf-8")
+        (str(value) + _get_secret_key()).encode("utf-8")
     ).hexdigest()[:16]
 
 def shift_date(date_str, shift_days):

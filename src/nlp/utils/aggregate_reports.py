@@ -1,4 +1,4 @@
-# src/nlp/utils/aggregate_reports_readable.py
+# src/nlp/utils/aggregate_reports.py
 """
 Aggregates radiology reports into a readable XLSX file.
 - Preserves line breaks in report_text for natural reading
@@ -15,6 +15,7 @@ import pandas as pd
 from datetime import datetime
 from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
+import re 
 
 REPORTS_DIR = Path("workspace/data/preprocessed_data/reports")
 OUTPUT_DIR = Path("results")
@@ -22,7 +23,6 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 TIMESTAMP = datetime.now().strftime("%Y%m%d_%H%M")
 OUTPUT_XLSX = OUTPUT_DIR / f"compiled_reports_readable_{TIMESTAMP}.xlsx"
-
 
 def aggregate_readable():
     txt_files = sorted(REPORTS_DIR.glob("*.txt"))
@@ -41,8 +41,8 @@ def aggregate_readable():
                 "report_text": text,
                 "word_count": len(text.split()),
                 "character_count": len(text),
-                "has_findings": "Findings:" in text,
-                "has_impression": any(word in text for word in ["Impression:", "Conclusion:", "CONCLUSION"])
+                "has_findings": bool(re.search(r'(findings|comments|body)\s*:\s*', text, re.I)),  # Flexible matching
+                "has_impression": bool(re.search(r'(impression|conclusion|summary|notes)\s*:\s*', text, re.I))  # Flexible matching
             })
         except Exception as e:
             print(f"Error reading {txt_file.name}: {e}")
@@ -74,11 +74,11 @@ def aggregate_readable():
         for cell in col:
             try:
                 if len(str(cell.value)) > max_length:
-                    max_length = len(str(cell.value))
+                    max_length = len(cell.value)
             except:
                 pass
         adjusted_width = (max_length + 2) * 1.2
-        # Cap report_text column at reasonable width (adjust as needed)
+        # Cap report_text column at reasonable width
         if column == "B":  # report_text
             adjusted_width = min(adjusted_width, 120)
         ws.column_dimensions[column].width = adjusted_width

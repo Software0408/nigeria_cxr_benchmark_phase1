@@ -1,0 +1,1991 @@
+study_id,report_text,gold_labels,is_synthetic,primary_augmented_label
+synth_00000,"CHEST RADIOGRAPHY REPORT
+The mediastinum, hila and pulmonary vasculature are also normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+Median sternotomy wires are noted.
+There is right pleural effusion.
+Impression
+Post sternotomy changes. right pleural effusion.
+Clinical correlation advised.","Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00001,"CHEST RADIOGRAPH REPORT
+There is left pleural effusion.
+An endotracheal tube is seen in situ.
+Both hilar angles are preserved.
+There is evidence of previous thoracic surgery with metallic sutures noted.
+There is cardiomegaly (CTR 0.7).
+Both costophrenic recesses and hemidiaphragms are normal.
+Impression
+Post sternotomy changes. Line in situ. Cardiomegaly. left pleural effusion.
+Kindly correlate with other clinical parameters.","Cardiomegaly,Device Present,Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00002,"CHEST RADIOGRAPH REPORT
+Comments:
+There are post-operative changes noted in the left hemithorax.
+Median sternotomy wires are noted.
+The bony rib cage and peripheral soft tissues are normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Sternotomy wires are noted in situ.
+CONCLUSION
+Post-surgical changes.",Post-Surgical Changes,1,Post-Surgical Changes
+synth_00003,"CHEST RADIOGRAPH REPORT
+Findings:
+The heart is enlarged (CTR - 0.63).
+The hila appear normal.
+Both costophrenic recesses and hemidiaphragms are normal.
+Post thoracotomy changes are seen on the right.
+CONCLUSION
+Post-operative changes noted. Cardiomegaly.
+Clinical correlation advised.","Cardiomegaly,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00004,"CHEST RADIOGRAPHY REPORT
+A chest tube is noted in the left hemithorax.
+The bony rib cage and peripheral soft tissues are normal.
+The mediastinal shadow is within normal limits.
+Surgical clips are noted in the left hemithorax.
+Both costophrenic recesses and hemidiaphragms are normal.
+Normal pulmonary vasculature is seen.
+Impression
+Post-surgical changes. Line in situ.
+Suggest clinical correlation.","Device Present,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00005,"CHEST RADIOGRAPH REPORT
+The costophrenic sulci and hemidiaphragms are preserved.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Both costophrenic recesses and hemidiaphragms are normal.
+Post lobectomy changes are noted on the right with volume loss.
+The bony rib cage and peripheral soft tissues are normal.
+Surgical clips are noted in the right hemithorax.
+The heart is enlarged (CTR - 0.72).
+Sternotomy wires are noted in situ.
+Conclusion:
+Post-operative changes. Cardiomegaly.
+Clinical correlation advised.","Cardiomegaly,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00006,"CHEST RADIOGRAPH REPORT
+CABG changes with sternotomy wires are seen.
+Post-operative changes with sternotomy wires in situ.
+Both hilar angles are preserved.
+There is cardiomegaly (CTR 0.68).
+The mediastinum, hila and pulmonary vasculature are normal.
+Sternotomy wires are noted in situ.
+Normal pulmonary vasculature is seen.
+Conclusion:
+Post-surgical changes. Cardiomegaly.
+ECG advised.","Cardiomegaly,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00007,"CHEST RADIOGRAPH REPORT
+The bones of the thorax appear normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Normal pulmonary vasculature is seen.
+Surgical clips are noted in the left hemithorax.
+Trachea is central.
+There is evidence of previous thoracic surgery with metallic sutures noted.
+There are post-operative changes noted in the left hemithorax.
+Impression:
+Post thoracotomy changes.
+Clinical correlation advised.",Post-Surgical Changes,1,Post-Surgical Changes
+synth_00008,"CHEST RADIOGRAPH REPORT
+Comments:
+Trachea is central.
+Normal pulmonary vasculature is seen.
+The hila appear normal.
+Surgical clips are noted in the right hemithorax.
+The cardiac silhouette is enlarged (CTR - 0.54).
+The bones of the thorax appear normal.
+Impression:
+Post-operative changes noted. Cardiomegaly.","Cardiomegaly,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00009,"CHEST RADIOGRAPH REPORT
+Findings:
+A nasogastric tube is seen in situ.
+The cardiac silhouette is enlarged (CTR - 0.59).
+There is blunting of the right costophrenic angle.
+The bones of the thorax appear normal.
+Extra pulmonary soft tissues are normal.
+There are post-operative changes noted in the right hemithorax.
+Impression
+Post-surgical changes. Line in situ. Cardiomegaly. right pleural effusion.
+Kindly correlate with other clinical parameters.","Cardiomegaly,Device Present,Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00010,"CHEST RADIOGRAPH REPORT
+Comments:
+The mediastinal shadow is within normal limits.
+The bones of the thorax appear normal.
+Normal pulmonary vasculature is seen.
+Surgical clips are noted in the right hemithorax.
+There is evidence of previous thoracic surgery with metallic sutures noted.
+Both hilar angles are preserved.
+Impression
+Post-operative changes.
+Suggest clinical correlation.",Post-Surgical Changes,1,Post-Surgical Changes
+synth_00011,"CHEST RADIOGRAPHY REPORT
+The mediastinum, hila and pulmonary vasculature are normal.
+There is blunting of the right costophrenic angle.
+Normal pulmonary vasculature is seen.
+Trachea is central.
+Median sternotomy wires are noted.
+The hila appear normal.
+CONCLUSION
+Post-operative changes noted. right pleural effusion.
+Clinical correlation advised.","Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00012,"CHEST RADIOGRAPH REPORT
+The cardiac silhouette is enlarged (CTR - 0.65).
+The mediastinum, hila and pulmonary vasculature are also normal.
+Post-operative changes with sternotomy wires in situ.
+Both costophrenic recesses and hemidiaphragms are normal.
+A central venous catheter is noted with its tip projected over the SVC.
+Median sternotomy wires are noted.
+Impression:
+Post sternotomy changes. Line in situ. Cardiomegaly.","Cardiomegaly,Device Present,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00013,"CHEST RADIOGRAPH REPORT
+Findings:
+Extra pulmonary soft tissues are normal.
+Metallic clips are projected over the left hilum, in keeping with post-surgical changes.
+The costophrenic sulci and hemidiaphragms are preserved.
+Normal pulmonary vasculature is seen.
+Median sternotomy wires are noted.
+There is cardiomegaly (CTR 0.7).
+Both costophrenic recesses and hemidiaphragms are normal.
+CONCLUSION
+Post-operative changes noted. Cardiomegaly.
+Clinical correlation advised.","Cardiomegaly,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00014,"CHEST RADIOGRAPH REPORT
+Trachea is central.
+The mediastinal shadow is within normal limits.
+Median sternotomy wires are noted.
+There is blunting of the left costophrenic angle.
+Extra pulmonary soft tissues are normal.
+Conclusion:
+Post-operative changes noted. left pleural effusion.","Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00015,"CHEST RADIOGRAPHY REPORT
+The bony rib cage and peripheral soft tissues are normal.
+CABG changes with sternotomy wires are seen.
+The mediastinum, hila and pulmonary vasculature are normal.
+The cardiac silhouette is enlarged (CTR - 0.68).
+Post thoracotomy changes are seen on the right.
+Impression:
+Post-operative changes noted. Cardiomegaly.
+Further evaluation recommended.","Cardiomegaly,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00016,"CHEST RADIOGRAPH REPORT
+The bony rib cage and peripheral soft tissues are normal.
+Both costophrenic recesses and hemidiaphragms are normal.
+Surgical clips are noted in the right hemithorax.
+Post-operative changes with sternotomy wires in situ.
+Both costophrenic sulci are blunted.
+CONCLUSION
+Post-operative changes. right pleural effusion.
+Kindly correlate with other clinical parameters.","Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00017,"CHEST RADIOGRAPH REPORT
+Comments:
+Median sternotomy wires are noted.
+The bony rib cage and peripheral soft tissues are normal.
+Normal pulmonary vasculature is seen.
+Trachea is central.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Sternotomy wires are noted in situ.
+There is cardiomegaly (CTR 0.71).
+CONCLUSION
+Post-operative changes noted. Cardiomegaly.
+Suggest clinical correlation.","Cardiomegaly,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00018,"CHEST RADIOGRAPH REPORT
+Comments:
+The hila appear normal.
+Post lobectomy changes are noted on the left with volume loss.
+The bony rib cage and peripheral soft tissues are normal.
+The heart is enlarged (CTR - 0.67).
+Surgical clips are noted in the left hemithorax.
+There is blunting of the left costophrenic angle.
+CONCLUSION
+Post-operative changes noted. Cardiomegaly. left pleural effusion.
+Further evaluation recommended.","Cardiomegaly,Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00019,"CHEST RADIOGRAPHY REPORT
+The costophrenic sulci and hemidiaphragms are preserved.
+Surgical clips are noted in the left hemithorax.
+Normal pulmonary vasculature is seen.
+The hila appear normal.
+There is blunting of the left costophrenic angle.
+Median sternotomy wires are noted.
+The mediastinal shadow is within normal limits.
+Post thoracotomy changes are seen on the left.
+Impression
+Post-operative changes. left pleural effusion.
+Further evaluation recommended.","Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00020,"CHEST RADIOGRAPH REPORT
+There is evidence of previous thoracic surgery with metallic sutures noted.
+The mediastinal shadow is within normal limits.
+A nasogastric tube is seen in situ.
+The cardiac silhouette is enlarged (CTR - 0.66).
+The bones of the thorax appear normal.
+Impression
+Post sternotomy changes. Line in situ. Cardiomegaly.
+Further evaluation recommended.","Cardiomegaly,Device Present,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00021,"CHEST RADIOGRAPH REPORT
+Comments:
+Extra pulmonary soft tissues are normal.
+Sternal wires are seen consistent with previous cardiac surgery.
+Surgical clips are noted in the left hemithorax.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There is left pleural effusion.
+The mediastinal shadow is within normal limits.
+There are post-operative changes noted in the left hemithorax.
+Impression
+Post thoracotomy changes. left pleural effusion.
+Further evaluation recommended.","Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00022,"CHEST RADIOGRAPH REPORT
+Comments:
+Sternotomy wires are noted in situ.
+Both hilar angles are preserved.
+Extra pulmonary soft tissues are normal.
+There is evidence of previous thoracic surgery with metallic sutures noted.
+Trachea is central.
+There is right pleural effusion.
+CABG changes with sternotomy wires are seen.
+Impression
+Post thoracotomy changes. right pleural effusion.","Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00023,"CHEST RADIOGRAPH REPORT
+There is cardiomegaly (CTR 0.72).
+Sternotomy wires are noted in situ.
+There is evidence of previous thoracic surgery with metallic sutures noted.
+Normal pulmonary vasculature is seen.
+Metallic clips are projected over the right hilum, in keeping with post-surgical changes.
+A nasogastric tube is seen in situ.
+Both costophrenic recesses and hemidiaphragms are normal.
+The bones of the thorax appear normal.
+There is right pleural effusion.
+Impression:
+Evidence of previous thoracic surgery. Line in situ. Cardiomegaly. right pleural effusion.
+ECG advised.","Cardiomegaly,Device Present,Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00024,"CHEST RADIOGRAPH REPORT
+The cardiac silhouette is enlarged (CTR - 0.71).
+The bones of the thorax appear normal.
+The mediastinal shadow is within normal limits.
+Sternotomy wires are noted in situ.
+Conclusion:
+Evidence of previous thoracic surgery. Cardiomegaly.
+Suggest clinical correlation.","Cardiomegaly,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00025,"CHEST RADIOGRAPH REPORT
+Comments
+Normal pulmonary vasculature is seen.
+Both hilar angles are preserved.
+Trachea is central.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Surgical clips are noted in the right hemithorax.
+CONCLUSION
+Post sternotomy changes.
+Kindly correlate with other clinical parameters.",Post-Surgical Changes,1,Post-Surgical Changes
+synth_00026,"CHEST RADIOGRAPH REPORT
+Findings:
+There is evidence of previous thoracic surgery with metallic sutures noted.
+Extra pulmonary soft tissues are normal.
+The mediastinal shadow is within normal limits.
+Both hilar angles are preserved.
+The bony rib cage and peripheral soft tissues are normal.
+Impression:
+Post-operative changes.
+ECG advised.",Post-Surgical Changes,1,Post-Surgical Changes
+synth_00027,"CHEST RADIOGRAPHY REPORT
+Trachea is central.
+There is cardiomegaly (CTR 0.64).
+Sternotomy wires are noted in situ.
+The costophrenic sulci and hemidiaphragms are preserved.
+Both hilar angles are preserved.
+Post-operative changes with sternotomy wires in situ.
+There is left pleural effusion.
+There is evidence of previous thoracic surgery with metallic sutures noted.
+Impression
+Evidence of previous thoracic surgery. Cardiomegaly. left pleural effusion.
+Further evaluation recommended.","Cardiomegaly,Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00028,"CHEST RADIOGRAPH REPORT
+Findings:
+Surgical clips are noted in the right hemithorax.
+The bony rib cage and peripheral soft tissues are normal.
+Both costophrenic recesses and hemidiaphragms are normal.
+Extra pulmonary soft tissues are normal.
+Conclusion:
+Post-operative changes noted.
+ECG advised.",Post-Surgical Changes,1,Post-Surgical Changes
+synth_00029,"CHEST RADIOGRAPHY REPORT
+Findings:
+The costophrenic sulci and hemidiaphragms are preserved.
+There are post-operative changes noted in the right hemithorax.
+Trachea is central.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Normal pulmonary vasculature is seen.
+A nasogastric tube is seen in situ.
+The heart is enlarged (CTR - 0.67).
+CONCLUSION
+Post-operative changes. Line in situ. Cardiomegaly.","Cardiomegaly,Device Present,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00030,"CHEST RADIOGRAPHY REPORT
+A nasogastric tube is seen in situ.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There is blunting of the right costophrenic angle.
+CABG changes with sternotomy wires are seen.
+The hila appear normal.
+The bones of the thorax appear normal.
+CONCLUSION
+Post-surgical changes. Line in situ. right pleural effusion.
+Kindly correlate with other clinical parameters.","Device Present,Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00031,"CHEST RADIOGRAPH REPORT
+Findings:
+Both costophrenic sulci are blunted.
+Trachea is central.
+Post lobectomy changes are noted on the right with volume loss.
+There are post-operative changes noted in the right hemithorax.
+The hila appear normal.
+The costophrenic sulci and hemidiaphragms are preserved.
+CABG changes with sternotomy wires are seen.
+Impression:
+Post-operative changes noted. right pleural effusion.
+Clinical correlation advised.","Pleural Effusion,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00032,"CHEST RADIOGRAPHY REPORT
+Findings:
+Both hilar angles are preserved.
+Trachea is central.
+A chest tube is noted in the right hemithorax.
+There are post-operative changes noted in the right hemithorax.
+The costophrenic sulci and hemidiaphragms are preserved.
+Sternotomy wires are noted in situ.
+Normal pulmonary vasculature is seen.
+CONCLUSION
+Post-operative changes noted. Line in situ.
+Suggest clinical correlation.","Device Present,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00033,"CHEST RADIOGRAPH REPORT
+Surgical clips are noted in the left hemithorax.
+Trachea is central.
+Both hilar angles are preserved.
+Both costophrenic recesses and hemidiaphragms are normal.
+There is evidence of previous thoracic surgery with metallic sutures noted.
+Post lobectomy changes are noted on the left with volume loss.
+Conclusion:
+Post-operative changes.
+Further evaluation recommended.",Post-Surgical Changes,1,Post-Surgical Changes
+synth_00034,"CHEST RADIOGRAPH REPORT
+Comments
+Metallic clips are projected over the left hilum, in keeping with post-surgical changes.
+Median sternotomy wires are noted.
+The bony rib cage and peripheral soft tissues are normal.
+A chest tube is noted in the left hemithorax.
+Sternal wires are seen consistent with previous cardiac surgery.
+The cardiac silhouette is enlarged (CTR - 0.64).
+The costophrenic sulci and hemidiaphragms are preserved.
+The bones of the thorax appear normal.
+Impression:
+Post-operative changes noted. Line in situ. Cardiomegaly.","Cardiomegaly,Device Present,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00035,"CHEST RADIOGRAPH REPORT
+Metallic clips are projected over the left hilum, in keeping with post-surgical changes.
+The mediastinum, hila and pulmonary vasculature are normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+An endotracheal tube is seen in situ.
+Sternal wires are seen consistent with previous cardiac surgery.
+The bones of the thorax appear normal.
+Normal pulmonary vasculature is seen.
+Sternotomy wires are noted in situ.
+Conclusion:
+Post thoracotomy changes. Line in situ.
+Further evaluation recommended.","Device Present,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00036,"CHEST RADIOGRAPH REPORT
+The mediastinum, hila and pulmonary vasculature are also normal.
+There are post-operative changes noted in the left hemithorax.
+Sternal wires are seen consistent with previous cardiac surgery.
+The mediastinal shadow is within normal limits.
+The cardiac silhouette is enlarged (CTR - 0.61).
+Both hilar angles are preserved.
+The costophrenic sulci and hemidiaphragms are preserved.
+Impression
+Post-operative changes. Cardiomegaly.
+Clinical correlation advised.","Cardiomegaly,Post-Surgical Changes",1,Post-Surgical Changes
+synth_00037,"CHEST RADIOGRAPH REPORT
+Comments:
+The mediastinum, hila and pulmonary vasculature are normal.
+A spiculated opacity is seen in the left lower lung field.
+A focal mass is noted in the left lower lung zone.
+The bony rib cage and peripheral soft tissues are normal.
+There is volume loss in the left lower lobe.
+An ovoid mass is seen in the left lower lung zone.
+CONCLUSION
+left lung mass for further evaluation. left lower lobe atelectasis.
+Kindly correlate with other clinical parameters.","Atelectasis,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00038,"CHEST RADIOGRAPH REPORT
+A rounded opacity is seen in the left upper lung field.
+A spiculated opacity is seen in the left upper lung field.
+Both costophrenic recesses and hemidiaphragms are normal.
+A coin lesion is noted in the left upper lung zone.
+There is cardiomegaly (CTR 0.62).
+Both costophrenic sulci are blunted.
+The hila appear normal.
+Conclusion:
+Rounded opacity in the left lung — differential includes granuloma, neoplasm. Cardiomegaly. left pleural effusion.","Cardiomegaly,Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00039,"CHEST RADIOGRAPH REPORT
+Comments:
+Both costophrenic recesses and hemidiaphragms are normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+There is blunting of the left costophrenic angle.
+A coin lesion is noted in the left upper lung zone.
+Impression
+Pulmonary nodule in the left upper zone. Recommend CT evaluation. left pleural effusion.
+Suggest clinical correlation.","Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00040,"CHEST RADIOGRAPH REPORT
+The hila appear normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+A well-defined nodular opacity is seen in the right upper lung zone.
+A solitary pulmonary nodule is noted in the right upper lung zone.
+There is volume loss in the right lower lobe.
+The costophrenic sulci and hemidiaphragms are preserved.
+Impression
+Pulmonary nodule in the right upper zone. Recommend CT evaluation. right lower lobe atelectasis.","Atelectasis,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00041,"CHEST RADIOGRAPHY REPORT
+There is volume loss in the left lower lobe.
+There is a well-defined rounded opacity in the left middle lung zone measuring approximately 5.3cm.
+The bony rib cage and peripheral soft tissues are normal.
+The hila appear normal.
+A focal mass is noted in the left middle lung zone.
+The heart is enlarged (CTR - 0.57).
+CONCLUSION
+Pulmonary nodule in the left middle zone. Recommend CT evaluation. Cardiomegaly. left lower lobe atelectasis.
+Clinical correlation advised.","Atelectasis,Cardiomegaly,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00042,"CHEST RADIOGRAPH REPORT
+Findings:
+There is volume loss in the right lower lobe.
+There is a well-defined rounded opacity in the right lower lung zone measuring approximately 2.6cm.
+Trachea is central.
+A coin lesion is noted in the right lower lung zone.
+A rounded opacity is seen in the right lower lung field.
+Both costophrenic recesses and hemidiaphragms are normal.
+CONCLUSION
+Solitary pulmonary nodule. CT chest recommended. right lower lobe atelectasis.
+Suggest clinical correlation.","Atelectasis,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00043,"CHEST RADIOGRAPH REPORT
+Extra pulmonary soft tissues are normal.
+The hila appear normal.
+An ovoid mass is seen in the left upper lung zone.
+The bony rib cage and peripheral soft tissues are normal.
+Both hilar angles are preserved.
+There is a 2.7cm rounded soft tissue density lesion in the left upper lung zone.
+There is volume loss in the left lower lobe.
+CONCLUSION
+left lung mass for further evaluation. left lower lobe atelectasis.
+Suggest clinical correlation.","Atelectasis,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00044,"CHEST RADIOGRAPHY REPORT
+Comments
+The heart is enlarged (CTR - 0.55).
+The bones of the thorax appear normal.
+The costophrenic sulci and hemidiaphragms are preserved.
+There is volume loss in the left lower lobe.
+The mediastinum, hila and pulmonary vasculature are also normal.
+The bony rib cage and peripheral soft tissues are normal.
+A focal mass is noted in the left lower lung zone.
+Both costophrenic sulci are blunted.
+Impression
+left lung mass. CT scan advised for further characterisation. Cardiomegaly. left pleural effusion. left lower lobe atelectasis.
+Suggest clinical correlation.","Atelectasis,Cardiomegaly,Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00045,"CHEST RADIOGRAPH REPORT
+There is right pleural effusion.
+Both costophrenic recesses and hemidiaphragms are normal.
+There is a 4.4cm rounded soft tissue density lesion in the right middle lung zone.
+A spiculated opacity is seen in the right middle lung field.
+A solitary well-defined round soft tissue density mass is seen in the right middle lung zone.
+The hila appear normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Impression
+right lung mass. CT scan advised for further characterisation. right pleural effusion.
+Kindly correlate with other clinical parameters.","Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00046,"CHEST RADIOGRAPH REPORT
+The cardiac silhouette is enlarged (CTR - 0.71).
+Normal pulmonary vasculature is seen.
+Both costophrenic recesses and hemidiaphragms are normal.
+There is volume loss in the right lower lobe.
+An ovoid mass is seen in the right lower lung zone.
+Both hilar angles are preserved.
+The mediastinal shadow is within normal limits.
+Impression:
+Rounded opacity in the right lung — differential includes granuloma, neoplasm. Cardiomegaly. right lower lobe atelectasis.","Atelectasis,Cardiomegaly,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00047,"CHEST RADIOGRAPH REPORT
+The bones of the thorax appear normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+The cardiac silhouette is enlarged (CTR - 0.68).
+A well-defined nodular opacity is seen in the right upper lung zone.
+Both hilar angles are preserved.
+There is blunting of the right costophrenic angle.
+Trachea is central.
+CONCLUSION
+Rounded opacity in the right lung — differential includes granuloma, neoplasm. Cardiomegaly. right pleural effusion.
+Further evaluation recommended.","Cardiomegaly,Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00048,"CHEST RADIOGRAPH REPORT
+Comments:
+A coin lesion is noted in the right upper lung zone.
+Trachea is central.
+The mediastinum, hila and pulmonary vasculature are also normal.
+The mediastinal shadow is within normal limits.
+There is volume loss in the right lower lobe.
+There is a well-defined rounded opacity in the right upper lung zone measuring approximately 6.0cm.
+Impression:
+right lung mass for further evaluation. right lower lobe atelectasis.","Atelectasis,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00049,"CHEST RADIOGRAPH REPORT
+There is right pleural effusion.
+There is volume loss in the right lower lobe.
+A spiculated opacity is seen in the right middle lung field.
+The mediastinal shadow is within normal limits.
+The hila appear normal.
+The bones of the thorax appear normal.
+A focal mass is noted in the right middle lung zone.
+Impression:
+Solitary pulmonary nodule. CT chest recommended. right pleural effusion. right lower lobe atelectasis.
+Suggest clinical correlation.","Atelectasis,Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00050,"CHEST RADIOGRAPH REPORT
+Comments
+There is a 2.1cm rounded soft tissue density lesion in the left lower lung zone.
+The hila appear normal.
+A spiculated opacity is seen in the left lower lung field.
+A solitary well-defined round soft tissue density mass is seen in the left lower lung zone.
+The mediastinal shadow is within normal limits.
+Conclusion:
+Rounded opacity in the left lung — differential includes granuloma, neoplasm.
+Further evaluation recommended.",Lung Mass / Nodule,1,Lung Mass / Nodule
+synth_00051,"CHEST RADIOGRAPHY REPORT
+Comments
+A rounded opacity is seen in the right lower lung field.
+There is cardiomegaly (CTR 0.69).
+Trachea is central.
+A solitary well-defined round soft tissue density mass is seen in the right lower lung zone.
+The mediastinal shadow is within normal limits.
+CONCLUSION
+Solitary pulmonary nodule in the right lung. Further evaluation recommended. Cardiomegaly.
+Clinical correlation advised.","Cardiomegaly,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00052,"CHEST RADIOGRAPH REPORT
+The bones of the thorax appear normal.
+There is volume loss in the left lower lobe.
+There is a well-defined rounded opacity in the left middle lung zone measuring approximately 4.7cm.
+A solitary well-defined round soft tissue density mass is seen in the left middle lung zone.
+A well-defined nodular opacity is seen in the left middle lung zone.
+The bony rib cage and peripheral soft tissues are normal.
+Trachea is central.
+The heart is enlarged (CTR - 0.68).
+There is blunting of the left costophrenic angle.
+CONCLUSION
+Pulmonary nodule in the left middle zone. Recommend CT evaluation. Cardiomegaly. left pleural effusion. left lower lobe atelectasis.
+Kindly correlate with other clinical parameters.","Atelectasis,Cardiomegaly,Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00053,"CHEST RADIOGRAPHY REPORT
+Comments:
+There is a 5.9cm rounded soft tissue density lesion in the right middle lung zone.
+Both costophrenic recesses and hemidiaphragms are normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+Conclusion:
+right lung mass. CT scan advised for further characterisation.
+Suggest clinical correlation.",Lung Mass / Nodule,1,Lung Mass / Nodule
+synth_00054,"CHEST RADIOGRAPH REPORT
+The bony rib cage and peripheral soft tissues are normal.
+Both hilar angles are preserved.
+A focal mass is noted in the left upper lung zone.
+The costophrenic sulci and hemidiaphragms are preserved.
+The hila appear normal.
+A solitary well-defined round soft tissue density mass is seen in the left upper lung zone.
+CONCLUSION
+Rounded opacity in the left lung — differential includes granuloma, neoplasm.
+Kindly correlate with other clinical parameters.",Lung Mass / Nodule,1,Lung Mass / Nodule
+synth_00055,"CHEST RADIOGRAPH REPORT
+Comments:
+Both costophrenic recesses and hemidiaphragms are normal.
+There is volume loss in the left lower lobe.
+Normal pulmonary vasculature is seen.
+Extra pulmonary soft tissues are normal.
+Trachea is central.
+A spiculated opacity is seen in the left upper lung field.
+There is a well-defined rounded opacity in the left upper lung zone measuring approximately 2.6cm.
+There is blunting of the left costophrenic angle.
+There is a 2.6cm rounded soft tissue density lesion in the left upper lung zone.
+Impression
+Solitary pulmonary nodule. CT chest recommended. left pleural effusion. left lower lobe atelectasis.
+Further evaluation recommended.","Atelectasis,Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00056,"CHEST RADIOGRAPH REPORT
+Both costophrenic recesses and hemidiaphragms are normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+An ovoid mass is seen in the left lower lung zone.
+The cardiac silhouette is enlarged (CTR - 0.64).
+A coin lesion is noted in the left lower lung zone.
+A well-defined nodular opacity is seen in the left lower lung zone.
+Trachea is central.
+Impression:
+Solitary pulmonary nodule in the left lung. Further evaluation recommended. Cardiomegaly.","Cardiomegaly,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00057,"CHEST RADIOGRAPH REPORT
+There is volume loss in the right lower lobe.
+A focal mass is noted in the right lower lung zone.
+The bones of the thorax appear normal.
+A solitary well-defined round soft tissue density mass is seen in the right lower lung zone.
+The mediastinal shadow is within normal limits.
+Multiple rounded opacities of different sizes are seen in both lung fields.
+The mediastinum, hila and pulmonary vasculature are also normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+Conclusion:
+Solitary pulmonary nodule. CT chest recommended. right lower lobe atelectasis.
+ECG advised.","Atelectasis,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00058,"CHEST RADIOGRAPH REPORT
+The hila appear normal.
+The cardiac silhouette is enlarged (CTR - 0.68).
+Both hilar angles are preserved.
+A well-defined nodular opacity is seen in the left middle lung zone.
+An ovoid mass is seen in the left middle lung zone.
+A solitary well-defined round soft tissue density mass is seen in the left middle lung zone.
+Trachea is central.
+Impression
+Pulmonary nodule in the left middle zone. Recommend CT evaluation. Cardiomegaly.
+Clinical correlation advised.","Cardiomegaly,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00059,"CHEST RADIOGRAPH REPORT
+Findings:
+The mediastinal shadow is within normal limits.
+Normal pulmonary vasculature is seen.
+A rounded opacity is seen in the right middle lung field.
+Multiple rounded opacities of different sizes are seen in both lung fields.
+The costophrenic sulci and hemidiaphragms are preserved.
+The heart is enlarged (CTR - 0.65).
+Impression:
+right lung mass. CT scan advised for further characterisation. Cardiomegaly.","Cardiomegaly,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00060,"CHEST RADIOGRAPHY REPORT
+The bones of the thorax appear normal.
+Both hilar angles are preserved.
+A rounded opacity is seen in the left lower lung field.
+CONCLUSION
+Pulmonary nodule in the left lower zone. Recommend CT evaluation.",Lung Mass / Nodule,1,Lung Mass / Nodule
+synth_00061,"CHEST RADIOGRAPH REPORT
+The hila appear normal.
+The bony rib cage and peripheral soft tissues are normal.
+A solitary pulmonary nodule is noted in the left upper lung zone.
+An ovoid mass is seen in the left upper lung zone.
+Extra pulmonary soft tissues are normal.
+CONCLUSION
+Pulmonary nodule in the left upper zone. Recommend CT evaluation.
+Suggest clinical correlation.",Lung Mass / Nodule,1,Lung Mass / Nodule
+synth_00062,"CHEST RADIOGRAPHY REPORT
+Findings:
+Both costophrenic recesses and hemidiaphragms are normal.
+The bony rib cage and peripheral soft tissues are normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+A rounded opacity is seen in the right lower lung field.
+The heart is enlarged (CTR - 0.69).
+There is volume loss in the right lower lobe.
+There is right pleural effusion.
+There is a well-defined rounded opacity in the right lower lung zone measuring approximately 5.3cm.
+CONCLUSION
+Pulmonary nodule in the right lower zone. Recommend CT evaluation. Cardiomegaly. right pleural effusion. right lower lobe atelectasis.
+Clinical correlation advised.","Atelectasis,Cardiomegaly,Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00063,"CHEST RADIOGRAPH REPORT
+Comments
+A well-defined nodular opacity is seen in the right upper lung zone.
+Trachea is central.
+A focal mass is noted in the right upper lung zone.
+A rounded opacity is seen in the right upper lung field.
+There is volume loss in the right lower lobe.
+Extra pulmonary soft tissues are normal.
+Impression
+Pulmonary nodule in the right upper zone. Recommend CT evaluation. right lower lobe atelectasis.
+Kindly correlate with other clinical parameters.","Atelectasis,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00064,"CHEST RADIOGRAPH REPORT
+Comments
+A solitary pulmonary nodule is noted in the right middle lung zone.
+The cardiac silhouette is enlarged (CTR - 0.53).
+The hila appear normal.
+Both hilar angles are preserved.
+A rounded opacity is seen in the right middle lung field.
+There is volume loss in the right lower lobe.
+A well-defined nodular opacity is seen in the right middle lung zone.
+CONCLUSION
+right lung mass for further evaluation. Cardiomegaly. right lower lobe atelectasis.
+ECG advised.","Atelectasis,Cardiomegaly,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00065,"CHEST RADIOGRAPH REPORT
+Findings:
+The hila appear normal.
+An ovoid mass is seen in the right middle lung zone.
+A coin lesion is noted in the right middle lung zone.
+There is a well-defined rounded opacity in the right middle lung zone measuring approximately 5.0cm.
+There is cardiomegaly (CTR 0.6).
+The bones of the thorax appear normal.
+Impression:
+Solitary pulmonary nodule. CT chest recommended. Cardiomegaly.
+Clinical correlation advised.","Cardiomegaly,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00066,"CHEST RADIOGRAPH REPORT
+The hila appear normal.
+There is right pleural effusion.
+There is a 5.7cm rounded soft tissue density lesion in the right middle lung zone.
+Both costophrenic recesses and hemidiaphragms are normal.
+A focal mass is noted in the right middle lung zone.
+A solitary well-defined round soft tissue density mass is seen in the right middle lung zone.
+Impression
+Solitary pulmonary nodule. CT chest recommended. right pleural effusion.
+ECG advised.","Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00067,"CHEST RADIOGRAPH REPORT
+Comments
+Both hilar angles are preserved.
+There is a well-defined rounded opacity in the right middle lung zone measuring approximately 4.6cm.
+There is a 4.6cm rounded soft tissue density lesion in the right middle lung zone.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Both costophrenic recesses and hemidiaphragms are normal.
+The heart is enlarged (CTR - 0.6).
+A spiculated opacity is seen in the right middle lung field.
+There is volume loss in the right lower lobe.
+Impression
+Pulmonary nodule in the right middle zone. Recommend CT evaluation. Cardiomegaly. right lower lobe atelectasis.
+ECG advised.","Atelectasis,Cardiomegaly,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00068,"CHEST RADIOGRAPHY REPORT
+The heart is enlarged (CTR - 0.61).
+A coin lesion is noted in the right upper lung zone.
+A rounded opacity is seen in the right upper lung field.
+The mediastinum, hila and pulmonary vasculature are also normal.
+A solitary well-defined round soft tissue density mass is seen in the right upper lung zone.
+Normal pulmonary vasculature is seen.
+CONCLUSION
+Rounded opacity in the right lung — differential includes granuloma, neoplasm. Cardiomegaly.
+ECG advised.","Cardiomegaly,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00069,"CHEST RADIOGRAPH REPORT
+Findings:
+An ovoid mass is seen in the left upper lung zone.
+Extra pulmonary soft tissues are normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There is a 4.1cm rounded soft tissue density lesion in the left upper lung zone.
+There is blunting of the left costophrenic angle.
+The cardiac silhouette is enlarged (CTR - 0.63).
+The costophrenic sulci and hemidiaphragms are preserved.
+Impression:
+Solitary pulmonary nodule. CT chest recommended. Cardiomegaly. left pleural effusion.
+Further evaluation recommended.","Cardiomegaly,Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00070,"CHEST RADIOGRAPH REPORT
+Comments:
+There is a well-defined rounded opacity in the right lower lung zone measuring approximately 3.5cm.
+The mediastinal shadow is within normal limits.
+Both costophrenic recesses and hemidiaphragms are normal.
+Both hilar angles are preserved.
+The hila appear normal.
+A coin lesion is noted in the right lower lung zone.
+An ovoid mass is seen in the right lower lung zone.
+There is right pleural effusion.
+Conclusion:
+Pulmonary nodule in the right lower zone. Recommend CT evaluation. right pleural effusion.
+Suggest clinical correlation.","Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00071,"CHEST RADIOGRAPH REPORT
+A spiculated opacity is seen in the right upper lung field.
+There is volume loss in the right lower lobe.
+A focal mass is noted in the right upper lung zone.
+The hila appear normal.
+Extra pulmonary soft tissues are normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Multiple rounded opacities of different sizes are seen in both lung fields.
+The bones of the thorax appear normal.
+Conclusion:
+Rounded opacity in the right lung — differential includes granuloma, neoplasm. right lower lobe atelectasis.
+ECG advised.","Atelectasis,Lung Mass / Nodule",1,Lung Mass / Nodule
+synth_00072,"CHEST RADIOGRAPHY REPORT
+Comments:
+There is a 3.0cm rounded soft tissue density lesion in the right upper lung zone.
+The mediastinal shadow is within normal limits.
+Both costophrenic sulci are blunted.
+Multiple rounded opacities of different sizes are seen in both lung fields.
+The costophrenic sulci and hemidiaphragms are preserved.
+The hila appear normal.
+CONCLUSION
+Rounded opacity in the right lung — differential includes granuloma, neoplasm. right pleural effusion.
+Suggest clinical correlation.","Lung Mass / Nodule,Pleural Effusion",1,Lung Mass / Nodule
+synth_00073,"CHEST RADIOGRAPH REPORT
+Comments:
+The bony rib cage and peripheral soft tissues are normal.
+There is alveolar edema with bilateral air space opacities in a bat-wing distribution.
+Normal pulmonary vasculature is seen.
+There are bilateral perihilar haze and prominent bronchovascular markings.
+The bones of the thorax appear normal.
+Kerley B lines are noted at the lung bases bilaterally.
+Both costophrenic sulci are blunted.
+The costophrenic sulci and hemidiaphragms are preserved.
+Conclusion:
+Interstitial pulmonary edema. right pleural effusion.
+ECG advised.","Pleural Effusion,Pulmonary Edema",1,Pulmonary Edema
+synth_00074,"CHEST RADIOGRAPHY REPORT
+Normal pulmonary vasculature is seen.
+The bones of the thorax appear normal.
+There is interstitial edema with bilateral perihilar opacities.
+There is blunting of the left costophrenic angle.
+The mediastinal shadow is within normal limits.
+Diffuse ground-glass opacification of both lung fields is noted.
+CONCLUSION
+Pulmonary edema. Heart failure changes. left pleural effusion.
+Clinical correlation advised.","Pleural Effusion,Pulmonary Edema",1,Pulmonary Edema
+synth_00075,"CHEST RADIOGRAPH REPORT
+Findings:
+Trachea is central.
+There is cardiomegaly (CTR 0.62).
+There is vascular congestion with upper lobe blood diversion.
+Both costophrenic recesses and hemidiaphragms are normal.
+Prominent bronchovascular markings with upper lobe blood diversion are noted.
+Impression:
+Pulmonary edema with vascular congestion. Cardiomegaly.
+Further evaluation recommended.","Cardiomegaly,Pulmonary Edema",1,Pulmonary Edema
+synth_00076,"CHEST RADIOGRAPH REPORT
+The costophrenic sulci and hemidiaphragms are preserved.
+Extra pulmonary soft tissues are normal.
+There is vascular congestion with upper lobe blood diversion.
+There are prominent bronchovascular markings bilaterally.
+The bones of the thorax appear normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Both costophrenic sulci are blunted.
+There is alveolar edema with bilateral air space opacities in a bat-wing distribution.
+The heart is enlarged (CTR - 0.68).
+Impression:
+Pulmonary edema with vascular congestion. Cardiomegaly. right pleural effusion. Reticulonodular pattern.
+Kindly correlate with other clinical parameters.","Cardiomegaly,Pleural Effusion,Pulmonary Edema,Reticulonodular / Interstitial Pattern",1,Pulmonary Edema
+synth_00077,"CHEST RADIOGRAPH REPORT
+Trachea is central.
+There are bilateral perihilar haze with associated pulmonary vascular congestion.
+Diffuse ground-glass opacification of both lung fields is noted.
+There are prominent bronchovascular markings bilaterally.
+Both costophrenic sulci are blunted.
+Both hilar angles are preserved.
+The costophrenic sulci and hemidiaphragms are preserved.
+Both costophrenic recesses and hemidiaphragms are normal.
+CONCLUSION
+Pulmonary vascular congestion. Features in keeping with fluid overload. right pleural effusion. Reticulonodular pattern.","Pleural Effusion,Pulmonary Edema,Reticulonodular / Interstitial Pattern",1,Pulmonary Edema
+synth_00078,"CHEST RADIOGRAPH REPORT
+Comments:
+There is vascular congestion with upper lobe blood diversion.
+Both costophrenic sulci are blunted.
+The hila appear normal.
+There are bilateral perihilar haze and prominent bronchovascular markings.
+Normal pulmonary vasculature is seen.
+The mediastinal shadow is within normal limits.
+There are bilateral perihilar haze with associated pulmonary vascular congestion.
+Conclusion:
+Pulmonary vascular congestion. Features in keeping with fluid overload. right pleural effusion.
+Further evaluation recommended.","Pleural Effusion,Pulmonary Edema",1,Pulmonary Edema
+synth_00079,"CHEST RADIOGRAPH REPORT
+Findings:
+There are bilateral perihilar haze and prominent bronchovascular markings.
+There is bilateral pulmonary congestion with peribronchial cuffing.
+The bones of the thorax appear normal.
+Extra pulmonary soft tissues are normal.
+There is interstitial edema with bilateral perihilar opacities.
+CONCLUSION
+Pulmonary edema with vascular congestion.
+Suggest clinical correlation.",Pulmonary Edema,1,Pulmonary Edema
+synth_00080,"CHEST RADIOGRAPH REPORT
+Comments
+Both hilar angles are preserved.
+There are bilateral perihilar haze and prominent bronchovascular markings.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Prominent bronchovascular markings with upper lobe blood diversion are noted.
+There is cardiomegaly (CTR 0.72).
+Extra pulmonary soft tissues are normal.
+The costophrenic sulci and hemidiaphragms are preserved.
+CONCLUSION
+Pulmonary vascular congestion. Features in keeping with fluid overload. Cardiomegaly.","Cardiomegaly,Pulmonary Edema",1,Pulmonary Edema
+synth_00081,"CHEST RADIOGRAPH REPORT
+Findings:
+The mediastinum, hila and pulmonary vasculature are also normal.
+There is pulmonary vascular congestion with cephalization of vessels.
+Normal pulmonary vasculature is seen.
+Diffuse ground-glass opacification of both lung fields is noted.
+Kerley B lines are noted at the lung bases bilaterally.
+Reticulonodular opacities are seen in both lung fields.
+The bony rib cage and peripheral soft tissues are normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+CONCLUSION
+Interstitial pulmonary edema. Reticulonodular pattern.
+ECG advised.","Pulmonary Edema,Reticulonodular / Interstitial Pattern",1,Pulmonary Edema
+synth_00082,"CHEST RADIOGRAPH REPORT
+The mediastinal shadow is within normal limits.
+The mediastinum, hila and pulmonary vasculature are normal.
+There are bilateral perihilar haze with associated pulmonary vascular congestion.
+There is bilateral pulmonary congestion with peribronchial cuffing.
+There are bilateral perihilar haze and prominent bronchovascular markings.
+Reticulonodular opacities are seen in both lung fields.
+The bony rib cage and peripheral soft tissues are normal.
+CONCLUSION
+Pulmonary vascular congestion. Features in keeping with fluid overload. Reticulonodular pattern.
+ECG advised.","Pulmonary Edema,Reticulonodular / Interstitial Pattern",1,Pulmonary Edema
+synth_00083,"CHEST RADIOGRAPH REPORT
+Comments:
+The mediastinum, hila and pulmonary vasculature are normal.
+The costophrenic sulci and hemidiaphragms are preserved.
+There is bilateral pulmonary congestion with peribronchial cuffing.
+There is blunting of the left costophrenic angle.
+The mediastinal shadow is within normal limits.
+There are prominent bronchovascular markings bilaterally.
+Both costophrenic recesses and hemidiaphragms are normal.
+Impression:
+Interstitial pulmonary edema. left pleural effusion. Reticulonodular pattern.
+Clinical correlation advised.","Pleural Effusion,Pulmonary Edema,Reticulonodular / Interstitial Pattern",1,Pulmonary Edema
+synth_00084,"CHEST RADIOGRAPH REPORT
+There is right pleural effusion.
+The hila appear normal.
+There are bilateral perihilar haze and prominent bronchovascular markings.
+Reticulonodular opacities are seen in both lung fields.
+Normal pulmonary vasculature is seen.
+Both costophrenic recesses and hemidiaphragms are normal.
+There is alveolar edema with bilateral air space opacities in a bat-wing distribution.
+CONCLUSION
+Interstitial pulmonary edema. right pleural effusion. Reticulonodular pattern.
+ECG advised.","Pleural Effusion,Pulmonary Edema,Reticulonodular / Interstitial Pattern",1,Pulmonary Edema
+synth_00085,"CHEST RADIOGRAPHY REPORT
+There is interstitial edema with bilateral perihilar opacities.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There are bilateral perihilar haze with associated pulmonary vascular congestion.
+The hila appear normal.
+Normal pulmonary vasculature is seen.
+Both hilar angles are preserved.
+Conclusion:
+Features of pulmonary edema. Suggest clinical correlation.
+Clinical correlation advised.",Pulmonary Edema,1,Pulmonary Edema
+synth_00086,"CHEST RADIOGRAPHY REPORT
+Trachea is central.
+The bony rib cage and peripheral soft tissues are normal.
+Prominent bronchovascular markings with upper lobe blood diversion are noted.
+Reticulonodular opacities are seen in both lung fields.
+There are bilateral perihilar haze with associated pulmonary vascular congestion.
+There is pulmonary vascular congestion with cephalization of vessels.
+The bones of the thorax appear normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+Impression:
+Features suggestive of congestive cardiac failure with pulmonary edema. Reticulonodular pattern.
+Further evaluation recommended.","Pulmonary Edema,Reticulonodular / Interstitial Pattern",1,Pulmonary Edema
+synth_00087,"CHEST RADIOGRAPH REPORT
+Comments:
+There is cardiomegaly (CTR 0.72).
+The bony rib cage and peripheral soft tissues are normal.
+There is blunting of the left costophrenic angle.
+Prominent bronchovascular markings with upper lobe blood diversion are noted.
+Both costophrenic recesses and hemidiaphragms are normal.
+Both hilar angles are preserved.
+The hila appear normal.
+Impression
+Features suggestive of congestive cardiac failure with pulmonary edema. Cardiomegaly. left pleural effusion.
+Suggest clinical correlation.","Cardiomegaly,Pleural Effusion,Pulmonary Edema",1,Pulmonary Edema
+synth_00088,"CHEST RADIOGRAPH REPORT
+Comments:
+The bones of the thorax appear normal.
+Normal pulmonary vasculature is seen.
+Kerley B lines are noted at the lung bases bilaterally.
+Both hilar angles are preserved.
+Impression
+Pulmonary edema. Heart failure changes.
+Suggest clinical correlation.",Pulmonary Edema,1,Pulmonary Edema
+synth_00089,"CHEST RADIOGRAPH REPORT
+The bones of the thorax appear normal.
+Extra pulmonary soft tissues are normal.
+Normal pulmonary vasculature is seen.
+Prominent bronchovascular markings with upper lobe blood diversion are noted.
+Reticulonodular opacities are seen in both lung fields.
+CONCLUSION
+Pulmonary edema. Heart failure changes. Reticulonodular pattern.
+Clinical correlation advised.","Pulmonary Edema,Reticulonodular / Interstitial Pattern",1,Pulmonary Edema
+synth_00090,"CHEST RADIOGRAPHY REPORT
+Findings:
+The bones of the thorax appear normal.
+Fluid overload changes with bilateral pleural effusion and pulmonary vascular congestion.
+The bony rib cage and peripheral soft tissues are normal.
+Extra pulmonary soft tissues are normal.
+The hila appear normal.
+The heart is enlarged (CTR - 0.63).
+Kerley B lines are noted at the lung bases bilaterally.
+Impression
+Interstitial pulmonary edema. Cardiomegaly.
+Clinical correlation advised.","Cardiomegaly,Pulmonary Edema",1,Pulmonary Edema
+synth_00091,"CHEST RADIOGRAPHY REPORT
+Comments
+The costophrenic sulci and hemidiaphragms are preserved.
+Both hilar angles are preserved.
+There is bilateral pulmonary congestion with peribronchial cuffing.
+There is vascular congestion with upper lobe blood diversion.
+Normal pulmonary vasculature is seen.
+Impression:
+Features of pulmonary edema. Suggest clinical correlation.
+Kindly correlate with other clinical parameters.",Pulmonary Edema,1,Pulmonary Edema
+synth_00092,"CHEST RADIOGRAPH REPORT
+The cardiac silhouette is enlarged (CTR - 0.64).
+There are bilateral perihilar haze and prominent bronchovascular markings.
+There is blunting of the right costophrenic angle.
+The bones of the thorax appear normal.
+Both hilar angles are preserved.
+There is interstitial edema with bilateral perihilar opacities.
+Impression
+Pulmonary edema with vascular congestion. Cardiomegaly. right pleural effusion.
+Further evaluation recommended.","Cardiomegaly,Pleural Effusion,Pulmonary Edema",1,Pulmonary Edema
+synth_00093,"CHEST RADIOGRAPHY REPORT
+Comments:
+There is pulmonary vascular congestion with cephalization of vessels.
+The hila appear normal.
+Normal pulmonary vasculature is seen.
+Prominent bronchovascular markings with upper lobe blood diversion are noted.
+Both costophrenic recesses and hemidiaphragms are normal.
+Impression
+Features suggestive of congestive cardiac failure with pulmonary edema.
+ECG advised.",Pulmonary Edema,1,Pulmonary Edema
+synth_00094,"CHEST RADIOGRAPH REPORT
+Both hilar angles are preserved.
+The bones of the thorax appear normal.
+Prominent bronchovascular markings with upper lobe blood diversion are noted.
+There are prominent bronchovascular markings bilaterally.
+The hila appear normal.
+The mediastinal shadow is within normal limits.
+Impression:
+Pulmonary edema. Heart failure changes. Reticulonodular pattern.","Pulmonary Edema,Reticulonodular / Interstitial Pattern",1,Pulmonary Edema
+synth_00095,"CHEST RADIOGRAPH REPORT
+There is pulmonary vascular congestion with cephalization of vessels.
+Both costophrenic sulci are blunted.
+Trachea is central.
+The hila appear normal.
+Impression
+Features of pulmonary edema. Suggest clinical correlation. right pleural effusion.
+Kindly correlate with other clinical parameters.","Pleural Effusion,Pulmonary Edema",1,Pulmonary Edema
+synth_00096,"CHEST RADIOGRAPH REPORT
+Both hilar angles are preserved.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There is vascular congestion with upper lobe blood diversion.
+There is bilateral pulmonary congestion with peribronchial cuffing.
+CONCLUSION
+Pulmonary edema with vascular congestion.
+Further evaluation recommended.",Pulmonary Edema,1,Pulmonary Edema
+synth_00097,"CHEST RADIOGRAPH REPORT
+There are bilateral perihilar haze and prominent bronchovascular markings.
+The mediastinum, hila and pulmonary vasculature are also normal.
+The cardiac silhouette is enlarged (CTR - 0.62).
+The bony rib cage and peripheral soft tissues are normal.
+Impression:
+Features of pulmonary edema. Suggest clinical correlation. Cardiomegaly.
+Further evaluation recommended.","Cardiomegaly,Pulmonary Edema",1,Pulmonary Edema
+synth_00098,"CHEST RADIOGRAPHY REPORT
+The mediastinum, hila and pulmonary vasculature are also normal.
+Both costophrenic sulci are blunted.
+The mediastinum, hila and pulmonary vasculature are normal.
+There is bilateral pulmonary congestion with peribronchial cuffing.
+The costophrenic sulci and hemidiaphragms are preserved.
+Impression
+Features of pulmonary edema. Suggest clinical correlation. left pleural effusion.
+Kindly correlate with other clinical parameters.","Pleural Effusion,Pulmonary Edema",1,Pulmonary Edema
+synth_00099,"CHEST RADIOGRAPH REPORT
+Both hilar angles are preserved.
+Both costophrenic recesses and hemidiaphragms are normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Both costophrenic sulci are blunted.
+The heart is enlarged (CTR - 0.64).
+Fluid overload changes with bilateral pleural effusion and pulmonary vascular congestion.
+There is bilateral pulmonary congestion with peribronchial cuffing.
+The mediastinum, hila and pulmonary vasculature are normal.
+Impression
+Features suggestive of congestive cardiac failure with pulmonary edema. Cardiomegaly. left pleural effusion.
+Further evaluation recommended.","Cardiomegaly,Pleural Effusion,Pulmonary Edema",1,Pulmonary Edema
+synth_00100,"CHEST RADIOGRAPHY REPORT
+The hila appear normal.
+Normal pulmonary vasculature is seen.
+Fluid overload changes with bilateral pleural effusion and pulmonary vascular congestion.
+The mediastinum, hila and pulmonary vasculature are also normal.
+CONCLUSION
+Features suggestive of congestive cardiac failure with pulmonary edema.
+ECG advised.",Pulmonary Edema,1,Pulmonary Edema
+synth_00101,"CHEST RADIOGRAPH REPORT
+Findings:
+The bony rib cage and peripheral soft tissues are normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+There is pulmonary vascular congestion with cephalization of vessels.
+The hila appear normal.
+Kerley B lines are noted at the lung bases bilaterally.
+The mediastinum, hila and pulmonary vasculature are also normal.
+The cardiac silhouette is enlarged (CTR - 0.59).
+Conclusion:
+Pulmonary vascular congestion. Features in keeping with fluid overload. Cardiomegaly.
+Suggest clinical correlation.","Cardiomegaly,Pulmonary Edema",1,Pulmonary Edema
+synth_00102,"CHEST RADIOGRAPH REPORT
+Comments
+The cardiac silhouette is enlarged (CTR - 0.56).
+Kerley B lines are noted at the lung bases bilaterally.
+Both costophrenic recesses and hemidiaphragms are normal.
+The costophrenic sulci and hemidiaphragms are preserved.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Prominent bronchovascular markings with upper lobe blood diversion are noted.
+CONCLUSION
+Pulmonary edema. Heart failure changes. Cardiomegaly.
+Suggest clinical correlation.","Cardiomegaly,Pulmonary Edema",1,Pulmonary Edema
+synth_00103,"CHEST RADIOGRAPHY REPORT
+Diffuse ground-glass opacification of both lung fields is noted.
+There is left pleural effusion.
+There are bilateral perihilar haze with associated pulmonary vascular congestion.
+The hila appear normal.
+The costophrenic sulci and hemidiaphragms are preserved.
+Kerley B lines are noted at the lung bases bilaterally.
+The bones of the thorax appear normal.
+There are prominent bronchovascular markings bilaterally.
+The heart is enlarged (CTR - 0.61).
+Impression:
+Pulmonary edema with vascular congestion. Cardiomegaly. left pleural effusion. Reticulonodular pattern.","Cardiomegaly,Pleural Effusion,Pulmonary Edema,Reticulonodular / Interstitial Pattern",1,Pulmonary Edema
+synth_00104,"CHEST RADIOGRAPHY REPORT
+Prominent bronchovascular markings with upper lobe blood diversion are noted.
+There are prominent bronchovascular markings bilaterally.
+There is alveolar edema with bilateral air space opacities in a bat-wing distribution.
+There is pulmonary vascular congestion with cephalization of vessels.
+There is cardiomegaly (CTR 0.68).
+Trachea is central.
+Both costophrenic sulci are blunted.
+The mediastinum, hila and pulmonary vasculature are also normal.
+The bones of the thorax appear normal.
+CONCLUSION
+Features of pulmonary edema. Suggest clinical correlation. Cardiomegaly. left pleural effusion. Reticulonodular pattern.
+Clinical correlation advised.","Cardiomegaly,Pleural Effusion,Pulmonary Edema,Reticulonodular / Interstitial Pattern",1,Pulmonary Edema
+synth_00105,"CHEST RADIOGRAPH REPORT
+Findings:
+The cardiac silhouette is enlarged (CTR - 0.66).
+There is interstitial edema with bilateral perihilar opacities.
+The bones of the thorax appear normal.
+There is alveolar edema with bilateral air space opacities in a bat-wing distribution.
+Trachea is central.
+Normal pulmonary vasculature is seen.
+Both costophrenic sulci are blunted.
+Both hilar angles are preserved.
+Impression:
+Interstitial pulmonary edema. Cardiomegaly. right pleural effusion.","Cardiomegaly,Pleural Effusion,Pulmonary Edema",1,Pulmonary Edema
+synth_00106,"CHEST RADIOGRAPH REPORT
+Both costophrenic recesses and hemidiaphragms are normal.
+The bones of the thorax appear normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+The costophrenic sulci and hemidiaphragms are preserved.
+There is bilateral pulmonary congestion with peribronchial cuffing.
+Conclusion:
+Features suggestive of congestive cardiac failure with pulmonary edema.",Pulmonary Edema,1,Pulmonary Edema
+synth_00107,"CHEST RADIOGRAPH REPORT
+Prominent bronchovascular markings with upper lobe blood diversion are noted.
+There are bilateral perihilar haze and prominent bronchovascular markings.
+There is alveolar edema with bilateral air space opacities in a bat-wing distribution.
+Trachea is central.
+Normal pulmonary vasculature is seen.
+The mediastinum, hila and pulmonary vasculature are normal.
+There are prominent bronchovascular markings bilaterally.
+Impression:
+Pulmonary edema. Heart failure changes. Reticulonodular pattern.
+Suggest clinical correlation.","Pulmonary Edema,Reticulonodular / Interstitial Pattern",1,Pulmonary Edema
+synth_00108,"CHEST RADIOGRAPHY REPORT
+Both hilar angles are preserved.
+Trachea is central.
+Few round soft tissue density lesions are seen in the right lower lung zone, raising the suspicion of metastatic deposit.
+A large irregular opacity is seen in the right lower lung zone, suspicious for malignancy.
+The bony rib cage and peripheral soft tissues are normal.
+CONCLUSION
+right lung mass suspicious for malignancy. Recommend further evaluation.
+Suggest clinical correlation.",Suspected Malignancy,1,Suspected Malignancy
+synth_00109,"CHEST RADIOGRAPHY REPORT
+Findings:
+A rounded opacity is seen in the right lower lung field.
+A large irregular opacity is seen in the right lower lung zone, suspicious for malignancy.
+The bony rib cage and peripheral soft tissues are normal.
+There is a mass lesion in the right lower lung zone with destruction of the adjacent rib.
+Trachea is central.
+Conclusion:
+Features raising suspicion of malignancy. right lung opacity for further evaluation.
+ECG advised.","Lung Mass / Nodule,Suspected Malignancy",1,Suspected Malignancy
+synth_00110,"CHEST RADIOGRAPH REPORT
+The bony rib cage and peripheral soft tissues are normal.
+There is extensive homogenous opacity in the left lower and lower lung zones with associated pleural effusion.
+There is left pleural effusion.
+The bones of the thorax appear normal.
+The hila appear normal.
+Conclusion:
+Suspicious for malignancy. CT scan and tissue biopsy recommended. left pleural effusion.
+ECG advised.","Pleural Effusion,Suspected Malignancy",1,Suspected Malignancy
+synth_00111,"CHEST RADIOGRAPH REPORT
+There is volume loss in the right lower lobe.
+The mediastinum, hila and pulmonary vasculature are normal.
+Normal pulmonary vasculature is seen.
+A rounded opacity is seen in the right middle lung field.
+There is extensive homogenous opacity in the right middle and lower lung zones with associated pleural effusion.
+The bones of the thorax appear normal.
+A mass is seen abutting the mediastinum on the right with possible chest wall invasion.
+Extra pulmonary soft tissues are normal.
+Impression:
+Metastatic deposits. Primary to be determined. right lung opacity for further evaluation. right lower lobe atelectasis.
+Further evaluation recommended.","Atelectasis,Lung Mass / Nodule,Suspected Malignancy",1,Suspected Malignancy
+synth_00112,"CHEST RADIOGRAPH REPORT
+Comments
+A lobulated mass is seen in the right hilum with mediastinal widening.
+There is a large mass in the right hemithorax with associated pleural effusion.
+Trachea is central.
+There is a mass lesion in the right upper lung zone with destruction of the adjacent rib.
+Both costophrenic recesses and hemidiaphragms are normal.
+Impression:
+Metastatic deposits. Primary to be determined.
+Clinical correlation advised.",Suspected Malignancy,1,Suspected Malignancy
+synth_00113,"CHEST RADIOGRAPH REPORT
+Both costophrenic sulci are blunted.
+A rounded opacity is seen in the left upper lung field.
+There is a mass lesion in the left upper lung zone with destruction of the adjacent rib.
+The bones of the thorax appear normal.
+The costophrenic sulci and hemidiaphragms are preserved.
+The bony rib cage and peripheral soft tissues are normal.
+The mediastinal shadow is within normal limits.
+CONCLUSION
+left lung mass suspicious for malignancy. Recommend further evaluation. left pleural effusion. left lung opacity for further evaluation.
+Further evaluation recommended.","Lung Mass / Nodule,Pleural Effusion,Suspected Malignancy",1,Suspected Malignancy
+synth_00114,"CHEST RADIOGRAPH REPORT
+There is extensive homogenous opacity in the left middle and lower lung zones with associated pleural effusion.
+A large irregular opacity is seen in the left middle lung zone, suspicious for malignancy.
+Normal pulmonary vasculature is seen.
+The bones of the thorax appear normal.
+The costophrenic sulci and hemidiaphragms are preserved.
+There is a large mass in the left hemithorax with associated pleural effusion.
+Impression:
+Features raising suspicion of malignancy.
+Kindly correlate with other clinical parameters.",Suspected Malignancy,1,Suspected Malignancy
+synth_00115,"CHEST RADIOGRAPH REPORT
+The mediastinal shadow is within normal limits.
+The costophrenic sulci and hemidiaphragms are preserved.
+A rounded opacity is seen in the right lower lung field.
+There is a mass lesion in the right lower lung zone with destruction of the adjacent rib.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There is volume loss in the right lower lobe.
+Both hilar angles are preserved.
+Conclusion:
+Suspicious for malignancy. CT scan and tissue biopsy recommended. right lung opacity for further evaluation. right lower lobe atelectasis.
+Further evaluation recommended.","Atelectasis,Lung Mass / Nodule,Suspected Malignancy",1,Suspected Malignancy
+synth_00116,"CHEST RADIOGRAPHY REPORT
+Findings:
+Both costophrenic recesses and hemidiaphragms are normal.
+Both hilar angles are preserved.
+There is a mass lesion in the right lower lung zone with destruction of the adjacent rib.
+Impression
+Suspicious mass in the right lung. Tissue diagnosis recommended.
+Kindly correlate with other clinical parameters.",Suspected Malignancy,1,Suspected Malignancy
+synth_00117,"CHEST RADIOGRAPH REPORT
+There is volume loss in the right lower lobe.
+Trachea is central.
+Extra pulmonary soft tissues are normal.
+A lobulated mass is seen in the right hilum with mediastinal widening.
+Conclusion:
+right lung mass suspicious for malignancy. Recommend further evaluation. right lower lobe atelectasis.
+Further evaluation recommended.","Atelectasis,Suspected Malignancy",1,Suspected Malignancy
+synth_00118,"CHEST RADIOGRAPH REPORT
+Normal pulmonary vasculature is seen.
+A mass is seen abutting the mediastinum on the left with possible chest wall invasion.
+The costophrenic sulci and hemidiaphragms are preserved.
+Impression:
+Features suspicious for bronchogenic carcinoma. CT chest advised.",Suspected Malignancy,1,Suspected Malignancy
+synth_00119,"CHEST RADIOGRAPH REPORT
+Comments:
+Few round soft tissue density lesions are seen in the left upper lung zone, raising the suspicion of metastatic deposit.
+There is volume loss in the left lower lobe.
+There is a large spiculated mass in the left upper lung zone.
+A lobulated mass is seen in the left hilum with mediastinal widening.
+Normal pulmonary vasculature is seen.
+The bones of the thorax appear normal.
+Impression
+Metastatic deposits. Primary to be determined. left lower lobe atelectasis.
+ECG advised.","Atelectasis,Suspected Malignancy",1,Suspected Malignancy
+synth_00120,"CHEST RADIOGRAPH REPORT
+Comments:
+There is right pleural effusion.
+A rounded opacity is seen in the right middle lung field.
+A mass is seen abutting the mediastinum on the right with possible chest wall invasion.
+The costophrenic sulci and hemidiaphragms are preserved.
+Both hilar angles are preserved.
+Extra pulmonary soft tissues are normal.
+Conclusion:
+Metastatic deposits. Primary to be determined. right pleural effusion. right lung opacity for further evaluation.
+Clinical correlation advised.","Lung Mass / Nodule,Pleural Effusion,Suspected Malignancy",1,Suspected Malignancy
+synth_00121,"CHEST RADIOGRAPHY REPORT
+There is volume loss in the left lower lobe.
+Trachea is central.
+The bones of the thorax appear normal.
+Few round soft tissue density lesions are seen in the left middle lung zone, raising the suspicion of metastatic deposit.
+A lobulated mass is seen in the left hilum with mediastinal widening.
+A large irregular opacity is seen in the left middle lung zone, suspicious for malignancy.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Conclusion:
+Suspicious mass in the left lung. Tissue diagnosis recommended. left lower lobe atelectasis.
+Further evaluation recommended.","Atelectasis,Suspected Malignancy",1,Suspected Malignancy
+synth_00122,"CHEST RADIOGRAPH REPORT
+Comments:
+There is volume loss in the left lower lobe.
+The costophrenic sulci and hemidiaphragms are preserved.
+There is a large mass in the left hemithorax with associated pleural effusion.
+Extra pulmonary soft tissues are normal.
+The bony rib cage and peripheral soft tissues are normal.
+There is left pleural effusion.
+There is a mass lesion in the left lower lung zone with destruction of the adjacent rib.
+Conclusion:
+Features raising suspicion of malignancy. left pleural effusion. left lower lobe atelectasis.
+ECG advised.","Atelectasis,Pleural Effusion,Suspected Malignancy",1,Suspected Malignancy
+synth_00123,"CHEST RADIOGRAPH REPORT
+Findings:
+There is a large spiculated mass in the right middle lung zone.
+A large irregular opacity is seen in the right middle lung zone, suspicious for malignancy.
+The mediastinum, hila and pulmonary vasculature are normal.
+Multiple rounded opacities of varying sizes in both lung fields, suggestive of metastatic deposits.
+There is blunting of the right costophrenic angle.
+The mediastinal shadow is within normal limits.
+A rounded opacity is seen in the right middle lung field.
+CONCLUSION
+right lung mass suspicious for malignancy. Recommend further evaluation. right pleural effusion. right lung opacity for further evaluation.
+Kindly correlate with other clinical parameters.","Lung Mass / Nodule,Pleural Effusion,Suspected Malignancy",1,Suspected Malignancy
+synth_00124,"CHEST RADIOGRAPH REPORT
+Both costophrenic recesses and hemidiaphragms are normal.
+Extra pulmonary soft tissues are normal.
+There is right pleural effusion.
+A lobulated mass is seen in the right hilum with mediastinal widening.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Conclusion:
+Metastatic deposits. Primary to be determined. right pleural effusion.
+Further evaluation recommended.","Pleural Effusion,Suspected Malignancy",1,Suspected Malignancy
+synth_00125,"CHEST RADIOGRAPH REPORT
+A rounded opacity is seen in the left lower lung field.
+There is a soft tissue density mass in the left lower lung zone with irregular margins.
+Extra pulmonary soft tissues are normal.
+Normal pulmonary vasculature is seen.
+Impression
+Metastatic deposits. Primary to be determined. left lung opacity for further evaluation.","Lung Mass / Nodule,Suspected Malignancy",1,Suspected Malignancy
+synth_00126,"CHEST RADIOGRAPHY REPORT
+Comments
+Both costophrenic recesses and hemidiaphragms are normal.
+The bones of the thorax appear normal.
+A rounded opacity is seen in the left upper lung field.
+There is extensive homogenous opacity in the left upper and lower lung zones with associated pleural effusion.
+There is volume loss in the left lower lobe.
+The mediastinum, hila and pulmonary vasculature are also normal.
+The bony rib cage and peripheral soft tissues are normal.
+There is a large spiculated mass in the left upper lung zone.
+CONCLUSION
+left lung mass suspicious for malignancy. Recommend further evaluation. left lung opacity for further evaluation. left lower lobe atelectasis.
+Further evaluation recommended.","Atelectasis,Lung Mass / Nodule,Suspected Malignancy",1,Suspected Malignancy
+synth_00127,"CHEST RADIOGRAPH REPORT
+Findings:
+Both costophrenic recesses and hemidiaphragms are normal.
+There is volume loss in the left lower lobe.
+The bony rib cage and peripheral soft tissues are normal.
+The bones of the thorax appear normal.
+There is a mass lesion in the left middle lung zone with destruction of the adjacent rib.
+Impression:
+Metastatic deposits. Primary to be determined. left lower lobe atelectasis.
+Clinical correlation advised.","Atelectasis,Suspected Malignancy",1,Suspected Malignancy
+synth_00128,"CHEST RADIOGRAPH REPORT
+A large irregular opacity is seen in the left lower lung zone, suspicious for malignancy.
+The costophrenic sulci and hemidiaphragms are preserved.
+There is a mass lesion in the left lower lung zone with destruction of the adjacent rib.
+The hila appear normal.
+Conclusion:
+left lung mass suspicious for malignancy. Recommend further evaluation.
+Kindly correlate with other clinical parameters.",Suspected Malignancy,1,Suspected Malignancy
+synth_00129,"CHEST RADIOGRAPHY REPORT
+There is volume loss in the left lower lobe.
+Both hilar angles are preserved.
+There is a large spiculated mass in the left upper lung zone.
+The hila appear normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Impression
+Suspicious for malignancy. CT scan and tissue biopsy recommended. left lower lobe atelectasis.
+Clinical correlation advised.","Atelectasis,Suspected Malignancy",1,Suspected Malignancy
+synth_00130,"CHEST RADIOGRAPH REPORT
+Findings:
+The bony rib cage and peripheral soft tissues are normal.
+There is a mass lesion in the right middle lung zone with destruction of the adjacent rib.
+The hila appear normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+Impression:
+Features suspicious for bronchogenic carcinoma. CT chest advised.
+Suggest clinical correlation.",Suspected Malignancy,1,Suspected Malignancy
+synth_00131,"CHEST RADIOGRAPH REPORT
+Findings:
+There is extensive homogenous opacity in the right lower and lower lung zones with associated pleural effusion.
+There is a large spiculated mass in the right lower lung zone.
+Normal pulmonary vasculature is seen.
+There is blunting of the right costophrenic angle.
+A large irregular opacity is seen in the right lower lung zone, suspicious for malignancy.
+The hila appear normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+Extra pulmonary soft tissues are normal.
+Impression:
+Metastatic deposits. Primary to be determined. right pleural effusion.
+ECG advised.","Pleural Effusion,Suspected Malignancy",1,Suspected Malignancy
+synth_00132,"CHEST RADIOGRAPH REPORT
+The mediastinum, hila and pulmonary vasculature are also normal.
+There is extensive homogenous opacity in the right upper and lower lung zones with associated pleural effusion.
+Normal pulmonary vasculature is seen.
+Conclusion:
+Metastatic deposits. Primary to be determined.
+Suggest clinical correlation.",Suspected Malignancy,1,Suspected Malignancy
+synth_00133,"CHEST RADIOGRAPH REPORT
+Findings:
+There is a mass lesion in the left middle lung zone with destruction of the adjacent rib.
+The mediastinal shadow is within normal limits.
+The mediastinum, hila and pulmonary vasculature are normal.
+Both costophrenic recesses and hemidiaphragms are normal.
+There is left pleural effusion.
+Trachea is central.
+Conclusion:
+Features suspicious for bronchogenic carcinoma. CT chest advised. left pleural effusion.
+Suggest clinical correlation.","Pleural Effusion,Suspected Malignancy",1,Suspected Malignancy
+synth_00134,"CHEST RADIOGRAPH REPORT
+The mediastinum, hila and pulmonary vasculature are normal.
+The mediastinal shadow is within normal limits.
+There is a large mass in the right hemithorax with associated pleural effusion.
+Multiple rounded opacities of varying sizes in both lung fields, suggestive of metastatic deposits.
+There is a mass lesion in the right upper lung zone with destruction of the adjacent rib.
+Both hilar angles are preserved.
+Impression
+Suspicious for malignancy. CT scan and tissue biopsy recommended.
+Suggest clinical correlation.",Suspected Malignancy,1,Suspected Malignancy
+synth_00135,"CHEST RADIOGRAPHY REPORT
+Comments:
+A lobulated mass is seen in the right hilum with mediastinal widening.
+Both hilar angles are preserved.
+Extra pulmonary soft tissues are normal.
+CONCLUSION
+Features suspicious for bronchogenic carcinoma. CT chest advised.
+Clinical correlation advised.",Suspected Malignancy,1,Suspected Malignancy
+synth_00136,"CHEST RADIOGRAPH REPORT
+Comments
+There is a mass lesion in the right lower lung zone with destruction of the adjacent rib.
+There is a large spiculated mass in the right lower lung zone.
+Trachea is central.
+The hila appear normal.
+A lobulated mass is seen in the right hilum with mediastinal widening.
+Conclusion:
+Suspicious mass in the right lung. Tissue diagnosis recommended.",Suspected Malignancy,1,Suspected Malignancy
+synth_00137,"CHEST RADIOGRAPH REPORT
+Comments
+The mediastinum, hila and pulmonary vasculature are normal.
+There is blunting of the right costophrenic angle.
+There is a large spiculated mass in the right lower lung zone.
+Both hilar angles are preserved.
+There is extensive homogenous opacity in the right lower and lower lung zones with associated pleural effusion.
+CONCLUSION
+Features suspicious for bronchogenic carcinoma. CT chest advised. right pleural effusion.
+Suggest clinical correlation.","Pleural Effusion,Suspected Malignancy",1,Suspected Malignancy
+synth_00138,"CHEST RADIOGRAPH REPORT
+Comments:
+There is blunting of the left costophrenic angle.
+There is extensive homogenous opacity in the left upper and lower lung zones with associated pleural effusion.
+The mediastinal shadow is within normal limits.
+A rounded opacity is seen in the left upper lung field.
+Multiple rounded opacities of varying sizes in both lung fields, suggestive of metastatic deposits.
+There is volume loss in the left lower lobe.
+There is a mass lesion in the left upper lung zone with destruction of the adjacent rib.
+Both costophrenic recesses and hemidiaphragms are normal.
+Conclusion:
+Suspicious mass in the left lung. Tissue diagnosis recommended. left pleural effusion. left lung opacity for further evaluation. left lower lobe atelectasis.
+Suggest clinical correlation.","Atelectasis,Lung Mass / Nodule,Pleural Effusion,Suspected Malignancy",1,Suspected Malignancy
+synth_00139,"CHEST RADIOGRAPH REPORT
+Comments
+Both hilar angles are preserved.
+The costophrenic sulci and hemidiaphragms are preserved.
+A lobulated mass is seen in the left hilum with mediastinal widening.
+The hila appear normal.
+Impression:
+left lung mass suspicious for malignancy. Recommend further evaluation.
+Further evaluation recommended.",Suspected Malignancy,1,Suspected Malignancy
+synth_00140,"CHEST RADIOGRAPH REPORT
+The costophrenic sulci and hemidiaphragms are preserved.
+A large irregular opacity is seen in the right middle lung zone, suspicious for malignancy.
+Multiple rounded opacities of varying sizes in both lung fields, suggestive of metastatic deposits.
+There is blunting of the right costophrenic angle.
+The bony rib cage and peripheral soft tissues are normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+CONCLUSION
+Features suspicious for bronchogenic carcinoma. CT chest advised. right pleural effusion.
+Clinical correlation advised.","Pleural Effusion,Suspected Malignancy",1,Suspected Malignancy
+synth_00141,"CHEST RADIOGRAPHY REPORT
+Findings:
+Extra pulmonary soft tissues are normal.
+A rounded opacity is seen in the left upper lung field.
+There is volume loss in the left lower lobe.
+Normal pulmonary vasculature is seen.
+Trachea is central.
+The bony rib cage and peripheral soft tissues are normal.
+Few round soft tissue density lesions are seen in the left upper lung zone, raising the suspicion of metastatic deposit.
+Impression
+Features raising suspicion of malignancy. left lung opacity for further evaluation. left lower lobe atelectasis.","Atelectasis,Lung Mass / Nodule,Suspected Malignancy",1,Suspected Malignancy
+synth_00142,"CHEST RADIOGRAPH REPORT
+Comments:
+A large irregular opacity is seen in the right lower lung zone, suspicious for malignancy.
+Normal pulmonary vasculature is seen.
+Both hilar angles are preserved.
+A mass is seen abutting the mediastinum on the right with possible chest wall invasion.
+There is a mass lesion in the right lower lung zone with destruction of the adjacent rib.
+Conclusion:
+Suspicious mass in the right lung. Tissue diagnosis recommended.
+Suggest clinical correlation.",Suspected Malignancy,1,Suspected Malignancy
+synth_00143,"CHEST RADIOGRAPH REPORT
+There is volume loss in the left lower lobe.
+The bones of the thorax appear normal.
+Trachea is central.
+Extra pulmonary soft tissues are normal.
+There is a cavitating lesion in the left upper lobe.
+The mediastinum, hila and pulmonary vasculature are normal.
+Impression:
+Old TB changes with fibrocalcific lesions. left lower lobe atelectasis.
+ECG advised.","Atelectasis,Tuberculosis",1,Tuberculosis
+synth_00144,"CHEST RADIOGRAPH REPORT
+Comments
+Both costophrenic sulci are blunted.
+The bony rib cage and peripheral soft tissues are normal.
+Bilateral upper zone infiltrates with cavitation are noted.
+There are reticulonodular opacities in the left upper lung zone.
+Both costophrenic recesses and hemidiaphragms are normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+There are bilateral apical infiltrates consistent with active pulmonary tuberculosis.
+There are prominent bronchovascular markings bilaterally.
+Impression:
+? TB. Recommend sputum for AFB. Reticulonodular pattern. left pleural effusion.
+Clinical correlation advised.","Pleural Effusion,Reticulonodular / Interstitial Pattern,Tuberculosis",1,Tuberculosis
+synth_00145,"CHEST RADIOGRAPHY REPORT
+There are fibrocalcific changes in the right upper lung zone.
+Extra pulmonary soft tissues are normal.
+Both costophrenic recesses and hemidiaphragms are normal.
+There is volume loss in the right lower lobe.
+The bones of the thorax appear normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+Miliary shadows are seen diffusely in both lung fields.
+There is right pleural effusion.
+Conclusion:
+Active pulmonary tuberculosis. Clinical correlation and microbiological confirmation advised. right pleural effusion. right lower lobe atelectasis.
+Kindly correlate with other clinical parameters.","Atelectasis,Pleural Effusion,Tuberculosis",1,Tuberculosis
+synth_00146,"CHEST RADIOGRAPH REPORT
+There are apical fibrotic changes bilaterally.
+The hila appear normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+There is apical fibrosis with cavitation in the right upper zone.
+Miliary shadows are seen diffusely in both lung fields.
+CONCLUSION
+Active pulmonary tuberculosis. Clinical correlation and microbiological confirmation advised.
+ECG advised.",Tuberculosis,1,Tuberculosis
+synth_00147,"CHEST RADIOGRAPH REPORT
+Comments:
+There are fibrocalcific changes in the right upper lung zone.
+Reticulonodular opacities are seen in both lung fields.
+The costophrenic sulci and hemidiaphragms are preserved.
+Normal pulmonary vasculature is seen.
+Extra pulmonary soft tissues are normal.
+The bony rib cage and peripheral soft tissues are normal.
+There are reticulonodular opacities in the right upper lung zone.
+CONCLUSION
+Old TB changes with fibrocalcific lesions. Reticulonodular pattern.","Reticulonodular / Interstitial Pattern,Tuberculosis",1,Tuberculosis
+synth_00148,"CHEST RADIOGRAPH REPORT
+Comments
+Miliary shadows are seen diffusely in both lung fields.
+There are apical fibrotic changes bilaterally.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Trachea is central.
+The mediastinum, hila and pulmonary vasculature are normal.
+CONCLUSION
+? TB. Recommend sputum for AFB.",Tuberculosis,1,Tuberculosis
+synth_00149,"CHEST RADIOGRAPH REPORT
+The mediastinal shadow is within normal limits.
+Both costophrenic recesses and hemidiaphragms are normal.
+There are apical fibrotic changes bilaterally.
+The bony rib cage and peripheral soft tissues are normal.
+Diffuse perivascular nodular opacities are noted in the left lung field.
+There is blunting of the left costophrenic angle.
+The hila appear normal.
+Miliary shadows are seen diffusely in both lung fields.
+Conclusion:
+Features consistent with pulmonary tuberculosis. left pleural effusion.
+ECG advised.","Pleural Effusion,Tuberculosis",1,Tuberculosis
+synth_00150,"CHEST RADIOGRAPHY REPORT
+There is apical fibrosis with cavitation in the right upper zone.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Miliary shadows are seen diffusely in both lung fields.
+There is a thick-walled cavity in the right upper lobe.
+The costophrenic sulci and hemidiaphragms are preserved.
+CONCLUSION
+Reactivation tuberculosis. Sputum evaluation recommended.",Tuberculosis,1,Tuberculosis
+synth_00151,"CHEST RADIOGRAPH REPORT
+The bones of the thorax appear normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+There is apical fibrosis with cavitation in the right upper zone.
+There are fibrocalcific changes in the right upper lung zone.
+Impression
+Old TB changes with fibrocalcific lesions.
+Suggest clinical correlation.",Tuberculosis,1,Tuberculosis
+synth_00152,"CHEST RADIOGRAPHY REPORT
+There is volume loss in the left lower lobe.
+The mediastinal shadow is within normal limits.
+There are prominent bronchovascular markings bilaterally.
+Both costophrenic recesses and hemidiaphragms are normal.
+There are apical fibrotic changes bilaterally.
+The hila appear normal.
+Both costophrenic sulci are blunted.
+Conclusion:
+Active pulmonary tuberculosis. Clinical correlation and microbiological confirmation advised. Reticulonodular pattern. left pleural effusion. left lower lobe atelectasis.
+Further evaluation recommended.","Atelectasis,Pleural Effusion,Reticulonodular / Interstitial Pattern,Tuberculosis",1,Tuberculosis
+synth_00153,"CHEST RADIOGRAPHY REPORT
+Comments
+Extra pulmonary soft tissues are normal.
+Both costophrenic recesses and hemidiaphragms are normal.
+There is blunting of the right costophrenic angle.
+There are fibrocalcific changes in the right upper lung zone.
+Bilateral upper zone infiltrates with cavitation are noted.
+CONCLUSION
+Reactivation tuberculosis. Sputum evaluation recommended. right pleural effusion.
+Clinical correlation advised.","Pleural Effusion,Tuberculosis",1,Tuberculosis
+synth_00154,"CHEST RADIOGRAPHY REPORT
+Findings:
+The mediastinal shadow is within normal limits.
+Both hilar angles are preserved.
+There are reticulonodular opacities in the right upper lung zone.
+There are prominent bronchovascular markings bilaterally.
+Both costophrenic recesses and hemidiaphragms are normal.
+The bony rib cage and peripheral soft tissues are normal.
+Conclusion:
+Features suggestive of pulmonary tuberculosis. Sputum AFB and GeneXpert recommended. Reticulonodular pattern.","Reticulonodular / Interstitial Pattern,Tuberculosis",1,Tuberculosis
+synth_00155,"CHEST RADIOGRAPH REPORT
+Findings:
+There are fibrocalcific changes in the right upper lung zone.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There are reticulonodular opacities in the right upper lung zone.
+The mediastinum, hila and pulmonary vasculature are normal.
+Both costophrenic sulci are blunted.
+Both hilar angles are preserved.
+The hila appear normal.
+There is hilar lymphadenopathy with right upper lobe consolidation.
+Conclusion:
+Old TB changes with fibrocalcific lesions. right pleural effusion.","Pleural Effusion,Tuberculosis",1,Tuberculosis
+synth_00156,"CHEST RADIOGRAPH REPORT
+Trachea is central.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There is hilar lymphadenopathy with right upper lobe consolidation.
+There are bilateral apical infiltrates consistent with active pulmonary tuberculosis.
+Both hilar angles are preserved.
+The costophrenic sulci and hemidiaphragms are preserved.
+Miliary shadows are seen diffusely in both lung fields.
+Conclusion:
+Miliary TB. Urgent clinical review.
+ECG advised.",Tuberculosis,1,Tuberculosis
+synth_00157,"CHEST RADIOGRAPH REPORT
+The hila appear normal.
+There is volume loss in the left lower lobe.
+Reticulonodular opacities noted in both upper zones with bilateral hilar lymphadenopathy.
+There is blunting of the left costophrenic angle.
+Trachea is central.
+Conclusion:
+Reactivation tuberculosis. Sputum evaluation recommended. left pleural effusion. left lower lobe atelectasis.
+Further evaluation recommended.","Atelectasis,Pleural Effusion,Tuberculosis",1,Tuberculosis
+synth_00158,"CHEST RADIOGRAPHY REPORT
+Comments
+Both hilar angles are preserved.
+The mediastinum, hila and pulmonary vasculature are also normal.
+The hila appear normal.
+There are reticulonodular opacities in the left upper lung zone.
+CONCLUSION
+Reactivation tuberculosis. Sputum evaluation recommended.",Tuberculosis,1,Tuberculosis
+synth_00159,"CHEST RADIOGRAPH REPORT
+There are prominent bronchovascular markings bilaterally.
+The hila appear normal.
+The mediastinal shadow is within normal limits.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There are fibrocalcific changes in the right upper lung zone.
+Bilateral upper zone infiltrates with cavitation are noted.
+Impression
+Old TB changes with fibrocalcific lesions. Reticulonodular pattern.
+Clinical correlation advised.","Reticulonodular / Interstitial Pattern,Tuberculosis",1,Tuberculosis
+synth_00160,"CHEST RADIOGRAPH REPORT
+Comments:
+Diffuse perivascular nodular opacities are noted in the left lung field.
+There are prominent bronchovascular markings bilaterally.
+There is hilar lymphadenopathy with left upper lobe consolidation.
+Bilateral upper zone infiltrates with cavitation are noted.
+The hila appear normal.
+Both hilar angles are preserved.
+There is volume loss in the left lower lobe.
+Conclusion:
+Old TB changes with fibrocalcific lesions. Reticulonodular pattern. left lower lobe atelectasis.
+Further evaluation recommended.","Atelectasis,Reticulonodular / Interstitial Pattern,Tuberculosis",1,Tuberculosis
+synth_00161,"CHEST RADIOGRAPHY REPORT
+There is left pleural effusion.
+There are bilateral apical infiltrates consistent with active pulmonary tuberculosis.
+The mediastinum, hila and pulmonary vasculature are also normal.
+The bones of the thorax appear normal.
+There are reticulonodular opacities in the left upper lung zone.
+There is hilar lymphadenopathy with left upper lobe consolidation.
+Impression
+Old TB changes with fibrocalcific lesions. left pleural effusion.
+Further evaluation recommended.","Pleural Effusion,Tuberculosis",1,Tuberculosis
+synth_00162,"CHEST RADIOGRAPH REPORT
+Bilateral upper zone infiltrates with cavitation are noted.
+The bony rib cage and peripheral soft tissues are normal.
+There is right pleural effusion.
+There is a cavitating lesion in the right upper lobe.
+The mediastinum, hila and pulmonary vasculature are also normal.
+CONCLUSION
+Miliary TB. Urgent clinical review. right pleural effusion.
+Suggest clinical correlation.","Pleural Effusion,Tuberculosis",1,Tuberculosis
+synth_00163,"CHEST RADIOGRAPH REPORT
+The hila appear normal.
+Both costophrenic sulci are blunted.
+Both costophrenic recesses and hemidiaphragms are normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There are apical fibrotic changes bilaterally.
+The bones of the thorax appear normal.
+There are reticulonodular opacities in the right upper lung zone.
+CONCLUSION
+Miliary TB. Urgent clinical review. right pleural effusion.","Pleural Effusion,Tuberculosis",1,Tuberculosis
+synth_00164,"CHEST RADIOGRAPH REPORT
+There is a cavitating lesion in the right upper lobe.
+Reticulonodular opacities noted in both upper zones with bilateral hilar lymphadenopathy.
+Both costophrenic recesses and hemidiaphragms are normal.
+The bony rib cage and peripheral soft tissues are normal.
+There is right pleural effusion.
+There is volume loss in the right lower lobe.
+Reticulonodular opacities are seen in both lung fields.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There are fibrocalcific changes in the right upper lung zone.
+The mediastinum, hila and pulmonary vasculature are normal.
+Impression
+Old TB changes with fibrocalcific lesions. Reticulonodular pattern. right pleural effusion. right lower lobe atelectasis.
+Suggest clinical correlation.","Atelectasis,Pleural Effusion,Reticulonodular / Interstitial Pattern,Tuberculosis",1,Tuberculosis
+synth_00165,"CHEST RADIOGRAPH REPORT
+There are bilateral apical infiltrates consistent with active pulmonary tuberculosis.
+The costophrenic sulci and hemidiaphragms are preserved.
+The bony rib cage and peripheral soft tissues are normal.
+Both hilar angles are preserved.
+Diffuse perivascular nodular opacities are noted in the left lung field.
+There are prominent bronchovascular markings bilaterally.
+There is hilar lymphadenopathy with left upper lobe consolidation.
+Normal pulmonary vasculature is seen.
+Conclusion:
+Miliary TB. Urgent clinical review. Reticulonodular pattern.
+Clinical correlation advised.","Reticulonodular / Interstitial Pattern,Tuberculosis",1,Tuberculosis
+synth_00166,"CHEST RADIOGRAPH REPORT
+Findings:
+Trachea is central.
+Diffuse perivascular nodular opacities are noted in the right lung field.
+There is hilar lymphadenopathy with right upper lobe consolidation.
+Reticulonodular opacities noted in both upper zones with bilateral hilar lymphadenopathy.
+There is volume loss in the right lower lobe.
+The bones of the thorax appear normal.
+Extra pulmonary soft tissues are normal.
+Impression:
+Old TB changes with fibrocalcific lesions. right lower lobe atelectasis.","Atelectasis,Tuberculosis",1,Tuberculosis
+synth_00167,"CHEST RADIOGRAPH REPORT
+There is hilar lymphadenopathy with right upper lobe consolidation.
+There is volume loss in the right lower lobe.
+Reticulonodular opacities are seen in both lung fields.
+Miliary shadows are seen diffusely in both lung fields.
+The bones of the thorax appear normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Trachea is central.
+Impression:
+Active pulmonary tuberculosis. Clinical correlation and microbiological confirmation advised. Reticulonodular pattern. right lower lobe atelectasis.
+Further evaluation recommended.","Atelectasis,Reticulonodular / Interstitial Pattern,Tuberculosis",1,Tuberculosis
+synth_00168,"CHEST RADIOGRAPH REPORT
+Findings:
+Extra pulmonary soft tissues are normal.
+There is a thick-walled cavity in the left upper lobe.
+Both hilar angles are preserved.
+There are prominent bronchovascular markings bilaterally.
+There are reticulonodular opacities in the left upper lung zone.
+The hila appear normal.
+Both costophrenic recesses and hemidiaphragms are normal.
+There is left pleural effusion.
+Impression:
+Reactivation tuberculosis. Sputum evaluation recommended. Reticulonodular pattern. left pleural effusion.
+Further evaluation recommended.","Pleural Effusion,Reticulonodular / Interstitial Pattern,Tuberculosis",1,Tuberculosis
+synth_00169,"CHEST RADIOGRAPH REPORT
+Comments:
+There is right pleural effusion.
+There are bilateral apical infiltrates consistent with active pulmonary tuberculosis.
+The mediastinal shadow is within normal limits.
+The mediastinum, hila and pulmonary vasculature are normal.
+CONCLUSION
+Miliary TB. Urgent clinical review. right pleural effusion.
+Kindly correlate with other clinical parameters.","Pleural Effusion,Tuberculosis",1,Tuberculosis
+synth_00170,"CHEST RADIOGRAPH REPORT
+The hila appear normal.
+There is subsegmental atelectasis in the left lower lung zone.
+Both costophrenic sulci are blunted.
+Both costophrenic recesses and hemidiaphragms are normal.
+There is consolidation in the left lower zone.
+Impression:
+Segmental atelectasis left lung. left pleural effusion. left lower zone consolidation.
+Kindly correlate with other clinical parameters.","Atelectasis,Pleural Effusion,Pneumonia / Consolidation",1,Atelectasis
+synth_00171,"CHEST RADIOGRAPHY REPORT
+Findings:
+There is discoid atelectasis noted in the left lower lung zone.
+There is volume loss in the left lower lobe with elevation of the hemidiaphragm.
+Elevation of the left hemidiaphragm with streaky opacities at the base.
+Extra pulmonary soft tissues are normal.
+There are patchy opacities in the left middle lung zone.
+The mediastinum, hila and pulmonary vasculature are normal.
+Both hilar angles are preserved.
+The costophrenic sulci and hemidiaphragms are preserved.
+Impression:
+left subsegmental atelectasis. left lower zone consolidation.
+Clinical correlation advised.","Atelectasis,Pneumonia / Consolidation",1,Atelectasis
+synth_00172,"CHEST RADIOGRAPH REPORT
+Findings:
+Both hilar angles are preserved.
+The hila appear normal.
+Linear opacities in the right lower zone in keeping with subsegmental atelectasis.
+A nasogastric tube is seen in situ.
+Impression:
+right subsegmental atelectasis. Line in situ.
+Clinical correlation advised.","Atelectasis,Device Present",1,Atelectasis
+synth_00173,"CHEST RADIOGRAPH REPORT
+Comments:
+Linear opacities in the left lower zone in keeping with subsegmental atelectasis.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There are patchy opacities in the left lower lung zone.
+Rib crowding is noted in the left lower lung with elevation of the diaphragm, consistent with lower lobe collapse.
+Extra pulmonary soft tissues are normal.
+The mediastinum, hila and pulmonary vasculature are normal.
+Both hilar angles are preserved.
+CONCLUSION
+left lower lobe atelectasis. left lower zone consolidation.
+Suggest clinical correlation.","Atelectasis,Pneumonia / Consolidation",1,Atelectasis
+synth_00174,"CHEST RADIOGRAPH REPORT
+Comments:
+There is volume loss in the right lower lobe with elevation of the hemidiaphragm.
+The costophrenic sulci and hemidiaphragms are preserved.
+The hila appear normal.
+Linear opacities in the right lower zone in keeping with subsegmental atelectasis.
+There are patchy opacities in the right middle lung zone.
+Both hilar angles are preserved.
+The mediastinal shadow is within normal limits.
+Impression
+right lower lobe collapse. right lower zone consolidation.
+Suggest clinical correlation.","Atelectasis,Pneumonia / Consolidation",1,Atelectasis
+synth_00175,"CHEST RADIOGRAPH REPORT
+There is consolidation in the right lower zone.
+Trachea is central.
+Rib crowding is noted in the right lower lung with elevation of the diaphragm, consistent with lower lobe collapse.
+The costophrenic sulci and hemidiaphragms are preserved.
+There is discoid atelectasis noted in the right lower lung zone.
+Elevation of the right hemidiaphragm with streaky opacities at the base.
+Impression:
+Segmental atelectasis right lung. right lower zone consolidation.
+ECG advised.","Atelectasis,Pneumonia / Consolidation",1,Atelectasis
+synth_00176,"CHEST RADIOGRAPH REPORT
+Linear opacities in the right lower zone in keeping with subsegmental atelectasis.
+There is discoid atelectasis noted in the right lower lung zone.
+The bones of the thorax appear normal.
+Both costophrenic recesses and hemidiaphragms are normal.
+Both costophrenic sulci are blunted.
+A chest tube is noted in the right hemithorax.
+Impression
+Segmental atelectasis right lung. right pleural effusion. Line in situ.
+Clinical correlation advised.","Atelectasis,Device Present,Pleural Effusion",1,Atelectasis
+synth_00177,"CHEST RADIOGRAPHY REPORT
+The costophrenic sulci and hemidiaphragms are preserved.
+Both costophrenic recesses and hemidiaphragms are normal.
+There is plate atelectasis in the right lower zone.
+Rib crowding is noted in the right lower lung with elevation of the diaphragm, consistent with lower lobe collapse.
+Linear opacities in the right lower zone in keeping with subsegmental atelectasis.
+The bones of the thorax appear normal.
+A chest tube is noted in the right hemithorax.
+Conclusion:
+right lower lobe atelectasis. Line in situ.
+ECG advised.","Atelectasis,Device Present",1,Atelectasis
+synth_00178,"CHEST RADIOGRAPH REPORT
+The bones of the thorax appear normal.
+Linear opacities in the right lower zone in keeping with subsegmental atelectasis.
+A central venous catheter is noted with its tip projected over the SVC.
+Both costophrenic recesses and hemidiaphragms are normal.
+Rib crowding is noted in the right lower lung with elevation of the diaphragm, consistent with lower lobe collapse.
+Extra pulmonary soft tissues are normal.
+There is volume loss in the right lower lobe with elevation of the hemidiaphragm.
+The mediastinal shadow is within normal limits.
+Conclusion:
+Volume loss in the right hemithorax — atelectasis. Line in situ.
+Suggest clinical correlation.","Atelectasis,Device Present",1,Atelectasis
+synth_00179,"CHEST RADIOGRAPH REPORT
+There is compressive atelectasis of the right lower lobe.
+There is right lower lobe collapse with mediastinal shift.
+There are patchy opacities in the right lower lung zone.
+There is partial collapse of the right lung with loss of volume.
+Both hilar angles are preserved.
+The mediastinum, hila and pulmonary vasculature are normal.
+A nasogastric tube is seen in situ.
+Normal pulmonary vasculature is seen.
+CONCLUSION
+right lower lobe collapse. Line in situ. right lower zone consolidation.
+Suggest clinical correlation.","Atelectasis,Device Present,Pneumonia / Consolidation",1,Atelectasis
+synth_00180,"CHEST RADIOGRAPH REPORT
+There is plate atelectasis in the right lower zone.
+The hila appear normal.
+Both costophrenic recesses and hemidiaphragms are normal.
+There is subsegmental atelectasis in the right middle lung zone.
+There is segmental collapse of the right lower lobe.
+The bones of the thorax appear normal.
+CONCLUSION
+Atelectasis of the right lower lobe.
+Clinical correlation advised.",Atelectasis,1,Atelectasis
+synth_00181,"CHEST RADIOGRAPHY REPORT
+Trachea is central.
+The bones of the thorax appear normal.
+Linear opacities in the right lower zone in keeping with subsegmental atelectasis.
+Normal pulmonary vasculature is seen.
+There is right pleural effusion.
+Conclusion:
+right lower lobe collapse. right pleural effusion.
+Clinical correlation advised.","Atelectasis,Pleural Effusion",1,Atelectasis
+synth_00182,"CHEST RADIOGRAPH REPORT
+The hila appear normal.
+There is subsegmental atelectasis in the right lower lung zone.
+Both hilar angles are preserved.
+Impression
+Atelectasis of the right lower lobe.
+Further evaluation recommended.",Atelectasis,1,Atelectasis
+synth_00183,"CHEST RADIOGRAPH REPORT
+Comments:
+Trachea is central.
+Both costophrenic sulci are blunted.
+There is subsegmental atelectasis in the right upper lung zone.
+The bony rib cage and peripheral soft tissues are normal.
+The mediastinum, hila and pulmonary vasculature are also normal.
+There is right lower lobe collapse with mediastinal shift.
+There is partial collapse of the right lung with loss of volume.
+Normal pulmonary vasculature is seen.
+Impression:
+Atelectasis of the right lower lobe. right pleural effusion.
+Suggest clinical correlation.","Atelectasis,Pleural Effusion",1,Atelectasis
+synth_00184,"CHEST RADIOGRAPH REPORT
+The bony rib cage and peripheral soft tissues are normal.
+There are patchy opacities in the right upper lung zone.
+There is volume loss in the right lower lobe with elevation of the hemidiaphragm.
+There is subsegmental atelectasis in the right upper lung zone.
+The bones of the thorax appear normal.
+Rib crowding is noted in the right lower lung with elevation of the diaphragm, consistent with lower lobe collapse.
+Impression:
+right lower lobe atelectasis. right lower zone consolidation.
+ECG advised.","Atelectasis,Pneumonia / Consolidation",1,Atelectasis
+synth_00185,"CHEST RADIOGRAPHY REPORT
+Comments:
+There is partial collapse of the left lung with loss of volume.
+Both costophrenic recesses and hemidiaphragms are normal.
+Both hilar angles are preserved.
+CONCLUSION
+left lower lobe collapse.
+ECG advised.",Atelectasis,1,Atelectasis
+synth_00186,"CHEST RADIOGRAPHY REPORT
+Comments:
+The costophrenic sulci and hemidiaphragms are preserved.
+Rib crowding is noted in the left lower lung with elevation of the diaphragm, consistent with lower lobe collapse.
+Linear opacities in the left lower zone in keeping with subsegmental atelectasis.
+Elevation of the left hemidiaphragm with streaky opacities at the base.
+There are patchy opacities in the left lower lung zone.
+Trachea is central.
+Both costophrenic recesses and hemidiaphragms are normal.
+Conclusion:
+left subsegmental atelectasis. left lower zone consolidation.
+Kindly correlate with other clinical parameters.","Atelectasis,Pneumonia / Consolidation",1,Atelectasis
+synth_00187,"CHEST RADIOGRAPH REPORT
+Findings:
+There is right lower lobe collapse with mediastinal shift.
+There is volume loss in the right lower lobe with elevation of the hemidiaphragm.
+Trachea is central.
+There is partial collapse of the right lung with loss of volume.
+The bones of the thorax appear normal.
+Impression
+Atelectasis of the right lower lobe.
+Further evaluation recommended.",Atelectasis,1,Atelectasis
+synth_00188,"CHEST RADIOGRAPH REPORT
+There is consolidation in the left lower zone.
+The mediastinal shadow is within normal limits.
+The hila appear normal.
+Both costophrenic recesses and hemidiaphragms are normal.
+Linear opacities in the left lower zone in keeping with subsegmental atelectasis.
+The mediastinum, hila and pulmonary vasculature are normal.
+A chest tube is noted in the left hemithorax.
+Impression
+Volume loss in the left hemithorax — atelectasis. Line in situ. left lower zone consolidation.
+Suggest clinical correlation.","Atelectasis,Device Present,Pneumonia / Consolidation",1,Atelectasis
+synth_00189,"CHEST RADIOGRAPHY REPORT
+Findings:
+Both costophrenic sulci are blunted.
+There is subsegmental atelectasis in the right lower lung zone.
+There are patchy opacities in the right lower lung zone.
+Normal pulmonary vasculature is seen.
+Trachea is central.
+Impression:
+right lower lobe atelectasis. right pleural effusion. right lower zone consolidation.
+Suggest clinical correlation.","Atelectasis,Pleural Effusion,Pneumonia / Consolidation",1,Atelectasis

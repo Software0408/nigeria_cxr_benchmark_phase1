@@ -1,3 +1,9 @@
+# Project-internal files (not for public distribution)
+CLAUDE.md
+models/
+pytest.ini
+run_pipeline.py
+
 # Data & sensitive files
 *.dicom
 *.dcm

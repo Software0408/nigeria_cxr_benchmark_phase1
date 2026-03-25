@@ -1,0 +1,1185 @@
+study_id,report_text,gold_labels,is_synthetic,neg_target
+hard_neg_90001,"CHEST RADIOGRAPH REPORT
+Findings:
+The heart is normal in size and contour.
+The mediastinum, hila and pulmonary vasculature are normal.
+No focal lung lesion is seen.
+The costophrenic sulci and hemidiaphragms are preserved.
+The bony rib cage and peripheral soft tissues are normal.
+Impression:
+Normal chest radiograph.",Normal,True,Degenerative / Structural Changes
+hard_neg_90002,"CHEST RADIOGRAPHY REPORT
+
+Comments
+The lung fields are clear.
+The cardiac and mediastinal shadows are within normal limits.
+Normal pulmonary vasculature is seen.
+Both costophrenic recesses and hemidiaphragms are normal.
+The bones of the thorax and peripheral soft tissue shadows are normal.
+Impression:
+Normal chest radiograph.",Normal,True,Degenerative / Structural Changes
+hard_neg_90003,"CHEST RADIOGRAPH REPORT
+Findings:
+The heart is within normal limits (CTR - 0.48) and contour.
+The aorta is normal in caliber.
+No focal lung lesion is seen.
+The costophrenic sulci and hemidiaphragms are preserved.
+The bony thorax and overlying soft tissues are unremarkable.
+Impression:
+No gross abnormality seen.",Normal,True,Degenerative / Structural Changes
+hard_neg_90004,"AP CHEST RADIOGRAPH REPORT
+
+Findings:
+The cardiac shadow is within normal limits.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Both lung fields are clear.
+Both costophrenic sulci and hemidiaphragms are preserved.
+The bony rib cage and peripheral soft tissues are intact.
+Impression:
+Normal chest radiograph.",Normal,True,Degenerative / Structural Changes
+hard_neg_90005,"CHEST RADIOGRAPHY REPORT
+The heart is within normal limits.
+The mediastinum and hila are unremarkable.
+No focal lung lesion is identified.
+The costophrenic angles and hemidiaphragms are preserved.
+The visualized bony thorax is normal.
+Conclusion:
+No significant radiographic abnormality.",Normal,True,Degenerative / Structural Changes
+hard_neg_90006,"CHEST XRAY REPORT
+Findings:
+The lung fields are clear with normal bronchovascular markings.
+The cardiac size is within normal limits (CTR - 0.46).
+The aortic arch is normal.
+The bony structures of the thorax appear normal.
+Both costophrenic angles are clear.
+Impression:
+No significant radiographic abnormality.",Normal,True,Degenerative / Structural Changes
+hard_neg_90007,"AP CHEST RADIOGRAPH REPORT
+Findings:
+The cardiac shadow is enlarged (CTR - 0.62).
+The aorta is normal.
+Bilateral pleural effusion is noted with meniscus sign.
+The bony rib cage is intact.
+Impression:
+Cardiomegaly with bilateral pleural effusion.","Cardiomegaly,Pleural Effusion",True,Degenerative / Structural Changes
+hard_neg_90008,"CHEST RADIOGRAPHY REPORT
+
+Findings:
+Homogenous opacity is noted in the right lower lung zone.
+The aortic arch is normal.
+The heart is within normal limits.
+The bony thorax is unremarkable.
+Impression:
+Right lower lobe pneumonia.",Pneumonia / Consolidation,True,Degenerative / Structural Changes
+hard_neg_90009,"CHEST RADIOGRAPHY REPORT
+
+Findings:
+The heart is within normal limits.
+The mediastinum, hila and pulmonary vasculature are normal.
+No focal lung lesion is seen.
+The costophrenic sulci and hemidiaphragms are preserved.
+The bony rib cage and peripheral soft tissues are normal.
+Impression:
+Normal chest radiograph.",Normal,True,Degenerative / Structural Changes
+hard_neg_90010,"CHEST RADIOGRAPH REPORT
+Comments
+The lung fields are clear.
+The cardiac and mediastinal shadows are within normal limits.
+Normal pulmonary vasculature is seen.
+Both costophrenic recesses and hemidiaphragms are normal.
+The bones of the thorax and peripheral soft tissue shadows are normal.
+Impression:
+No significant radiographic abnormality.",Normal,True,Degenerative / Structural Changes
+hard_neg_90011,"CHEST RADIOGRAPH REPORT
+Findings:
+The heart is within normal limits (CTR - 0.48) and contour.
+The aorta is normal in caliber.
+No focal lung lesion is identified.
+The costophrenic sulci and hemidiaphragms are preserved.
+The bony thorax and overlying soft tissues are unremarkable.
+Impression:
+Normal study.",Normal,True,Degenerative / Structural Changes
+hard_neg_90012,"AP CHEST RADIOGRAPH  REPORT
+Findings:
+The cardiac shadow is within normal limits.
+The mediastinum, hila and pulmonary vasculature are also normal.
+Both lung fields are clear.
+Both costophrenic sulci and hemidiaphragms are preserved.
+The bony rib cage and peripheral soft tissues are intact.
+Impression:
+Normal chest radiograph.",Normal,True,Degenerative / Structural Changes
+hard_neg_90013,"CHEST XRAY REPORT
+
+The heart is normal in size and contour.
+The mediastinum and hila are unremarkable.
+No focal lung lesion is identified.
+The costophrenic angles and hemidiaphragms are preserved.
+The visualized bony thorax is normal.
+Conclusion:
+No significant radiographic abnormality.",Normal,True,Degenerative / Structural Changes
+hard_neg_90014,"CHEST RADIOGRAPH REPORT
+Findings:
+The lung fields are clear with normal bronchovascular markings.
+The cardiac size is within normal limits (CTR - 0.46).
+The aortic arch is normal.
+The bony structures of the thorax appear normal.
+Both costophrenic angles are clear.
+Impression:
+Normal chest radiograph.",Normal,True,Degenerative / Structural Changes
+hard_neg_90015,"AP CHEST RADIOGRAPH REPORT
+Findings:
+The cardiac shadow is enlarged (CTR - 0.62).
+The aorta is normal.
+Bilateral pleural effusion is noted with meniscus sign.
+The bony rib cage is intact.
+Impression:
+Cardiomegaly with bilateral pleural effusion.","Cardiomegaly,Pleural Effusion",True,Degenerative / Structural Changes
+hard_neg_90016,"CHEST RADIOGRAPH REPORT
+Findings:
+The heart is normal in size and contour.
+The mediastinum, hila and pulmonary vasculature are normal.
+No focal lung lesion is seen.
+Both costophrenic sulci and hemidiaphragms are intact.
+The bony rib cage and peripheral soft tissues are normal.
+Impression:
+Normal chest radiograph.",Normal,True,Pleural Effusion
+hard_neg_90017,"AP CHEST RADIOGRAPH REPORT
+The cardiac shadow is enlarged (CTR - 0.57).
+The costophrenic sulci and hemidiaphragms are preserved bilaterally.
+No pleural effusion is seen.
+The lung fields are clear.
+Impression:
+Cardiomegaly. No pleural effusion.",Cardiomegaly,True,Pleural Effusion
+hard_neg_90018,"CHEST RADIOGRAPHY REPORT
+Findings:
+Reticular opacities are noted in both lung fields.
+Both costophrenic angles are clear.
+The hemidiaphragms are intact.
+Cardiac size is within normal limits.
+Impression:
+Bilateral reticulonodular pattern. No effusion.",Reticulonodular / Interstitial Pattern,True,Pleural Effusion
+hard_neg_90019,"CHEST RADIOGRAPH REPORT
+The heart is normal in size.
+The costophrenic recesses appear normal bilaterally.
+The hemidiaphragms are well visualized and normal.
+The lung fields are clear.
+Impression:
+No gross abnormality seen.",Normal,True,Pleural Effusion
+hard_neg_90020,"CHEST RADIOGRAPHY REPORT
+
+Findings:
+Patchy opacity is observed in the right middle lung zone.
+Both costophrenic sulci are preserved.
+The hemidiaphragms are intact.
+The cardiac shadow is within normal limits.
+Impression:
+Right middle lobe pneumonia. No pleural effusion.",Pneumonia / Consolidation,True,Pleural Effusion
+hard_neg_90021,"AP CHEST XRAY REPORT
+The cardiac shadow is normal.
+The costophrenic sulci and hemidiaphragms are preserved.
+Clear lung fields bilaterally.
+Normal pulmonary vasculature.
+Impression:
+No acute cardiopulmonary disease.",Normal,True,Pleural Effusion
+hard_neg_90022,"CHEST RADIOGRAPH REPORT
+The heart is enlarged (CTR - 0.59) with left ventricular configuration.
+Both costophrenic angles are clear and well-preserved.
+No pleural fluid is seen.
+Impression:
+Cardiomegaly with left ventricular preponderance. Clear costophrenic angles.",Cardiomegaly,True,Pleural Effusion
+hard_neg_90023,"AP CHEST RADIOGRAPH REPORT
+
+Findings:
+The heart is normal in size and contour.
+The mediastinum, hila and pulmonary vasculature are normal.
+No focal lung lesion is seen.
+Both costophrenic sulci and hemidiaphragms are intact.
+The bony rib cage and peripheral soft tissues are normal.
+Impression:
+Normal chest radiograph.",Normal,True,Pleural Effusion
+hard_neg_90024,"CHEST XRAY REPORT
+The cardiac shadow appears enlarged (CTR - 0.57).
+The costophrenic sulci and hemidiaphragms are preserved bilaterally.
+No pleural effusion is noted.
+The lung fields are clear.
+Impression:
+Cardiomegaly. No pleural effusion.",Cardiomegaly,True,Pleural Effusion
+hard_neg_90025,"CHEST RADIOGRAPH  REPORT
+
+Findings:
+Reticular opacities are noted in both lung fields.
+Both costophrenic angles are clear.
+The hemidiaphragms are intact.
+Cardiac size is within normal limits.
+Impression:
+Bilateral reticulonodular pattern. No effusion.",Reticulonodular / Interstitial Pattern,True,Pleural Effusion
+hard_neg_90026,"CHEST RADIOGRAPHY REPORT
+The heart is normal in size.
+The costophrenic recesses are normal bilaterally.
+The hemidiaphragms are well visualized and normal.
+The lung fields are clear.
+Impression:
+Normal study.",Normal,True,Pleural Effusion
+hard_neg_90027,"CHEST XRAY REPORT
+Findings:
+Patchy opacity is observed in the right middle lung zone.
+Both costophrenic sulci are preserved.
+The hemidiaphragms are intact.
+The cardiac shadow is within normal limits.
+Impression:
+Right middle lobe pneumonia. No pleural effusion.",Pneumonia / Consolidation,True,Pleural Effusion
+hard_neg_90028,"AP CHEST RADIOGRAPH  REPORT
+The cardiac shadow is normal.
+The costophrenic sulci and hemidiaphragms are intact.
+Clear lung fields bilaterally.
+Normal pulmonary vasculature.
+Impression:
+No acute cardiopulmonary disease.",Normal,True,Pleural Effusion
+hard_neg_90029,"CHEST RADIOGRAPHY REPORT
+The heart appears enlarged (CTR - 0.59) with left ventricular configuration.
+Both costophrenic angles are clear and well-preserved.
+No pleural fluid is noted.
+Impression:
+Cardiomegaly with left ventricular preponderance. Clear costophrenic angles.",Cardiomegaly,True,Pleural Effusion
+hard_neg_90030,"CHEST RADIOGRAPH REPORT
+Findings:
+The heart is normal in size and contour.
+The mediastinum, hila and pulmonary vasculature are normal.
+No focal lung lesion is seen.
+Both costophrenic sulci and hemidiaphragms are preserved.
+The bony rib cage and peripheral soft tissues are normal.
+Impression:
+Normal chest radiograph.",Normal,True,Pleural Effusion
+hard_neg_90031,"CHEST RADIOGRAPH  REPORT
+Findings:
+Homogenous opacity is observed in the left lower lung zone silhouetting the left hemidiaphragm with meniscus sign.
+The cardiac shadow is within normal limits.
+Impression:
+Moderate left pleural effusion.",Pleural Effusion,True,Pneumonia / Consolidation
+hard_neg_90032,"CHEST XRAY REPORT
+Findings:
+There is haziness of the right hemithorax with associated volume loss.
+Mediastinal shift to the right is observed.
+Impression:
+Right lung collapse with associated volume loss.",Atelectasis,True,Pneumonia / Consolidation
+hard_neg_90033,"CHEST RADIOGRAPH REPORT
+Findings:
+Diffuse reticular opacities are seen bilaterally.
+No focal consolidation is noted.
+Both costophrenic angles are intact.
+Cardiac size is normal.
+Impression:
+Bilateral interstitial lung disease.",Reticulonodular / Interstitial Pattern,True,Pneumonia / Consolidation
+hard_neg_90034,"AP CHEST RADIOGRAPH REPORT
+
+Homogenous opacification of the left hemithorax with associated mediastinal shift to the right.
+The right lung field is clear.
+Impression:
+Massive left pleural effusion.",Pleural Effusion,True,Pneumonia / Consolidation
+hard_neg_90035,"CHEST RADIOGRAPHY REPORT
+Findings:
+A round opacity is noted in the right upper lung zone.
+No air bronchogram is seen.
+The cardiac shadow is normal.
+Both costophrenic sulci are intact.
+Impression:
+Right upper lobe lung mass for further evaluation.",Lung Mass / Nodule,True,Pneumonia / Consolidation
+hard_neg_90036,"AP CHEST RADIOGRAPH REPORT
+Findings:
+There is near-total opacification of the right hemithorax.
+The heart is displaced to the left.
+A chest tube artifact is noted on the right.
+Impression:
+Right hydropneumothorax with chest tube in situ.",Device Present,True,Pneumonia / Consolidation
+hard_neg_90037,"CHEST RADIOGRAPH REPORT
+
+Findings:
+Dense fibrotic opacities are noted bilaterally predominantly in the upper lung zones.
+Volume loss with upward retraction of both hila.
+Impression:
+Bilateral pulmonary fibrosis with volume loss, likely sequelae of old TB.","Reticulonodular / Interstitial Pattern,Tuberculosis",True,Pneumonia / Consolidation
+hard_neg_90038,"CHEST XRAY REPORT
+
+Findings:
+Homogenous opacity is observed in the left lower lung zone silhouetting the left hemidiaphragm with meniscus sign.
+The cardiac shadow is within normal limits.
+Impression:
+Moderate left pleural effusion.",Pleural Effusion,True,Pneumonia / Consolidation
+hard_neg_90039,"CHEST RADIOGRAPHY REPORT
+Findings:
+There is haziness of the right hemithorax with associated volume loss.
+Mediastinal shift to the right is observed.
+Impression:
+Right lung collapse with associated volume loss.",Atelectasis,True,Pneumonia / Consolidation
+hard_neg_90040,"CHEST RADIOGRAPH  REPORT
+
+Findings:
+Diffuse reticular opacities are seen bilaterally.
+No focal consolidation is seen.
+Both costophrenic angles are preserved.
+Cardiac size is normal.
+Impression:
+Bilateral interstitial lung disease.",Reticulonodular / Interstitial Pattern,True,Pneumonia / Consolidation
+hard_neg_90041,"AP CHEST RADIOGRAPH REPORT
+
+Homogenous opacification of the left hemithorax with associated mediastinal shift to the right.
+The right lung field is clear.
+Impression:
+Massive left pleural effusion.",Pleural Effusion,True,Pneumonia / Consolidation
+hard_neg_90042,"CHEST RADIOGRAPHY REPORT
+Findings:
+A round opacity is observed in the right upper lung zone.
+No air bronchogram is seen.
+The cardiac shadow is normal.
+Both costophrenic sulci are intact.
+Impression:
+Right upper lobe lung mass for further evaluation.",Lung Mass / Nodule,True,Pneumonia / Consolidation
+hard_neg_90043,"CHEST RADIOGRAPH REPORT
+
+Findings:
+There is near-total opacification of the right hemithorax.
+The heart is displaced to the left.
+A chest tube artifact is noted on the right.
+Impression:
+Right hydropneumothorax with chest tube in situ.",Device Present,True,Pneumonia / Consolidation
+hard_neg_90044,"CHEST RADIOGRAPH  REPORT
+
+Findings:
+Dense fibrotic opacities are noted bilaterally predominantly in the upper lung zones.
+Volume loss with upward retraction of both hila.
+Impression:
+Bilateral pulmonary fibrosis with volume loss, likely sequelae of old TB.","Reticulonodular / Interstitial Pattern,Tuberculosis",True,Pneumonia / Consolidation
+hard_neg_90045,"CHEST XRAY REPORT
+Findings:
+Homogenous opacity is observed in the left lower lung zone silhouetting the left hemidiaphragm with meniscus sign.
+The cardiac shadow is within normal limits.
+Impression:
+Moderate left pleural effusion.",Pleural Effusion,True,Pneumonia / Consolidation
+hard_neg_90046,"CHEST XRAY REPORT
+Findings:
+The heart is within normal limits and contour.
+The mediastinum, hila and pulmonary vasculature are normal.
+No focal lung lesion is seen.
+Impression:
+No significant radiographic abnormality.",Normal,True,Cardiomegaly
+hard_neg_90047,"CHEST RADIOGRAPH  REPORT
+The cardiac shadow is within normal limits (CTR - 0.48).
+Both lung fields are clear bilaterally.
+Both costophrenic sulci are preserved.
+Impression:
+No gross abnormality seen.",Normal,True,Cardiomegaly
+hard_neg_90048,"CHEST XRAY REPORT
+
+The heart is within normal limits (CTR - 0.45) and contour.
+There is blunting of the right costophrenic sulcus.
+Impression:
+Right pleural effusion. Normal cardiac size.",Pleural Effusion,True,Cardiomegaly
+hard_neg_90049,"CHEST RADIOGRAPH REPORT
+The cardiac size is indeterminate due to massive pleural effusion.
+Homogenous opacity is observed in the left hemithorax.
+Impression:
+Massive left pleural effusion. Cardiac size indeterminate.",Pleural Effusion,True,Cardiomegaly
+hard_neg_90050,"CHEST RADIOGRAPHY REPORT
+
+The heart is within normal limits.
+Reticular opacities are noted in both lower lung zones.
+The costophrenic sulci are intact.
+Impression:
+Interstitial lung disease. Normal cardiac size.",Reticulonodular / Interstitial Pattern,True,Cardiomegaly
+hard_neg_90051,"AP CHEST RADIOGRAPH REPORT
+
+Rotated image.
+The cardiac shadow appears prominent but this is likely due to rotation and AP projection.
+The lung fields are clear.
+Impression:
+Normal study. Apparent cardiomegaly likely due to rotation and AP projection.",Normal,True,Cardiomegaly
+hard_neg_90052,"CHEST RADIOGRAPH REPORT
+Findings:
+The heart is within normal limits.
+The mediastinum, hila and pulmonary vasculature are normal.
+No focal lung lesion is seen.
+Impression:
+Normal chest radiograph.",Normal,True,Cardiomegaly
+hard_neg_90053,"AP CHEST RADIOGRAPH REPORT
+The cardiac shadow is within normal limits (CTR - 0.48).
+The lung fields are clear.
+Both costophrenic sulci are intact.
+Impression:
+No gross abnormality seen.",Normal,True,Cardiomegaly
+hard_neg_90054,"CHEST XRAY REPORT
+
+The heart is within normal limits (CTR - 0.45) and contour.
+There is blunting of the right costophrenic sulcus.
+Impression:
+Right pleural effusion. Normal cardiac size.",Pleural Effusion,True,Cardiomegaly
+hard_neg_90055,"CHEST RADIOGRAPH  REPORT
+
+The cardiac size is indeterminate due to massive pleural effusion.
+Homogenous opacity is observed in the left hemithorax.
+Impression:
+Massive left pleural effusion. Cardiac size indeterminate.",Pleural Effusion,True,Cardiomegaly
+hard_neg_90056,"CHEST RADIOGRAPH  REPORT
+The heart is normal in size.
+Reticular opacities are noted in both lower lung zones.
+The costophrenic sulci are intact.
+Impression:
+Interstitial lung disease. Normal cardiac size.",Reticulonodular / Interstitial Pattern,True,Cardiomegaly
+hard_neg_90057,"AP CHEST RADIOGRAPH REPORT
+Rotated image.
+The cardiac shadow appears prominent but this is likely due to rotation and AP projection.
+Both lung fields are clear bilaterally.
+Impression:
+No gross abnormality seen. Apparent cardiomegaly likely due to rotation and AP projection.",Normal,True,Cardiomegaly
+hard_neg_90058,"AP CHEST RADIOGRAPH REPORT
+
+Findings:
+The heart is normal in size and contour.
+The mediastinum, hila and pulmonary vasculature are normal.
+No focal lung lesion is seen.
+Impression:
+Normal chest radiograph.",Normal,True,Cardiomegaly
+hard_neg_90059,"CHEST RADIOGRAPHY REPORT
+The cardiac shadow is within normal limits (CTR - 0.48).
+The lung fields are clear.
+Both costophrenic sulci are intact.
+Impression:
+No gross abnormality seen.",Normal,True,Cardiomegaly
+hard_neg_90060,"AP CHEST RADIOGRAPH REPORT
+The heart is within normal limits (CTR - 0.45) and contour.
+There is blunting of the right costophrenic sulcus.
+Impression:
+Right pleural effusion. Normal cardiac size.",Pleural Effusion,True,Cardiomegaly
+hard_neg_90061,"CHEST RADIOGRAPH REPORT
+
+Findings:
+The heart is normal in size.
+Central venous catheter artifact is noted with tip in the superior vena cava.
+Both lung fields are clear bilaterally.
+Impression:
+Central venous catheter in situ. No other abnormality.",Device Present,True,Post-Surgical Changes
+hard_neg_90062,"CHEST XRAY REPORT
+A chest tube is seen in the right hemithorax.
+Residual right pneumothorax is noted.
+No pleural effusion.
+Impression:
+Chest tube in situ with residual right pneumothorax.",Device Present,True,Post-Surgical Changes
+hard_neg_90063,"CHEST RADIOGRAPHY REPORT
+Findings:
+The bony rib cage shows old healed rib fractures on the left (4th-6th ribs).
+The lung fields are clear.
+Cardiac size is normal.
+Impression:
+Old healed left rib fractures. No acute lung pathology.",Degenerative / Structural Changes,True,Post-Surgical Changes
+hard_neg_90064,"CHEST RADIOGRAPH  REPORT
+Findings:
+NG tube artifact is noted with tip projected over the gastric region.
+The heart is normal in size.
+Both lung fields are clear.
+Impression:
+NG tube in situ. Normal chest radiograph otherwise.",Device Present,True,Post-Surgical Changes
+hard_neg_90065,"CHEST RADIOGRAPH REPORT
+Right subclavian central venous catheter noted with tip in the SVC.
+The cardiac shadow is enlarged (CTR - 0.60).
+Bilateral pleural effusion is seen.
+Impression:
+Cardiomegaly. Bilateral pleural effusion. Central line in situ.","Cardiomegaly,Pleural Effusion,Device Present",True,Post-Surgical Changes
+hard_neg_90066,"CHEST RADIOGRAPH  REPORT
+
+Findings:
+The heart is normal in size.
+Central venous catheter artifact is observed with tip in the superior vena cava.
+The lung fields are clear.
+Impression:
+Central venous catheter in situ. No other abnormality.",Device Present,True,Post-Surgical Changes
+hard_neg_90067,"CHEST XRAY REPORT
+
+A chest tube is noted in the right hemithorax.
+Residual right pneumothorax is observed.
+No pleural effusion.
+Impression:
+Chest tube in situ with residual right pneumothorax.",Device Present,True,Post-Surgical Changes
+hard_neg_90068,"CHEST RADIOGRAPHY REPORT
+Findings:
+The bony rib cage shows old healed rib fractures on the left (4th-6th ribs).
+The lung fields are clear.
+Cardiac size is normal.
+Impression:
+Old healed left rib fractures. No acute lung pathology.",Degenerative / Structural Changes,True,Post-Surgical Changes
+hard_neg_90069,"CHEST XRAY REPORT
+Findings:
+NG tube artifact is noted with tip projected over the gastric region.
+The heart is normal in size.
+Both lung fields are clear.
+Impression:
+NG tube in situ. Normal chest radiograph otherwise.",Device Present,True,Post-Surgical Changes
+hard_neg_90070,"CHEST RADIOGRAPH REPORT
+Right subclavian central venous catheter noted with tip in the SVC.
+The cardiac shadow is enlarged (CTR - 0.60).
+Bilateral pleural effusion is seen.
+Impression:
+Cardiomegaly. Bilateral pleural effusion. Central line in situ.","Cardiomegaly,Pleural Effusion,Device Present",True,Post-Surgical Changes
+hard_neg_90071,"CHEST XRAY REPORT
+Findings:
+The heart is within normal limits.
+Central venous catheter artifact is noted with tip in the superior vena cava.
+Both lung fields are clear bilaterally.
+Impression:
+Central venous catheter in situ. No other abnormality.",Device Present,True,Post-Surgical Changes
+hard_neg_90072,"CHEST RADIOGRAPH REPORT
+
+A chest tube is seen in the right hemithorax.
+Residual right pneumothorax is noted.
+No pleural effusion.
+Impression:
+Chest tube in situ with residual right pneumothorax.",Device Present,True,Post-Surgical Changes
+hard_neg_90073,"CHEST RADIOGRAPH REPORT
+Findings:
+The bony rib cage shows old healed rib fractures on the left (4th-6th ribs).
+Both lung fields are clear bilaterally.
+Cardiac size is normal.
+Impression:
+Old healed left rib fractures. No acute lung pathology.",Degenerative / Structural Changes,True,Post-Surgical Changes
+hard_neg_90074,"CHEST XRAY REPORT
+Findings:
+NG tube artifact is noted with tip projected over the gastric region.
+The heart is normal in size.
+Both lung fields are clear.
+Impression:
+NG tube in situ. Normal chest radiograph otherwise.",Device Present,True,Post-Surgical Changes
+hard_neg_90075,"CHEST RADIOGRAPH REPORT
+Right subclavian central venous catheter noted with tip in the SVC.
+The cardiac shadow appears enlarged (CTR - 0.60).
+Bilateral pleural effusion is noted.
+Impression:
+Cardiomegaly. Bilateral pleural effusion. Central line in situ.","Cardiomegaly,Pleural Effusion,Device Present",True,Post-Surgical Changes
+hard_neg_90076,"CHEST XRAY REPORT
+
+Findings:
+The heart is enlarged (CTR - 0.63).
+The pulmonary vasculature is normal.
+The lung fields are clear.
+Both costophrenic sulci are intact.
+Impression:
+Cardiomegaly. No pulmonary edema.",Cardiomegaly,True,Pulmonary Edema
+hard_neg_90077,"AP CHEST RADIOGRAPH REPORT
+
+Bilateral patchy opacities are noted predominantly in the lower lung zones.
+The cardiac size is normal.
+Impression:
+Bilateral pneumonia.",Pneumonia / Consolidation,True,Pulmonary Edema
+hard_neg_90078,"CHEST RADIOGRAPHY REPORT
+Findings:
+The cardiac shadow appears enlarged.
+Normal pulmonary vasculature. No vascular congestion.
+Both lung fields are clear bilaterally.
+Impression:
+Cardiomegaly. No features of pulmonary edema.",Cardiomegaly,True,Pulmonary Edema
+hard_neg_90079,"CHEST RADIOGRAPH REPORT
+Diffuse ground glass opacification noted bilaterally.
+The cardiac size is normal.
+No Kerley B lines. No cephalization.
+Impression:
+Bilateral ground glass opacities - likely infective etiology. No features of pulmonary edema.",Pneumonia / Consolidation,True,Pulmonary Edema
+hard_neg_90080,"CHEST XRAY REPORT
+
+The heart is normal in size.
+The mediastinum, hila and pulmonary vasculature are unremarkable.
+Both lung fields are clear.
+Impression:
+Normal study.",Normal,True,Pulmonary Edema
+hard_neg_90081,"CHEST RADIOGRAPHY REPORT
+Findings:
+The heart appears enlarged (CTR - 0.63).
+The pulmonary vasculature is normal.
+Both lung fields are clear.
+Both costophrenic sulci are intact.
+Impression:
+Cardiomegaly. No pulmonary edema.",Cardiomegaly,True,Pulmonary Edema
+hard_neg_90082,"CHEST RADIOGRAPH REPORT
+Bilateral patchy opacities are noted predominantly in the lower lung zones.
+The cardiac size is normal.
+Impression:
+Bilateral pneumonia.",Pneumonia / Consolidation,True,Pulmonary Edema
+hard_neg_90083,"CHEST RADIOGRAPHY REPORT
+Findings:
+The cardiac shadow is enlarged.
+Normal pulmonary vasculature. No vascular congestion.
+Both lung fields are clear bilaterally.
+Impression:
+Cardiomegaly. No features of pulmonary edema.",Cardiomegaly,True,Pulmonary Edema
+hard_neg_90084,"CHEST XRAY REPORT
+Diffuse ground glass opacification noted bilaterally.
+The cardiac size is normal.
+No Kerley B lines. No cephalization.
+Impression:
+Bilateral ground glass opacities - likely infective etiology. No features of pulmonary edema.",Pneumonia / Consolidation,True,Pulmonary Edema
+hard_neg_90085,"CHEST XRAY REPORT
+
+The heart is normal in size.
+The mediastinum, hila and pulmonary vasculature are unremarkable.
+The lung fields are clear.
+Impression:
+Normal study.",Normal,True,Pulmonary Edema
+hard_neg_90086,"CHEST RADIOGRAPHY REPORT
+Findings:
+The heart appears enlarged (CTR - 0.63).
+The pulmonary vasculature is normal.
+Both lung fields are clear.
+Both costophrenic sulci are preserved.
+Impression:
+Cardiomegaly. No pulmonary edema.",Cardiomegaly,True,Pulmonary Edema
+hard_neg_90087,"CHEST XRAY REPORT
+
+Bilateral patchy opacities are noted predominantly in the lower lung zones.
+The cardiac size is normal.
+Impression:
+Bilateral pneumonia.",Pneumonia / Consolidation,True,Pulmonary Edema
+hard_neg_90088,"CHEST XRAY REPORT
+Findings:
+The cardiac shadow is enlarged.
+Normal pulmonary vasculature. No vascular congestion.
+The lung fields are clear.
+Impression:
+Cardiomegaly. No features of pulmonary edema.",Cardiomegaly,True,Pulmonary Edema
+hard_neg_90089,"CHEST RADIOGRAPHY REPORT
+Diffuse ground glass opacification noted bilaterally.
+The cardiac size is normal.
+No Kerley B lines. No cephalization.
+Impression:
+Bilateral ground glass opacities - likely infective etiology. No features of pulmonary edema.",Pneumonia / Consolidation,True,Pulmonary Edema
+hard_neg_90090,"AP CHEST RADIOGRAPH REPORT
+The heart is normal in size.
+The mediastinum, hila and pulmonary vasculature are unremarkable.
+The lung fields are clear.
+Impression:
+No gross abnormality seen.",Normal,True,Pulmonary Edema
+hard_neg_90091,"CHEST RADIOGRAPH REPORT
+Findings:
+The heart is normal in size and contour.
+No tubes or lines are seen.
+Both lung fields are clear.
+Impression:
+Normal chest radiograph. No devices.",Normal,True,Device Present
+hard_neg_90092,"AP CHEST RADIOGRAPH REPORT
+
+The previously noted central venous catheter has been removed.
+The lung fields are clear.
+No residual pneumothorax.
+Impression:
+Post-line removal. No pneumothorax.",Normal,True,Device Present
+hard_neg_90093,"CHEST RADIOGRAPHY REPORT
+The cardiac shadow appears enlarged (CTR - 0.58).
+Aortic unfolding is observed.
+No lines, tubes or surgical artifacts seen.
+Impression:
+Cardiomegaly with aortic unfolding.","Cardiomegaly,Degenerative / Structural Changes",True,Device Present
+hard_neg_90094,"CHEST XRAY REPORT
+
+Findings:
+The heart is normal in size and contour.
+No tubes or lines are seen.
+The lung fields are clear.
+Impression:
+No significant radiographic abnormality. No devices.",Normal,True,Device Present
+hard_neg_90095,"CHEST RADIOGRAPH REPORT
+The previously noted central venous catheter has been removed.
+Both lung fields are clear bilaterally.
+No residual pneumothorax.
+Impression:
+Post-line removal. No pneumothorax.",Normal,True,Device Present
+hard_neg_90096,"AP CHEST RADIOGRAPH REPORT
+
+The cardiac shadow appears enlarged (CTR - 0.58).
+Aortic unfolding is observed.
+No lines, tubes or surgical artifacts seen.
+Impression:
+Cardiomegaly with aortic unfolding.","Cardiomegaly,Degenerative / Structural Changes",True,Device Present
+hard_neg_90097,"AP CHEST RADIOGRAPH REPORT
+Findings:
+The heart is within normal limits.
+No tubes or lines are seen.
+Both lung fields are clear.
+Impression:
+Normal chest radiograph. No devices.",Normal,True,Device Present
+hard_neg_90098,"CHEST RADIOGRAPHY REPORT
+The previously noted central venous catheter has been removed.
+Both lung fields are clear bilaterally.
+No residual pneumothorax.
+Impression:
+Post-line removal. No pneumothorax.",Normal,True,Device Present
+hard_neg_90099,"AP CHEST RADIOGRAPH REPORT
+The cardiac shadow appears enlarged (CTR - 0.58).
+Aortic unfolding is observed.
+No lines, tubes or surgical artifacts seen.
+Impression:
+Cardiomegaly with aortic unfolding.","Cardiomegaly,Degenerative / Structural Changes",True,Device Present
+hard_neg_90100,"CHEST RADIOGRAPHY REPORT
+Findings:
+The heart is normal in size and contour.
+No tubes or lines are seen.
+Both lung fields are clear.
+Impression:
+Normal chest radiograph. No devices.",Normal,True,Device Present
+hard_neg_90101,"CHEST RADIOGRAPHY REPORT
+
+The previously noted central venous catheter has been removed.
+Both lung fields are clear bilaterally.
+No residual pneumothorax.
+Impression:
+Post-line removal. No pneumothorax.",Normal,True,Device Present
+hard_neg_90102,"AP CHEST RADIOGRAPH REPORT
+
+The cardiac shadow appears enlarged (CTR - 0.58).
+Aortic unfolding is noted.
+No lines, tubes or surgical artifacts seen.
+Impression:
+Cardiomegaly with aortic unfolding.","Cardiomegaly,Degenerative / Structural Changes",True,Device Present
+hard_neg_90103,"CHEST RADIOGRAPH REPORT
+Findings:
+The heart is within normal limits.
+No tubes or lines are seen.
+Both lung fields are clear.
+Impression:
+Normal chest radiograph. No devices.",Normal,True,Device Present
+hard_neg_90104,"CHEST RADIOGRAPHY REPORT
+The previously noted central venous catheter has been removed.
+The lung fields are clear.
+No residual pneumothorax.
+Impression:
+Post-line removal. No pneumothorax.",Normal,True,Device Present
+hard_neg_90105,"CHEST RADIOGRAPH  REPORT
+The cardiac shadow is enlarged (CTR - 0.58).
+Aortic unfolding is observed.
+No lines, tubes or surgical artifacts seen.
+Impression:
+Cardiomegaly with aortic unfolding.","Cardiomegaly,Degenerative / Structural Changes",True,Device Present
+hard_neg_90106,"CHEST RADIOGRAPHY REPORT
+
+Findings:
+Homogenous opacity in the right lower lung zone with meniscus sign.
+No mediastinal shift. No volume loss.
+Cardiac size is normal.
+Impression:
+Right pleural effusion.",Pleural Effusion,True,Atelectasis
+hard_neg_90107,"CHEST RADIOGRAPHY REPORT
+Bilateral patchy opacities noted.
+No loss of lung volume.
+Both hemidiaphragms are at normal level.
+Impression:
+Bilateral pneumonic changes.",Pneumonia / Consolidation,True,Atelectasis
+hard_neg_90108,"CHEST RADIOGRAPH REPORT
+The lung fields are clear with normal lung volumes bilaterally.
+The heart is normal in size.
+Both hemidiaphragms are at normal level.
+Impression:
+No gross abnormality seen.",Normal,True,Atelectasis
+hard_neg_90109,"CHEST RADIOGRAPH  REPORT
+Findings:
+Homogenous opacity in the right lower lung zone with meniscus sign.
+No mediastinal shift. No volume loss.
+Cardiac size is normal.
+Impression:
+Right pleural effusion.",Pleural Effusion,True,Atelectasis
+hard_neg_90110,"CHEST XRAY REPORT
+Bilateral patchy opacities noted.
+No loss of lung volume.
+Both hemidiaphragms are at normal level.
+Impression:
+Bilateral pneumonic changes.",Pneumonia / Consolidation,True,Atelectasis
+hard_neg_90111,"CHEST RADIOGRAPH REPORT
+The lung fields are clear with normal lung volumes bilaterally.
+The heart is within normal limits.
+Both hemidiaphragms are at normal level.
+Impression:
+Normal study.",Normal,True,Atelectasis
+hard_neg_90112,"AP CHEST RADIOGRAPH REPORT
+
+Findings:
+Homogenous opacity in the right lower lung zone with meniscus sign.
+No mediastinal shift. No volume loss.
+Cardiac size is normal.
+Impression:
+Right pleural effusion.",Pleural Effusion,True,Atelectasis
+hard_neg_90113,"CHEST RADIOGRAPH  REPORT
+Bilateral patchy opacities noted.
+No loss of lung volume.
+Both hemidiaphragms are at normal level.
+Impression:
+Bilateral pneumonic changes.",Pneumonia / Consolidation,True,Atelectasis
+hard_neg_90114,"AP CHEST RADIOGRAPH REPORT
+Both lung fields are clear bilaterally with normal lung volumes bilaterally.
+The heart is normal in size.
+Both hemidiaphragms are at normal level.
+Impression:
+Normal study.",Normal,True,Atelectasis
+hard_neg_90115,"CHEST RADIOGRAPH REPORT
+Findings:
+Homogenous opacity in the right lower lung zone with meniscus sign.
+No mediastinal shift. No volume loss.
+Cardiac size is normal.
+Impression:
+Right pleural effusion.",Pleural Effusion,True,Atelectasis
+hard_neg_90116,"CHEST RADIOGRAPHY REPORT
+
+Bilateral patchy opacities noted.
+No loss of lung volume.
+Both hemidiaphragms are at normal level.
+Impression:
+Bilateral pneumonic changes.",Pneumonia / Consolidation,True,Atelectasis
+hard_neg_90117,"CHEST RADIOGRAPH  REPORT
+The lung fields are clear with normal lung volumes bilaterally.
+The heart is normal in size.
+Both hemidiaphragms are at normal level.
+Impression:
+Normal study.",Normal,True,Atelectasis
+hard_neg_90118,"CHEST XRAY REPORT
+Findings:
+Homogenous opacity in the right lower lung zone with meniscus sign.
+No mediastinal shift. No volume loss.
+Cardiac size is normal.
+Impression:
+Right pleural effusion.",Pleural Effusion,True,Atelectasis
+hard_neg_90119,"CHEST RADIOGRAPHY REPORT
+Bilateral patchy opacities noted.
+No loss of lung volume.
+Both hemidiaphragms are at normal level.
+Impression:
+Bilateral pneumonic changes.",Pneumonia / Consolidation,True,Atelectasis
+hard_neg_90120,"AP CHEST RADIOGRAPH REPORT
+The lung fields are clear with normal lung volumes bilaterally.
+The heart is within normal limits.
+Both hemidiaphragms are at normal level.
+Impression:
+No gross abnormality seen.",Normal,True,Atelectasis
+hard_neg_90121,"AP CHEST RADIOGRAPH REPORT
+The heart is normal in size.
+Normal bronchovascular markings bilaterally.
+No focal lung lesion is identified.
+Impression:
+No significant radiographic abnormality.",Normal,True,Reticulonodular / Interstitial Pattern
+hard_neg_90122,"CHEST RADIOGRAPH  REPORT
+
+Patchy air-space opacity noted in the right middle lung zone.
+Bronchovascular markings are otherwise normal.
+Impression:
+Right middle lobe pneumonia.",Pneumonia / Consolidation,True,Reticulonodular / Interstitial Pattern
+hard_neg_90123,"CHEST RADIOGRAPHY REPORT
+The lung fields show normal bronchovascular pattern.
+The heart is enlarged (CTR - 0.56).
+Impression:
+Cardiomegaly. Lungs are clear.",Cardiomegaly,True,Reticulonodular / Interstitial Pattern
+hard_neg_90124,"CHEST RADIOGRAPH  REPORT
+The heart is normal in size.
+Normal bronchovascular markings bilaterally.
+No focal lung lesion is noted.
+Impression:
+Normal chest radiograph.",Normal,True,Reticulonodular / Interstitial Pattern
+hard_neg_90125,"CHEST RADIOGRAPH  REPORT
+Patchy air-space opacity noted in the right middle lung zone.
+Bronchovascular markings are otherwise normal.
+Impression:
+Right middle lobe pneumonia.",Pneumonia / Consolidation,True,Reticulonodular / Interstitial Pattern
+hard_neg_90126,"AP CHEST RADIOGRAPH REPORT
+The lung fields show normal bronchovascular pattern.
+The heart appears enlarged (CTR - 0.56).
+Impression:
+Cardiomegaly. Lungs are clear.",Cardiomegaly,True,Reticulonodular / Interstitial Pattern
+hard_neg_90127,"CHEST XRAY REPORT
+The heart is normal in size.
+Normal bronchovascular markings bilaterally.
+No focal lung lesion is identified.
+Impression:
+Normal chest radiograph.",Normal,True,Reticulonodular / Interstitial Pattern
+hard_neg_90128,"CHEST RADIOGRAPHY REPORT
+Patchy air-space opacity noted in the right middle lung zone.
+Bronchovascular markings are otherwise normal.
+Impression:
+Right middle lobe pneumonia.",Pneumonia / Consolidation,True,Reticulonodular / Interstitial Pattern
+hard_neg_90129,"CHEST RADIOGRAPHY REPORT
+
+The lung fields show normal bronchovascular pattern.
+The heart appears enlarged (CTR - 0.56).
+Impression:
+Cardiomegaly. Lungs are clear.",Cardiomegaly,True,Reticulonodular / Interstitial Pattern
+hard_neg_90130,"CHEST XRAY REPORT
+The heart is within normal limits.
+Normal bronchovascular markings bilaterally.
+No focal lung lesion is seen.
+Impression:
+Normal chest radiograph.",Normal,True,Reticulonodular / Interstitial Pattern
+hard_neg_90131,"CHEST RADIOGRAPHY REPORT
+Patchy air-space opacity noted in the right middle lung zone.
+Bronchovascular markings are otherwise normal.
+Impression:
+Right middle lobe pneumonia.",Pneumonia / Consolidation,True,Reticulonodular / Interstitial Pattern
+hard_neg_90132,"CHEST RADIOGRAPHY REPORT
+
+The lung fields show normal bronchovascular pattern.
+The heart is enlarged (CTR - 0.56).
+Impression:
+Cardiomegaly. Lungs are clear.",Cardiomegaly,True,Reticulonodular / Interstitial Pattern
+hard_neg_90133,"CHEST RADIOGRAPHY REPORT
+The heart is within normal limits.
+Normal bronchovascular markings bilaterally.
+No focal lung lesion is seen.
+Impression:
+Normal chest radiograph.",Normal,True,Reticulonodular / Interstitial Pattern
+hard_neg_90134,"CHEST XRAY REPORT
+Patchy air-space opacity noted in the right middle lung zone.
+Bronchovascular markings are otherwise normal.
+Impression:
+Right middle lobe pneumonia.",Pneumonia / Consolidation,True,Reticulonodular / Interstitial Pattern
+hard_neg_90135,"CHEST RADIOGRAPH  REPORT
+
+The lung fields show normal bronchovascular pattern.
+The heart appears enlarged (CTR - 0.56).
+Impression:
+Cardiomegaly. Lungs are clear.",Cardiomegaly,True,Reticulonodular / Interstitial Pattern
+hard_neg_90136,"CHEST RADIOGRAPH REPORT
+Findings:
+A round well-defined mass lesion is noted in the right upper lung zone.
+No cavitation. No satellite nodules.
+Impression:
+Right upper lobe mass. Neoplastic process suspected.","Lung Mass / Nodule,Suspected Malignancy",True,Tuberculosis
+hard_neg_90137,"CHEST RADIOGRAPHY REPORT
+Fibrotic changes noted in both upper lung zones.
+Traction bronchiectasis seen bilaterally.
+The cardiac shadow is normal.
+Impression:
+Bilateral upper lobe fibrosis - likely post-radiation changes.",Reticulonodular / Interstitial Pattern,True,Tuberculosis
+hard_neg_90138,"CHEST XRAY REPORT
+The lung fields are clear.
+No active parenchymal disease.
+No cavitary lesion seen.
+Impression:
+No significant radiographic abnormality.",Normal,True,Tuberculosis
+hard_neg_90139,"CHEST RADIOGRAPH REPORT
+Findings:
+A round well-defined mass lesion is observed in the right upper lung zone.
+No cavitation. No satellite nodules.
+Impression:
+Right upper lobe mass. Neoplastic process suspected.","Lung Mass / Nodule,Suspected Malignancy",True,Tuberculosis
+hard_neg_90140,"CHEST XRAY REPORT
+Fibrotic changes noted in both upper lung zones.
+Traction bronchiectasis noted bilaterally.
+The cardiac shadow is normal.
+Impression:
+Bilateral upper lobe fibrosis - likely post-radiation changes.",Reticulonodular / Interstitial Pattern,True,Tuberculosis
+hard_neg_90141,"CHEST RADIOGRAPH  REPORT
+Both lung fields are clear bilaterally.
+No active parenchymal disease.
+No cavitary lesion seen.
+Impression:
+No significant radiographic abnormality.",Normal,True,Tuberculosis
+hard_neg_90142,"CHEST RADIOGRAPH  REPORT
+Findings:
+A round well-defined mass lesion is observed in the right upper lung zone.
+No cavitation. No satellite nodules.
+Impression:
+Right upper lobe mass. Neoplastic process suspected.","Lung Mass / Nodule,Suspected Malignancy",True,Tuberculosis
+hard_neg_90143,"AP CHEST RADIOGRAPH REPORT
+Fibrotic changes noted in both upper lung zones.
+Traction bronchiectasis noted bilaterally.
+The cardiac shadow is normal.
+Impression:
+Bilateral upper lobe fibrosis - likely post-radiation changes.",Reticulonodular / Interstitial Pattern,True,Tuberculosis
+hard_neg_90144,"AP CHEST RADIOGRAPH REPORT
+The lung fields are clear.
+No active parenchymal disease.
+No cavitary lesion seen.
+Impression:
+No significant radiographic abnormality.",Normal,True,Tuberculosis
+hard_neg_90145,"CHEST RADIOGRAPHY REPORT
+Findings:
+A round well-defined mass lesion is observed in the right upper lung zone.
+No cavitation. No satellite nodules.
+Impression:
+Right upper lobe mass. Neoplastic process suspected.","Lung Mass / Nodule,Suspected Malignancy",True,Tuberculosis
+hard_neg_90146,"CHEST XRAY REPORT
+
+Fibrotic changes noted in both upper lung zones.
+Traction bronchiectasis seen bilaterally.
+The cardiac shadow is normal.
+Impression:
+Bilateral upper lobe fibrosis - likely post-radiation changes.",Reticulonodular / Interstitial Pattern,True,Tuberculosis
+hard_neg_90147,"CHEST RADIOGRAPHY REPORT
+The lung fields are clear.
+No active parenchymal disease.
+No cavitary lesion seen.
+Impression:
+No significant radiographic abnormality.",Normal,True,Tuberculosis
+hard_neg_90148,"CHEST RADIOGRAPH REPORT
+Findings:
+A round well-defined mass lesion is observed in the right upper lung zone.
+No cavitation. No satellite nodules.
+Impression:
+Right upper lobe mass. Neoplastic process suspected.","Lung Mass / Nodule,Suspected Malignancy",True,Tuberculosis
+hard_neg_90149,"CHEST RADIOGRAPH  REPORT
+
+Fibrotic changes noted in both upper lung zones.
+Traction bronchiectasis noted bilaterally.
+The cardiac shadow is normal.
+Impression:
+Bilateral upper lobe fibrosis - likely post-radiation changes.",Reticulonodular / Interstitial Pattern,True,Tuberculosis
+hard_neg_90150,"CHEST RADIOGRAPH  REPORT
+The lung fields are clear.
+No active parenchymal disease.
+No cavitary lesion seen.
+Impression:
+No significant radiographic abnormality.",Normal,True,Tuberculosis
+hard_neg_90151,"CHEST XRAY REPORT
+
+Patchy opacity is observed in the left lower lung zone.
+Air bronchogram is seen within the opacity.
+Impression:
+Left lower lobe consolidation, likely pneumonia.",Pneumonia / Consolidation,True,Lung Mass / Nodule
+hard_neg_90152,"AP CHEST RADIOGRAPH REPORT
+No focal lung lesion is seen.
+Both lung fields are clear bilaterally bilaterally.
+Impression:
+Normal chest radiograph.",Normal,True,Lung Mass / Nodule
+hard_neg_90153,"CHEST RADIOGRAPH  REPORT
+Diffuse reticulonodular opacities bilaterally.
+No discrete mass or nodule identified.
+Impression:
+Interstitial lung disease.",Reticulonodular / Interstitial Pattern,True,Lung Mass / Nodule
+hard_neg_90154,"CHEST XRAY REPORT
+
+Patchy opacity is observed in the left lower lung zone.
+Air bronchogram is noted within the opacity.
+Impression:
+Left lower lobe consolidation, likely pneumonia.",Pneumonia / Consolidation,True,Lung Mass / Nodule
+hard_neg_90155,"CHEST RADIOGRAPH  REPORT
+No focal lung lesion is noted.
+The lung fields are clear bilaterally.
+Impression:
+Normal chest radiograph.",Normal,True,Lung Mass / Nodule
+hard_neg_90156,"CHEST RADIOGRAPH  REPORT
+
+Diffuse reticulonodular opacities bilaterally.
+No discrete mass or nodule identified.
+Impression:
+Interstitial lung disease.",Reticulonodular / Interstitial Pattern,True,Lung Mass / Nodule
+hard_neg_90157,"CHEST RADIOGRAPH  REPORT
+Patchy opacity is noted in the left lower lung zone.
+Air bronchogram is seen within the opacity.
+Impression:
+Left lower lobe consolidation, likely pneumonia.",Pneumonia / Consolidation,True,Lung Mass / Nodule
+hard_neg_90158,"CHEST XRAY REPORT
+No focal lung lesion is seen.
+The lung fields are clear bilaterally.
+Impression:
+Normal chest radiograph.",Normal,True,Lung Mass / Nodule
+hard_neg_90159,"CHEST XRAY REPORT
+Diffuse reticulonodular opacities bilaterally.
+No discrete mass or nodule identified.
+Impression:
+Interstitial lung disease.",Reticulonodular / Interstitial Pattern,True,Lung Mass / Nodule
+hard_neg_90160,"CHEST RADIOGRAPH REPORT
+Patchy opacity is observed in the left lower lung zone.
+Air bronchogram is noted within the opacity.
+Impression:
+Left lower lobe consolidation, likely pneumonia.",Pneumonia / Consolidation,True,Lung Mass / Nodule
+hard_neg_90161,"CHEST RADIOGRAPHY REPORT
+
+No focal lung lesion is seen.
+The lung fields are clear bilaterally.
+Impression:
+Normal chest radiograph.",Normal,True,Lung Mass / Nodule
+hard_neg_90162,"AP CHEST RADIOGRAPH REPORT
+Diffuse reticulonodular opacities bilaterally.
+No discrete mass or nodule identified.
+Impression:
+Interstitial lung disease.",Reticulonodular / Interstitial Pattern,True,Lung Mass / Nodule
+hard_neg_90163,"AP CHEST RADIOGRAPH REPORT
+Patchy opacity is observed in the left lower lung zone.
+Air bronchogram is seen within the opacity.
+Impression:
+Left lower lobe consolidation, likely pneumonia.",Pneumonia / Consolidation,True,Lung Mass / Nodule
+hard_neg_90164,"CHEST RADIOGRAPH  REPORT
+No focal lung lesion is noted.
+The lung fields are clear bilaterally.
+Impression:
+Normal chest radiograph.",Normal,True,Lung Mass / Nodule
+hard_neg_90165,"CHEST XRAY REPORT
+Diffuse reticulonodular opacities bilaterally.
+No discrete mass or nodule identified.
+Impression:
+Interstitial lung disease.",Reticulonodular / Interstitial Pattern,True,Lung Mass / Nodule
+hard_neg_90166,"AP CHEST RADIOGRAPH REPORT
+A well-defined rounded opacity is noted in the right lower lung zone.
+Smooth margins. No spiculation.
+Impression:
+Benign-appearing right lung nodule. Likely granuloma.",Lung Mass / Nodule,True,Suspected Malignancy
+hard_neg_90167,"CHEST RADIOGRAPH REPORT
+Calcified granuloma noted in the left upper lung zone.
+No active parenchymal disease.
+Impression:
+Old granulomatous disease. No active pathology.",Normal,True,Suspected Malignancy
+hard_neg_90168,"CHEST RADIOGRAPHY REPORT
+Lung fields are clear.
+No mass, nodule or cavitary lesion seen.
+Impression:
+Normal study.",Normal,True,Suspected Malignancy
+hard_neg_90169,"CHEST RADIOGRAPHY REPORT
+A well-defined rounded opacity is noted in the right lower lung zone.
+Smooth margins. No spiculation.
+Impression:
+Benign-appearing right lung nodule. Likely granuloma.",Lung Mass / Nodule,True,Suspected Malignancy
+hard_neg_90170,"CHEST RADIOGRAPH REPORT
+Calcified granuloma noted in the left upper lung zone.
+No active parenchymal disease.
+Impression:
+Old granulomatous disease. No active pathology.",Normal,True,Suspected Malignancy
+hard_neg_90171,"CHEST RADIOGRAPH  REPORT
+Lung fields are clear.
+No mass, nodule or cavitary lesion seen.
+Impression:
+No gross abnormality seen.",Normal,True,Suspected Malignancy
+hard_neg_90172,"CHEST RADIOGRAPHY REPORT
+A well-defined rounded opacity is observed in the right lower lung zone.
+Smooth margins. No spiculation.
+Impression:
+Benign-appearing right lung nodule. Likely granuloma.",Lung Mass / Nodule,True,Suspected Malignancy
+hard_neg_90173,"CHEST RADIOGRAPHY REPORT
+
+Calcified granuloma noted in the left upper lung zone.
+No active parenchymal disease.
+Impression:
+Old granulomatous disease. No active pathology.",Normal,True,Suspected Malignancy
+hard_neg_90174,"CHEST RADIOGRAPH REPORT
+Lung fields are clear.
+No mass, nodule or cavitary lesion seen.
+Impression:
+No gross abnormality seen.",Normal,True,Suspected Malignancy
+hard_neg_90175,"CHEST RADIOGRAPHY REPORT
+A well-defined rounded opacity is noted in the right lower lung zone.
+Smooth margins. No spiculation.
+Impression:
+Benign-appearing right lung nodule. Likely granuloma.",Lung Mass / Nodule,True,Suspected Malignancy
+hard_neg_90176,"CHEST RADIOGRAPHY REPORT
+Calcified granuloma noted in the left upper lung zone.
+No active parenchymal disease.
+Impression:
+Old granulomatous disease. No active pathology.",Normal,True,Suspected Malignancy
+hard_neg_90177,"AP CHEST RADIOGRAPH REPORT
+Lung fields are clear.
+No mass, nodule or cavitary lesion seen.
+Impression:
+No gross abnormality seen.",Normal,True,Suspected Malignancy
+hard_neg_90178,"CHEST XRAY REPORT
+A well-defined rounded opacity is noted in the right lower lung zone.
+Smooth margins. No spiculation.
+Impression:
+Benign-appearing right lung nodule. Likely granuloma.",Lung Mass / Nodule,True,Suspected Malignancy
+hard_neg_90179,"CHEST RADIOGRAPH  REPORT
+Calcified granuloma noted in the left upper lung zone.
+No active parenchymal disease.
+Impression:
+Old granulomatous disease. No active pathology.",Normal,True,Suspected Malignancy
+hard_neg_90180,"CHEST XRAY REPORT
+
+Lung fields are clear.
+No mass, nodule or cavitary lesion seen.
+Impression:
+No gross abnormality seen.",Normal,True,Suspected Malignancy

@@ -42,7 +42,7 @@ jobs:
       - name: Run Tests in Docker
         env:
           CXR_ANON_SECRET: ${{ secrets.CXR_ANON_SECRET }}  # Securely injects the anonymization key
-        run: docker run --rm ncb-phase1:latest pytest -v tests/
+        run: docker run --rm -e CXR_ANON_SECRET ncb-phase1:latest pytest -v tests/
 
       - name: Lint with flake8
         run: |
