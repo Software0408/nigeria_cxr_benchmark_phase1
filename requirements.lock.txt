@@ -399,7 +399,9 @@ python-json-logger==4.0.0
     # via jupyter-events
 pytokens==0.4.1
     # via black
-pywinpty==3.0.3
+ptyprocess==0.7.0
+    # via terminado (Linux/macOS only; pywinpty used on Windows instead)
+pywinpty==3.0.3 ; sys_platform == "win32"
     # via
     #   jupyter-server
     #   jupyter-server-terminals

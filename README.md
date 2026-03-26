@@ -363,7 +363,7 @@ nigeria_cxr_benchmark_phase1/
 └── README.md
 ```
 
-> **Not committed:** `models/` (fine-tuned BERT weights, ~2 GB), `CLAUDE.md` (internal project context), `pytest.ini`, `run_pipeline.py`.
+> **Not committed:** `models/` (fine-tuned BERT weights, ~2 GB).
 > Models are stored locally and re-trainable from `scripts/nlp/train_bert_extractor.py`.
 
 ---
