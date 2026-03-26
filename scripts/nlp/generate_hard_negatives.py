@@ -24,16 +24,15 @@ Output:
 
 Usage:
     python scripts/nlp/generate_hard_negatives.py
-    
+
     Then merge with existing augmented training set:
     python scripts/nlp/merge_training_data.py  (or manual pd.concat)
 """
 
 import random
 import logging
-import csv
 from pathlib import Path
-from typing import List, Dict, Tuple
+from typing import List, Dict
 from dataclasses import dataclass
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -377,29 +376,29 @@ def generate_hard_negatives(
 ) -> list:
     """
     Generate hard negative synthetic reports.
-    
+
     For each label, templates are repeated/sampled to reach n_per_label.
     Small random variations are applied (header style, whitespace, minor phrasing)
     to prevent BERT from memorizing exact templates.
-    
+
     Args:
         n_per_label: target number of hard negatives per label
         seed: random seed for reproducibility
-    
+
     Returns:
         list of dicts with keys: study_id, report_text, gold_labels, is_synthetic, neg_target
     """
     random.seed(seed)
-    
+
     # Header variations
     headers = [
         "CHEST RADIOGRAPH REPORT",
-        "CHEST RADIOGRAPHY REPORT", 
+        "CHEST RADIOGRAPHY REPORT",
         "AP CHEST RADIOGRAPH REPORT",
         "CHEST RADIOGRAPH  REPORT",
         "CHEST XRAY REPORT",
     ]
-    
+
     # Minor phrasing swaps (original -> alternatives)
     swaps = [
         ("normal in size and contour", "within normal limits"),
@@ -415,39 +414,39 @@ def generate_hard_negatives(
         ("Both lung fields are clear", "The lung fields are clear"),
         ("The lung fields are clear", "Both lung fields are clear bilaterally"),
     ]
-    
+
     all_reports = []
     study_counter = 90001  # start after generate_synthetic_reports.py range
-    
+
     for label, templates in HARD_NEGATIVE_TEMPLATES.items():
         if not templates:
             continue
-            
+
         logger.info(f"Generating {n_per_label} hard negatives for: {label} (from {len(templates)} templates)")
-        
+
         for i in range(n_per_label):
             # Pick a template (cycle through available ones)
             template = templates[i % len(templates)]
             text = template.text
-            
+
             # Apply random header variation
             for h in headers:
                 if h in text:
                     text = text.replace(h, random.choice(headers), 1)
                     break
-            
+
             # Apply 0-2 random phrase swaps
             n_swaps = random.randint(0, 2)
             swap_candidates = [(old, new) for old, new in swaps if old in text]
             for old, new in random.sample(swap_candidates, min(n_swaps, len(swap_candidates))):
                 text = text.replace(old, new, 1)
-            
+
             # Random minor whitespace variation
             if random.random() < 0.3:
                 text = text.replace("\n", "\n\n", 1)
-            
+
             gold_str = ",".join(template.gold_labels) if template.gold_labels else "Normal"
-            
+
             all_reports.append({
                 "study_id": f"hard_neg_{study_counter:05d}",
                 "report_text": text,
@@ -456,40 +455,40 @@ def generate_hard_negatives(
                 "neg_target": template.neg_target,
             })
             study_counter += 1
-    
+
     return all_reports
 
 
 def main():
     reports = generate_hard_negatives(n_per_label=15, seed=42)
-    
+
     logger.info(f"\nGenerated {len(reports)} hard negative reports")
-    
+
     # Count by target label
     from collections import Counter
     target_counts = Counter(r["neg_target"] for r in reports)
     for label, count in sorted(target_counts.items(), key=lambda x: -x[1]):
         logger.info(f"  {label}: {count} hard negatives")
-    
+
     # Count by gold label
     gold_counts = Counter()
     for r in reports:
-        for l in r["gold_labels"].split(","):
-            gold_counts[l.strip()] += 1
-    logger.info(f"\nGold label distribution in hard negatives:")
+        for lbl in r["gold_labels"].split(","):
+            gold_counts[lbl.strip()] += 1
+    logger.info("\nGold label distribution in hard negatives:")
     for label, count in sorted(gold_counts.items(), key=lambda x: -x[1]):
         logger.info(f"  {label}: {count}")
-    
+
     # Save
     output_dir = PROJECT_ROOT / "results" / "nlp"
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / "hard_negatives.csv"
-    
+
     import pandas as pd
     df = pd.DataFrame(reports)
     df.to_csv(output_path, index=False)
     logger.info(f"\nSaved to {output_path}")
-    
+
     # Also create merged training set
     # Load existing augmented data
     augmented_path = output_dir / "training_reports_augmented.csv"
@@ -500,11 +499,11 @@ def main():
         merged = pd.concat([aug_df, df], ignore_index=True)
         merged_path = output_dir / "training_reports_v2.csv"
         merged.to_csv(merged_path, index=False)
-        
+
         n_real = int((~merged["is_synthetic"].astype(bool)).sum())
         n_synth_pos = int(merged["is_synthetic"].astype(bool).sum()) - len(reports)
         n_hard_neg = len(reports)
-        
+
         logger.info(f"\nMerged training set saved to {merged_path}")
         logger.info(f"  Real: {n_real}")
         logger.info(f"  Synthetic positive (rare labels): {n_synth_pos}")
@@ -512,7 +511,7 @@ def main():
         logger.info(f"  Total: {len(merged)}")
     else:
         logger.info(f"\nNo existing augmented data found at {augmented_path}")
-        logger.info(f"Hard negatives saved standalone. Merge manually before training.")
+        logger.info("Hard negatives saved standalone. Merge manually before training.")
 
 
 if __name__ == "__main__":

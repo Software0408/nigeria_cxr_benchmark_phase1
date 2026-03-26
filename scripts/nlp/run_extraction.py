@@ -39,12 +39,12 @@ from tqdm import tqdm
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
-from nlp.labels import LabelHierarchy
-from nlp.extractors.bioclinicalbert_extractor import (
+from nlp.labels import LabelHierarchy  # noqa: E402
+from nlp.extractors.bioclinicalbert_extractor import (  # noqa: E402
     BioClinicalBERTExtractor,
     PATHOLOGY_LABELS,
 )
-from nlp.extractors.ensemble import EnsembleExtractor
+from nlp.extractors.ensemble import EnsembleExtractor  # noqa: E402
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
@@ -419,9 +419,18 @@ def main():
     logger.info(f"\n{'=' * 70}")
     logger.info(f"EXTRACTION COMPLETE — {distribution['total_reports']} reports ({len(bert_extractors)} BERT folds)")
     logger.info(f"{'=' * 70}")
-    logger.info(f"Normal: {stats['normal_count']} ({stats['normal_pct']}%) | Abnormal: {stats['abnormal_count']} ({stats['abnormal_pct']}%)")
-    logger.info(f"Labels/report: mean={stats['mean_labels_per_report']}, median={stats['median_labels_per_report']}, max={stats['max_labels_per_report']}")
-    logger.info(f"Multi-label: 1={stats['reports_with_1_label']}, 2={stats['reports_with_2_labels']}, 3+={stats['reports_with_3plus_labels']}")
+    logger.info(
+        f"Normal: {stats['normal_count']} ({stats['normal_pct']}%) | "
+        f"Abnormal: {stats['abnormal_count']} ({stats['abnormal_pct']}%)"
+    )
+    logger.info(
+        f"Labels/report: mean={stats['mean_labels_per_report']}, "
+        f"median={stats['median_labels_per_report']}, max={stats['max_labels_per_report']}"
+    )
+    logger.info(
+        f"Multi-label: 1={stats['reports_with_1_label']}, "
+        f"2={stats['reports_with_2_labels']}, 3+={stats['reports_with_3plus_labels']}"
+    )
 
     logger.info(f"\n{'Label':<42} {'Ensemble':>8} {'RB':>6} {'BERT':>6} {'Ens%':>6}")
     logger.info(f"{'-' * 70}")
@@ -433,7 +442,11 @@ def main():
             f"{info.get('ensemble_pct', 0):>5.1f}%"
         )
 
-    logger.info(f"\nDisagreements: {dis_stats['total_disagreements']} across {dis_stats['reports_with_disagreements']} reports ({dis_stats['pct_reports_with_disagreements']:.1f}%)")
+    logger.info(
+        f"\nDisagreements: {dis_stats['total_disagreements']} across "
+        f"{dis_stats['reports_with_disagreements']} reports "
+        f"({dis_stats['pct_reports_with_disagreements']:.1f}%)"
+    )
     logger.info(f"Confidence: high={conf['high']}, medium={conf['medium']}, low={conf['low']}")
     logger.info("\nDone!")
 
