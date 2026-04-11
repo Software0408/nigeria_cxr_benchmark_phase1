@@ -47,7 +47,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy your source code from src/
 COPY src/ src/
 COPY tests/ tests/
-COPY pytest.ini .
 # COPY configs/ configs/  # Uncomment when configs/ is added
 # COPY run_pipeline.py .           # Uncomment when implemented
 
