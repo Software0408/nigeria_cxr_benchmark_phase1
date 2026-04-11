@@ -47,7 +47,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy your source code from src/
 COPY src/ src/
 COPY tests/ tests/
-# COPY configs/ configs/  # Uncomment when configs/ is added
+COPY configs/ configs/
 # COPY run_pipeline.py .           # Uncomment when implemented
 
 ENV PYTHONPATH=/app/src:/app
