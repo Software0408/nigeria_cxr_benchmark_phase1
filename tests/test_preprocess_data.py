@@ -41,6 +41,7 @@ def create_mock_dicom(tmp_path, filename, shape=(512, 1024)):
     img = np.linspace(0, 1000, np.prod(shape)).reshape(shape).astype(np.uint16)
 
     ds.Rows, ds.Columns = img.shape
+    ds.ViewPosition = "PA"
     ds.PhotometricInterpretation = "MONOCHROME2"
     ds.SamplesPerPixel = 1
     ds.BitsAllocated = 16
@@ -115,8 +116,8 @@ def test_preprocess_study(tmp_path):
     study_out = tmp_path / "out"
     preprocess_study(study_in, study_out)
 
-    assert (study_out / "img1.npy").exists()
-    assert (study_out / "img1.png").exists()
+    assert (study_out / "primary_image.npy").exists()
+    assert (study_out / "primary_image.png").exists()
     assert (study_out / "report.txt").exists()
 
 
@@ -132,4 +133,4 @@ def test_preprocess_dataset(tmp_path):
     dataset_out = tmp_path / "processed"
     preprocess_dataset(dataset_in, dataset_out)
 
-    assert (dataset_out / "study1" / "img.npy").exists()
+    assert (dataset_out / "study1" / "primary_image.npy").exists()
