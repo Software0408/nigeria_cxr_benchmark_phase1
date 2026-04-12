@@ -55,7 +55,7 @@ jobs:
         env:
           CXR_ANON_SECRET: ${{ secrets.CXR_ANON_SECRET }}
         run: |
-          export PYTHONPATH="${{ github.workspace }}:$PYTHONPATH"
+          export PYTHONPATH="${{ github.workspace }}/src:${{ github.workspace }}:$PYTHONPATH"
           pytest --cov=src --cov-report=xml --cov-report=term-missing
           # Optional: Upload to Codecov later (add step with token secret)
 
